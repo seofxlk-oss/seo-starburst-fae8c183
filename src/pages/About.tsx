@@ -27,12 +27,11 @@ const About = () => {
         <div className="mx-auto max-w-4xl text-center">
           <span className="badge-pill">About SeoFX</span>
           <h1 className="mt-4 font-display text-4xl font-extrabold leading-tight sm:text-5xl md:text-6xl">
-            Sri Lanka's Most Trusted{" "}
-            <span className="text-gradient-accent">SEO Specialists</span>
+            <span className="text-gradient-accent">Best SEO Company in Sri Lanka</span> — Trusted SEO Specialists
           </h1>
           <p className="mt-5 text-lg text-muted-foreground">
-            SeoFX is one of the leading SEO companies in Sri Lanka, driven by a passion for building brands and
-            delivering results that truly matter.
+            SeoFX is a leading <strong className="text-foreground">SEO company in Sri Lanka</strong>, driven by a passion
+            for building brands and delivering measurable SEO results for businesses across the island.
           </p>
         </div>
       </section>
