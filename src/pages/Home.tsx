@@ -430,6 +430,65 @@ const Home = () => {
         </div>
       </section>
 
+      {/* ═══ SECTION 5b — SEO SPECIALIST SRI LANKA (keyword cluster) ═══ */}
+      <section className="bg-soft py-16 sm:py-20" aria-labelledby="seo-specialist-sl">
+        <div className="container-tight">
+          <div className="grid gap-10 lg:grid-cols-[1.1fr,1fr] lg:items-center">
+            <div>
+              <span className="badge-pill">SEO Specialist Sri Lanka</span>
+              <h2 id="seo-specialist-sl" className="mt-4 font-display text-3xl font-extrabold leading-tight sm:text-4xl">
+                Work With a Dedicated <span className="text-gradient-accent">SEO Specialist in Sri Lanka</span>
+              </h2>
+              <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
+                Every SeoFX engagement is led by a senior <strong className="text-foreground">SEO specialist in Sri Lanka</strong> who personally owns your strategy from day one. No
+                junior account managers, no offshore handoffs, no generic templates. Your dedicated SEO specialist
+                handles the technical audit, local keyword research, on-page optimisation, link building and monthly
+                reporting — so the same expert who plans your campaign is the one executing and refining it month
+                after month.
+              </p>
+              <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                A real SEO specialist understands how Sri Lankan customers actually search — across English, Sinhala
+                and Tamil queries, on mobile devices, with strong local intent. That context is what separates
+                meaningful page-1 rankings on Google.lk from generic international templates that quietly drain
+                budgets without producing leads. Whether you need a one-time consultation, a complete done-for-you SEO
+                programme or a long-term growth partner, our SEO specialists deliver white-hat results backed by a
+                90-day ranking promise and full transparency.
+              </p>
+
+              <div className="mt-7 flex flex-wrap gap-3">
+                <Button asChild variant="hero" size="lg">
+                  <Link to="/seo-specialist-sri-lanka">
+                    Meet Our SEO Specialists <ArrowRight className="size-4" />
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" size="lg">
+                  <Link to="/blog/what-does-seo-specialist-sri-lanka-do">
+                    What an SEO Specialist Does
+                  </Link>
+                </Button>
+              </div>
+            </div>
+
+            <div className="grid gap-4 sm:grid-cols-2">
+              {[
+                { title: "Senior-Led", text: "Your account is owned by a senior SEO specialist — not a junior trainee." },
+                { title: "Local Expertise", text: "Deep knowledge of Sri Lankan search behaviour and competitor landscape." },
+                { title: "White-Hat Only", text: "100% Google-compliant SEO. No black-hat shortcuts, no penalty risk." },
+                { title: "Direct Access", text: "Talk to the specialist actually doing the work — not an account layer." },
+              ].map((b) => (
+                <div key={b.title} className="rounded-2xl border border-border bg-card p-5 shadow-card">
+                  <div className="inline-flex size-10 items-center justify-center rounded-xl bg-accent/10 text-accent">
+                    <CheckCircle2 className="size-5" />
+                  </div>
+                  <h3 className="mt-3 font-display text-base font-bold">{b.title}</h3>
+                  <p className="mt-1.5 text-sm text-muted-foreground">{b.text}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ═══ SECTION 6 — SERVICES GRID (6 SEO + Web Dev) ═══ */}
       <section className="bg-soft py-16 sm:py-20" aria-labelledby="services-heading">
         <div className="container-tight">
