@@ -78,7 +78,7 @@ const Contact = () => {
 
           </div>
 
-          <aside className="rounded-3xl bg-hero p-8 text-white sm:p-10">
+          <aside className="rounded-3xl bg-hero p-6 text-white sm:p-10">
             <h2 className="font-display text-2xl font-bold">Visit our office</h2>
             <div className="mt-6 space-y-5 text-sm">
               <div className="flex items-start gap-3">
