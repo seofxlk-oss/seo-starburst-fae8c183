@@ -353,4 +353,34 @@ export const BLOG_INTERLINKS: Record<string, PostInterlinks> = {
     ],
     next: { anchor: "Complete guide to SEO in Sri Lanka (2026)", slug: "seo-sri-lanka-complete-guide-2025", blurb: "Decided SEO is worth it? Here's the complete 2026 playbook." },
   },
+
+  // 15. SEO Company Sri Lanka — 10 questions to ask
+  "how-to-choose-seo-company-sri-lanka-questions": {
+    related: [
+      { anchor: "What an SEO company in Sri Lanka should deliver in month 1, 3 & 6", slug: "what-seo-company-sri-lanka-should-deliver", blurb: "Realistic monthly expectations from a professional SEO company." },
+      { anchor: "Red flags vs green flags — telling good SEO companies from bad", slug: "seo-company-sri-lanka-red-flags-green-flags", blurb: "How to spot problematic providers before you sign anything." },
+      { anchor: "How to choose the right SEO company in Sri Lanka", slug: "how-to-choose-seo-company-sri-lanka", blurb: "The companion shortlisting framework for any SEO agency." },
+    ],
+    next: { anchor: "What an SEO company in Sri Lanka should deliver each month", slug: "what-seo-company-sri-lanka-should-deliver", blurb: "Now you know the questions — here's what their answers should look like in delivery." },
+  },
+
+  // 16. What SEO company should deliver
+  "what-seo-company-sri-lanka-should-deliver": {
+    related: [
+      { anchor: "10 questions to ask any SEO company in Sri Lanka before you sign", slug: "how-to-choose-seo-company-sri-lanka-questions", blurb: "The exact questions that reveal whether a provider can really deliver." },
+      { anchor: "Red flags vs green flags for SEO companies in Sri Lanka", slug: "seo-company-sri-lanka-red-flags-green-flags", blurb: "Warning signs and credibility markers to watch for in any provider." },
+      { anchor: "SEO packages in Sri Lanka", slug: "seo-packages-sri-lanka-guide", blurb: "Match these monthly deliverables to the right package tier." },
+    ],
+    next: { anchor: "Red flags vs green flags — good vs bad SEO companies in Sri Lanka", slug: "seo-company-sri-lanka-red-flags-green-flags", blurb: "Now learn how to spot the providers most likely to underdeliver." },
+  },
+
+  // 17. Red flags / green flags
+  "seo-company-sri-lanka-red-flags-green-flags": {
+    related: [
+      { anchor: "10 questions to ask any SEO company in Sri Lanka before you sign", slug: "how-to-choose-seo-company-sri-lanka-questions", blurb: "Use these questions to expose the red flags directly." },
+      { anchor: "What an SEO company in Sri Lanka should deliver in month 1, 3 & 6", slug: "what-seo-company-sri-lanka-should-deliver", blurb: "Realistic monthly benchmarks for any SEO company." },
+      { anchor: "Best SEO company in Sri Lanka — full criteria guide", slug: "best-seo-company-sri-lanka-guide", blurb: "What 'best' really means in Sri Lankan SEO." },
+    ],
+    next: { anchor: "10 questions to ask any SEO company in Sri Lanka before you sign", slug: "how-to-choose-seo-company-sri-lanka-questions", blurb: "Now turn the green flags into specific, direct questions for any agency." },
+  },
 };
