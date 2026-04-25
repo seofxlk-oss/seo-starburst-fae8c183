@@ -12,6 +12,24 @@ const Post8 = () => (
     date="2025-01-10"
     readTime="8 min read"
     cta="Ready to work with the best SEO company in Sri Lanka? Get your free SEO audit from SeoFX today."
+    faqs={[
+      {
+        q: "Who is the best SEO company in Sri Lanka?",
+        a: "The best SEO company in Sri Lanka is the one that consistently delivers measurable improvements in rankings, organic traffic and revenue using ethical, sustainable SEO. SeoFX is widely trusted by Sri Lankan businesses for exactly this — proven results, transparent reporting and long-term partnership.",
+      },
+      {
+        q: "What should I look for in the best SEO company in Sri Lanka?",
+        a: "Look for documented case studies, white-hat methodology aligned with Google's guidelines, full-spectrum SEO capability (technical + on-page + content + links), local Sri Lankan market expertise, and a long-term partnership mindset.",
+      },
+      {
+        q: "Are page-1 ranking guarantees from SEO companies in Sri Lanka legitimate?",
+        a: "No. No legitimate SEO company can guarantee page-1 Google rankings — Google itself states this. If a Sri Lankan SEO company guarantees rankings in 30 days, it is a major red flag for black-hat tactics that risk Google penalties.",
+      },
+      {
+        q: "How is SeoFX different from other SEO companies in Sri Lanka?",
+        a: "SeoFX is built around transparency, white-hat SEO and custom strategies for each client. Every campaign comes with clear monthly reporting, deep local market knowledge, and a partnership approach that treats your business growth as our own.",
+      },
+    ]}
   >
     <h2>Defining 'Best' — What Really Matters in an SEO Company</h2>
     <p>When Sri Lankan business owners search for the 'best SEO company in Sri Lanka', they are looking for one thing: a company that will get them to the top of Google and keep them there. But defining 'best' requires looking beyond flashy websites and impressive-sounding promises.</p>

@@ -7,6 +7,11 @@ import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/CTASection";
 import { SITE } from "@/lib/site";
 
+export interface BlogFAQ {
+  q: string;
+  a: string;
+}
+
 interface BlogPostProps {
   slug: string;
   title: string;
@@ -23,6 +28,8 @@ interface BlogPostProps {
   /** Optional hero image URL. Defaults to site OG image. */
   image?: string;
   cta: string;
+  /** Optional keyword-targeted FAQs — render visible accordion + FAQPage JSON-LD. */
+  faqs?: BlogFAQ[];
   children: React.ReactNode;
 }
 
@@ -39,6 +46,7 @@ export const BlogPost = ({
   author = "SeoFX Team",
   image = `${SITE.url}/og-image.jpg`,
   cta,
+  faqs,
   children,
 }: BlogPostProps) => {
   const url = `${SITE.url}/blog/${slug}`;
@@ -86,6 +94,21 @@ export const BlogPost = ({
     ],
   };
 
+  const faqJsonLd = faqs && faqs.length
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": `${url}#faq`,
+        mainEntity: faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      }
+    : null;
+
+  const jsonLd = [articleJsonLd, breadcrumbJsonLd, ...(faqJsonLd ? [faqJsonLd] : [])];
+
   return (
     <Layout>
       <SEO
@@ -94,9 +117,10 @@ export const BlogPost = ({
         canonical={`/blog/${slug}`}
         keywords={keywords}
         ogImage={image}
-        jsonLd={[articleJsonLd, breadcrumbJsonLd]}
+        jsonLd={jsonLd}
       />
       <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: category }]} />
+
 
       <article className="container-narrow py-12 sm:py-16">
         <span className="badge-pill">{category}</span>
@@ -116,6 +140,36 @@ export const BlogPost = ({
                        [&>p>strong]:text-foreground">
           {children}
         </div>
+
+        {faqs && faqs.length > 0 && (
+          <section aria-labelledby="post-faq-heading" className="mt-14">
+            <h2
+              id="post-faq-heading"
+              className="font-display text-2xl font-extrabold text-foreground sm:text-3xl"
+            >
+              Frequently Asked Questions
+            </h2>
+            <div className="mt-6 space-y-3">
+              {faqs.map((f) => (
+                <details
+                  key={f.q}
+                  className="group rounded-2xl border border-border bg-card p-5 open:shadow-card"
+                >
+                  <summary className="flex cursor-pointer list-none items-start justify-between gap-4 font-display font-semibold text-foreground">
+                    <span>{f.q}</span>
+                    <span
+                      aria-hidden
+                      className="mt-1 inline-flex size-5 shrink-0 items-center justify-center rounded-full border border-border text-xs text-muted-foreground transition-transform group-open:rotate-45"
+                    >
+                      +
+                    </span>
+                  </summary>
+                  <p className="mt-3 text-base leading-relaxed text-muted-foreground">{f.a}</p>
+                </details>
+              ))}
+            </div>
+          </section>
+        )}
 
         <div className="mt-12 rounded-3xl border border-accent/30 bg-accent/5 p-8 text-center">
           <p className="text-lg font-medium text-foreground">{cta}</p>

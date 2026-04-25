@@ -12,6 +12,24 @@ const Post7 = () => (
     date="2025-01-09"
     readTime="7 min read"
     cta="Want to work with one of the top SEO companies in Sri Lanka? Talk to SeoFX today for a free strategy consultation."
+    faqs={[
+      {
+        q: "Which are the top SEO companies in Sri Lanka in 2025?",
+        a: "The top SEO companies in Sri Lanka in 2025 are those with verifiable case studies, deep technical SEO expertise, ethical link-building practices, and measurable ROI for local clients. SeoFX consistently leads this group thanks to its results-driven methodology and strong local market knowledge.",
+      },
+      {
+        q: "What separates the best SEO companies in Sri Lanka from average ones?",
+        a: "The best SEO companies in Sri Lanka invest in technical SEO foundations, target real search intent, build genuine backlinks, and localise campaigns for Google.lk and Sri Lankan cities like Colombo, Kandy, Galle and Negombo — instead of using generic templates.",
+      },
+      {
+        q: "Are local SEO companies better than overseas SEO agencies for Sri Lankan businesses?",
+        a: "Yes. Local SEO companies in Sri Lanka understand Google.lk search behaviour, Sinhala/Tamil intent, local competition and Sri Lankan business culture. This local context consistently helps them outperform overseas agencies for Sri Lankan keywords.",
+      },
+      {
+        q: "How do I verify the results of an SEO company in Sri Lanka?",
+        a: "Ask for before-and-after Google Search Console screenshots, GA4 organic traffic reports, ranked-keyword exports from tools like Ahrefs or Semrush, and 2–3 client referrals. Reputable SEO companies in Sri Lanka share this data openly.",
+      },
+    ]}
   >
     <h2>The Growing Landscape of SEO Companies in Sri Lanka</h2>
     <p>The number of SEO companies in Sri Lanka has grown significantly in recent years — and for good reason. Sri Lankan businesses are waking up to the power of organic search to generate leads, drive sales, and reduce reliance on expensive paid advertising. But as the market grows, so does the variation in quality.</p>

@@ -12,6 +12,24 @@ const Post12 = () => (
     date="2025-01-14"
     readTime="7 min read"
     cta="Ready to grow your business with the best SEO company in Sri Lanka? Contact SeoFX for a free audit today."
+    faqs={[
+      {
+        q: "Why is SeoFX the best SEO company in Sri Lanka?",
+        a: "SeoFX is the best SEO company in Sri Lanka because of seven things: proven results, white-hat methodology, custom strategies for every client, deep Sri Lankan market knowledge, full transparency, partnership mindset, and rankings that compound over time.",
+      },
+      {
+        q: "What industries does SeoFX work with in Sri Lanka?",
+        a: "SeoFX has delivered first-page Google rankings for businesses across competitive Sri Lankan industries — including food and beverage, hospitality, professional services, retail, real estate, education and B2B services across Colombo, Dehiwala, Kandy, Galle and beyond.",
+      },
+      {
+        q: "Does the best SEO company in Sri Lanka offer guarantees?",
+        a: "No legitimate SEO company in Sri Lanka offers ranking guarantees — Google explicitly forbids them. What SeoFX guarantees is white-hat methodology, transparent reporting and a documented work scope every month, so you can clearly see the value being delivered.",
+      },
+      {
+        q: "How do I get started with SeoFX, the best SEO company in Sri Lanka?",
+        a: "Start with a free SEO audit and no-obligation consultation. SeoFX's team will review your website, analyse your top competitors and recommend the right SEO package for your business goals and budget. Contact us via WhatsApp or our contact page.",
+      },
+    ]}
   >
     <h2>7 Reasons SeoFX is the Best SEO Company in Sri Lanka</h2>
     <p>There are many SEO companies in Sri Lanka. So why do growing businesses consistently choose SeoFX? The answer comes down to seven key factors that we believe define what the best SEO company in Sri Lanka truly looks like — and that we deliver on every single time.</p>

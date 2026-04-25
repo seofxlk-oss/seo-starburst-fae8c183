@@ -12,6 +12,24 @@ const Post13 = () => (
     date="2025-01-15"
     readTime="7 min read"
     cta="Not sure which SEO package fits your business? Talk to SeoFX for a free, no-pressure recommendation."
+    faqs={[
+      {
+        q: "What should SEO packages in Sri Lanka include?",
+        a: "Every quality SEO package in Sri Lanka should include an initial audit, keyword research, on-page optimisation, technical SEO fixes, white-hat backlink building, monthly reporting and access to a dedicated account manager — at minimum.",
+      },
+      {
+        q: "How much do SEO packages in Sri Lanka cost?",
+        a: "Starter SEO packages in Sri Lanka typically start around LKR 25,000–40,000 per month, business packages around LKR 50,000–80,000, and premium packages from LKR 100,000+. Pricing depends on industry competitiveness, number of target keywords and depth of work.",
+      },
+      {
+        q: "Which SEO package is right for a small business in Sri Lanka?",
+        a: "Small Sri Lankan businesses or those new to SEO usually start with a Starter SEO package, targeting 2–3 core keywords with on-page optimisation and foundational backlinks. Once results appear in months 3–6, scaling up to a Business package is the natural next step.",
+      },
+      {
+        q: "Can I customise SEO packages in Sri Lanka for my business?",
+        a: "Yes. SeoFX offers Starter, Business and Premium SEO packages in Sri Lanka, but every package can be tailored — additional keywords, extra content, local SEO add-ons or e-commerce SEO — based on your specific industry and goals.",
+      },
+    ]}
   >
     <h2>Understanding SEO Packages in Sri Lanka — A Buyer's Guide</h2>
     <p>If you have started researching SEO packages in Sri Lanka, you have probably noticed that pricing and inclusions vary enormously between providers. Some offer low-cost monthly retainers that sound attractive but deliver little. Others charge premium rates without clear justification. This guide is designed to help you understand what SEO packages in Sri Lanka should include, what they typically cost, and how to choose the right one for your business.</p>

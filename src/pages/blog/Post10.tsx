@@ -12,6 +12,24 @@ const Post10 = () => (
     date="2025-01-12"
     readTime="9 min read"
     cta="Ready to start your SEO journey? Talk to Sri Lanka's SEO experts at SeoFX for a free consultation today."
+    faqs={[
+      {
+        q: "What is SEO and how does it work in Sri Lanka?",
+        a: "SEO (Search Engine Optimisation) is the process of improving your website so Google ranks it higher in search results. In Sri Lanka, SEO works by combining technical fixes, on-page optimisation, valuable local content, and backlinks to rank for the keywords your Sri Lankan customers actually search for.",
+      },
+      {
+        q: "How long does SEO take in Sri Lanka in 2025?",
+        a: "Most Sri Lankan businesses see early ranking improvements in 2–3 months and meaningful organic traffic growth between months 4–6. Competitive industries take 6–12 months to dominate page 1, but rankings then compound and continue growing over time.",
+      },
+      {
+        q: "Is SEO in Sri Lanka worth it compared to Google Ads?",
+        a: "Yes. Google Ads stop generating leads the moment you stop paying. SEO in Sri Lanka builds a permanent organic asset that keeps producing traffic and leads for years. Most successful Sri Lankan businesses use both — paid ads for instant results, SEO for sustainable long-term growth.",
+      },
+      {
+        q: "Can I do SEO in Sri Lanka myself or do I need an agency?",
+        a: "Basic SEO foundations (Google Business Profile, page titles, simple content) can be done yourself. But ranking competitively in Sri Lanka — especially for high-value keywords — requires an experienced SEO team with the right tools, processes and link-building network.",
+      },
+    ]}
   >
     <h2>What is SEO and Why Does it Matter for Sri Lankan Businesses in 2025?</h2>
     <p>SEO — Search Engine Optimisation — is the process of improving your website so that Google and other search engines rank it higher in search results when potential customers search for products or services related to your business. In simple terms: SEO makes your business more visible to the people who are already looking for what you offer.</p>

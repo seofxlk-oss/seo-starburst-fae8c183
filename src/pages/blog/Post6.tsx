@@ -12,6 +12,24 @@ const Post6 = () => (
     date="2025-01-08"
     readTime="8 min read"
     cta="Ready to partner with Sri Lanka's #1 SEO company? Contact SeoFX for a free website audit and consultation today."
+    faqs={[
+      {
+        q: "How do I choose the right SEO company in Sri Lanka?",
+        a: "Look for proven case studies, transparent monthly reporting, white-hat methodology, custom strategies, and clear knowledge of the Sri Lankan market. Avoid any SEO company in Sri Lanka that guarantees page-1 rankings in 30 days or quotes unusually low prices.",
+      },
+      {
+        q: "How much does an SEO company in Sri Lanka cost?",
+        a: "Quality SEO services in Sri Lanka typically start from around LKR 25,000–40,000 per month for starter packages and scale up for competitive industries. The right question is not the price — it's the ROI. A campaign that delivers 2–3 new clients a month easily justifies the investment.",
+      },
+      {
+        q: "How long does SEO take to show results in Sri Lanka?",
+        a: "Most Sri Lankan businesses see initial ranking movement within 2–3 months and meaningful organic traffic and lead growth between months 4–6. SEO compounds over time, so by month 12 your website becomes a true 24/7 lead generation machine.",
+      },
+      {
+        q: "Why is SeoFX considered the best SEO company in Sri Lanka?",
+        a: "SeoFX combines proven results, white-hat sustainable methods, fully custom strategies, deep local market knowledge, and complete transparency on every campaign. Every client gets a dedicated team and clear monthly reports tied to real business outcomes.",
+      },
+    ]}
   >
     <h2>Why Choosing the Right SEO Company in Sri Lanka Matters More Than Ever</h2>
     <p>With digital competition intensifying across every industry in Sri Lanka, choosing the right SEO company is one of the most important business decisions you can make. The wrong choice wastes your budget and can even damage your Google rankings. The right choice transforms your website into your most powerful sales tool.</p>

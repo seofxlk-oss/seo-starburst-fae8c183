@@ -12,6 +12,24 @@ const Post9 = () => (
     date="2025-01-11"
     readTime="8 min read"
     cta="Want an honest, no-pressure SEO consultation? Contact SeoFX — Sri Lanka's trusted SEO partner — for a free business consultation."
+    faqs={[
+      {
+        q: "How do I compare SEO companies in Sri Lanka before choosing one?",
+        a: "Compare SEO companies in Sri Lanka on five fronts: proof of results, methodology, monthly deliverables, reporting transparency and team expertise. Always ask for case studies of businesses similar to yours and a clear breakdown of exactly what's included in the monthly retainer.",
+      },
+      {
+        q: "What questions should I ask SEO companies in Sri Lanka before signing?",
+        a: "Ask: Can you show 3 case studies in my industry? What exact techniques will you use? How will you build backlinks? What KPIs and reports will I receive? Who works on my account day-to-day? What happens if rankings drop after a Google update?",
+      },
+      {
+        q: "Is in-house SEO better than hiring an SEO company in Sri Lanka?",
+        a: "For most SMEs in Sri Lanka, hiring an experienced SEO company delivers faster, better results at a lower total cost than building in-house. An agency brings established processes, premium SEO tools and a multi-disciplinary team you can't easily hire as one person.",
+      },
+      {
+        q: "How much should an SEO company in Sri Lanka cost per month?",
+        a: "Realistic SEO retainers in Sri Lanka range from around LKR 25,000 for starter campaigns to LKR 150,000+ per month for premium campaigns in highly competitive industries. The right benchmark is ROI per lead — not the headline price.",
+      },
+    ]}
   >
     <h2>Why More Sri Lankan Businesses Are Searching for SEO Companies Right Now</h2>
     <p>Search interest in 'SEO companies Sri Lanka' has been growing steadily as more local businesses realise that Google is where their customers are. Whether you run a hotel, a legal firm, a retail shop, or a B2B service business, your potential customers are typing search queries into Google every single day — and you need to be visible when they do.</p>
