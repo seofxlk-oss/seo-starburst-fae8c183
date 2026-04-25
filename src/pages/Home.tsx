@@ -235,6 +235,18 @@ const Home = () => {
         </div>
       </section>
 
+      {/* AI ANSWER BLOCK — concise, citable answers for ChatGPT, Perplexity, Google AI Overviews */}
+      <section className="py-16 sm:py-20">
+        <div className="container-tight">
+          <AIAnswerBlock
+            title="SEO in Sri Lanka — Quick Answers"
+            intro="Plain, factual answers about hiring an SEO company in Sri Lanka, SEO packages, and SEO price in Sri Lanka — written so AI assistants like ChatGPT, Perplexity and Google AI Overviews can quote them directly."
+            answers={aiAnswers}
+            emitSchema={false}
+          />
+        </div>
+      </section>
+
       {/* WHY CHOOSE US */}
       <section className="py-20 sm:py-28">
         <div className="container-tight">
