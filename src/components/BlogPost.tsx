@@ -5,6 +5,7 @@ import { Layout } from "@/components/Layout";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/CTASection";
+import { SITE } from "@/lib/site";
 
 interface BlogPostProps {
   slug: string;
@@ -14,14 +15,77 @@ interface BlogPostProps {
   keywords: string;
   category: string;
   date: string;
+  /** Optional ISO date the post was last updated. Defaults to `date`. */
+  dateModified?: string;
   readTime: string;
+  /** Optional author name. Defaults to "SeoFX Team". */
+  author?: string;
+  /** Optional hero image URL. Defaults to site OG image. */
+  image?: string;
   cta: string;
   children: React.ReactNode;
 }
 
 export const BlogPost = ({
-  slug, title, metaTitle, metaDesc, keywords, category, date, readTime, cta, children,
+  slug,
+  title,
+  metaTitle,
+  metaDesc,
+  keywords,
+  category,
+  date,
+  dateModified,
+  readTime,
+  author = "SeoFX Team",
+  image = `${SITE.url}/og-image.jpg`,
+  cta,
+  children,
 }: BlogPostProps) => {
+  const url = `${SITE.url}/blog/${slug}`;
+
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "@id": `${url}#article`,
+    mainEntityOfPage: { "@type": "WebPage", "@id": url },
+    headline: title,
+    name: title,
+    description: metaDesc,
+    image: { "@type": "ImageObject", url: image },
+    datePublished: date,
+    dateModified: dateModified ?? date,
+    inLanguage: "en-LK",
+    articleSection: category,
+    keywords,
+    url,
+    author: {
+      "@type": "Person",
+      name: author,
+      url: `${SITE.url}/seo-specialist-sri-lanka`,
+    },
+    publisher: {
+      "@type": "Organization",
+      "@id": `${SITE.url}/#organization`,
+      name: SITE.name,
+      url: SITE.url,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE.url}/logo.png`,
+      },
+    },
+    isPartOf: { "@type": "Blog", "@id": `${SITE.url}/blog#blog`, name: "SeoFX SEO Blog" },
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE.url}/` },
+      { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE.url}/blog` },
+      { "@type": "ListItem", position: 3, name: title, item: url },
+    ],
+  };
+
   return (
     <Layout>
       <SEO
@@ -29,18 +93,10 @@ export const BlogPost = ({
         description={metaDesc}
         canonical={`/blog/${slug}`}
         keywords={keywords}
-        jsonLd={{
-          "@context": "https://schema.org",
-          "@type": "BlogPosting",
-          headline: title,
-          datePublished: date,
-          author: { "@type": "Organization", name: "SeoFX" },
-          publisher: { "@id": "https://seofx.lk/#organization" },
-          mainEntityOfPage: `https://seofx.lk/blog/${slug}`,
-          image: "https://seofx.lk/og-image.jpg",
-        }}
+        ogImage={image}
+        jsonLd={[articleJsonLd, breadcrumbJsonLd]}
       />
-      <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: category }]} />
+      <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: title }]} />
 
       <article className="container-narrow py-12 sm:py-16">
         <span className="badge-pill">{category}</span>
