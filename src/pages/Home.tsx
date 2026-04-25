@@ -186,20 +186,20 @@ const Home = () => {
           </p>
           <div className="mt-5 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
             {[
-              { k: "seo company sri lanka", color: "google-blue" },
-              { k: "best seo company sri lanka", color: "google-red" },
-              { k: "seo packages in sri lanka", color: "google-yellow" },
-              { k: "seo service sri lanka", color: "google-green" },
-              { k: "seo price in sri lanka", color: "google-blue" },
-              { k: "seo sri lanka", color: "google-red" },
+              { k: "seo company sri lanka", cls: "border-google-blue/25 bg-google-blue/5", icon: "text-google-blue", pill: "bg-google-blue/10 text-google-blue" },
+              { k: "best seo company sri lanka", cls: "border-google-red/25 bg-google-red/5", icon: "text-google-red", pill: "bg-google-red/10 text-google-red" },
+              { k: "seo packages in sri lanka", cls: "border-google-yellow/30 bg-google-yellow/10", icon: "text-google-yellow", pill: "bg-google-yellow/15 text-foreground" },
+              { k: "seo service sri lanka", cls: "border-google-green/25 bg-google-green/5", icon: "text-google-green", pill: "bg-google-green/10 text-google-green" },
+              { k: "seo price in sri lanka", cls: "border-google-blue/25 bg-google-blue/5", icon: "text-google-blue", pill: "bg-google-blue/10 text-google-blue" },
+              { k: "seo sri lanka", cls: "border-google-red/25 bg-google-red/5", icon: "text-google-red", pill: "bg-google-red/10 text-google-red" },
             ].map((q) => (
               <span
                 key={q.k}
-                className={`inline-flex items-center gap-1.5 rounded-full border border-${q.color}/25 bg-${q.color}/5 px-3 py-1.5 text-xs font-medium text-foreground`}
+                className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-medium text-foreground ${q.cls}`}
               >
-                <Search className={`size-3 text-${q.color}`} />
+                <Search className={`size-3 ${q.icon}`} />
                 {q.k}
-                <span className={`ml-1 inline-flex items-center rounded-full bg-${q.color}/10 px-1.5 py-0.5 text-[10px] font-bold text-${q.color}`}>
+                <span className={`ml-1 inline-flex items-center rounded-full px-1.5 py-0.5 text-[10px] font-bold ${q.pill}`}>
                   #1
                 </span>
               </span>
@@ -227,13 +227,13 @@ const Home = () => {
 
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              { icon: TrendingUp, title: "We Lift You Up", text: "We focus on your business goals — more customers, more sales, sustainable growth.", color: "google-blue" },
-              { icon: MessageCircle, title: "We Keep You Informed", text: "Full transparency. Regular updates and clear reporting on every campaign.", color: "google-red" },
-              { icon: Target, title: "Custom SEO Strategies", text: "Tailored to your industry, business size, customers, and competitors in Sri Lanka.", color: "google-yellow" },
-              { icon: Users, title: "Part of Your Team", text: "We work as an extension of your business — aligned to your goals and your market.", color: "google-green" },
+              { icon: TrendingUp, title: "We Lift You Up", text: "We focus on your business goals — more customers, more sales, sustainable growth.", iconCls: "bg-google-blue/10 text-google-blue" },
+              { icon: MessageCircle, title: "We Keep You Informed", text: "Full transparency. Regular updates and clear reporting on every campaign.", iconCls: "bg-google-red/10 text-google-red" },
+              { icon: Target, title: "Custom SEO Strategies", text: "Tailored to your industry, business size, customers, and competitors in Sri Lanka.", iconCls: "bg-google-yellow/15 text-google-yellow" },
+              { icon: Users, title: "Part of Your Team", text: "We work as an extension of your business — aligned to your goals and your market.", iconCls: "bg-google-green/10 text-google-green" },
             ].map((f) => (
               <article key={f.title} className="card-feature">
-                <div className={`inline-flex h-12 w-12 items-center justify-center rounded-xl bg-${f.color}/10 text-${f.color}`}>
+                <div className={`inline-flex h-12 w-12 items-center justify-center rounded-xl ${f.iconCls}`}>
                   <f.icon className="size-5" />
                 </div>
                 <h3 className="mt-4 font-display text-lg font-bold">{f.title}</h3>
