@@ -13,10 +13,10 @@ const Contact = () => {
   return (
     <Layout>
       <SEO
-        title="Contact SeoFX | Best SEO Company in Sri Lanka | Free Consultation"
-        description="Get in touch with SeoFX — Sri Lanka's leading SEO company. Request a free website audit, SEO consultation, or pricing quote. Call +94 777 797 035 or message us."
+        title="Contact SEO Company Sri Lanka | Free SEO Audit | SeoFX"
+        description="Contact SeoFX — SEO company Sri Lanka. Request a free SEO audit, SEO consultation or SEO price quote. Call +94 777 797 035 or WhatsApp us today."
         canonical="/contact-us"
-        keywords="seo company sri lanka contact, seo consultation sri lanka, free seo audit sri lanka"
+        keywords="seo company sri lanka contact, seo consultation sri lanka, free seo audit sri lanka, seo service sri lanka, seo sri lanka"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "ContactPage",

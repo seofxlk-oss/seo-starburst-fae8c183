@@ -31,10 +31,10 @@ const Services = () => {
   return (
     <Layout>
       <SEO
-        title="SEO Services in Sri Lanka | SEO Company Sri Lanka | SeoFX"
-        description="SeoFX offers full-spectrum SEO services in Sri Lanka — keyword research, on-page SEO, link building, web development & digital marketing. Free SEO audit."
+        title="SEO Services Sri Lanka | SEO Service Sri Lanka | SeoFX"
+        description="SEO services Sri Lanka by SeoFX — full SEO service in Sri Lanka covering audit, keyword research, on-page, link building & local SEO. Free SEO audit."
         canonical="/services"
-        keywords="seo service sri lanka, seo companies sri lanka, seo company sri lanka, seo consulting sri lanka, link building sri lanka"
+        keywords="seo services sri lanka, seo service sri lanka, seo companies sri lanka, seo company sri lanka, best seo company sri lanka, seo sri lanka"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "Service",

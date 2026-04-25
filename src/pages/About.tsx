@@ -10,10 +10,10 @@ const About = () => {
   return (
     <Layout>
       <SEO
-        title="About SeoFX — Best SEO Company in Sri Lanka | SEO Specialists"
-        description="Meet SeoFX, the best SEO company in Sri Lanka. Our specialist SEO consultants help Sri Lankan businesses rank higher, get more traffic & generate more leads."
+        title="Best SEO Company in Sri Lanka | SEO Specialist Sri Lanka | SeoFX"
+        description="Best SEO company in Sri Lanka — SeoFX's SEO specialists in Sri Lanka help businesses rank #1 on Google with white-hat SEO services and proven results."
         canonical="/seo-specialist-sri-lanka"
-        keywords="best seo company in sri lanka, seo specialist sri lanka, seo consultant sri lanka, seo company sri lanka"
+        keywords="best seo company in sri lanka, best seo company sri lanka, seo specialist sri lanka, seo consultant sri lanka, seo company sri lanka, seo sri lanka"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "AboutPage",

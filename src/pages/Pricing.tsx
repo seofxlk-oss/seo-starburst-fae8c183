@@ -101,10 +101,10 @@ const Pricing = () => {
   return (
     <Layout>
       <SEO
-        title="SEO Packages Sri Lanka | SEO Price Sri Lanka | SeoFX"
-        description="View SeoFX SEO packages in Sri Lanka with clear, transparent pricing. Starter, Business & Premium SEO plans designed for Sri Lankan businesses. Get a free quote today."
+        title="SEO Packages in Sri Lanka | SEO Price in Sri Lanka | SeoFX"
+        description="SEO packages in Sri Lanka with transparent SEO price in Sri Lanka. Starter, Business & Premium SEO plans by SeoFX — Sri Lanka's leading SEO company. Free quote."
         canonical="/seo-packages-sri-lanka"
-        keywords="SEO packages in Sri Lanka, SEO price in Sri Lanka, seo service price sri lanka, seo cost sri lanka, affordable seo sri lanka"
+        keywords="seo packages in sri lanka, seo price in sri lanka, seo packages sri lanka, seo cost sri lanka, affordable seo sri lanka, seo company sri lanka"
         jsonLd={faqJsonLd}
       />
       <Breadcrumbs items={[{ label: "SEO Packages" }]} />

@@ -48,10 +48,10 @@ const FAQ = () => {
   return (
     <Layout>
       <SEO
-        title="SEO FAQ Sri Lanka | SEO Questions Answered | SeoFX"
-        description="Got questions about SEO in Sri Lanka? SeoFX answers the most common SEO questions — from pricing and timelines to what really works. Read our expert FAQ."
+        title="SEO FAQ Sri Lanka | SEO Price & SEO Service Questions | SeoFX"
+        description="SEO FAQ Sri Lanka — answers on SEO price in Sri Lanka, SEO packages, timelines and what an SEO service in Sri Lanka includes. From SeoFX SEO experts."
         canonical="/faq"
-        keywords="seo faq sri lanka, seo questions sri lanka, seo price sri lanka, how long does seo take, seo sri lanka"
+        keywords="seo faq sri lanka, seo questions sri lanka, seo price in sri lanka, seo packages in sri lanka, seo sri lanka, seo service sri lanka"
         jsonLd={jsonLd}
       />
       <Breadcrumbs items={[{ label: "FAQ" }]} />

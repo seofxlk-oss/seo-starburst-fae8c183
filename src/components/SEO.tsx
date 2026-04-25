@@ -15,7 +15,7 @@ export const SEO = ({
   description,
   canonical,
   keywords,
-  ogImage = "https://seofx.lk/og-image.jpg",
+  ogImage = "https://storage.googleapis.com/gpt-engineer-file-uploads/tmIaoo88z2Xx6RhZlq0u8oH6sQ62/social-images/social-1777087076617-logo_(1).webp",
   jsonLd,
   noindex = false,
 }: SEOProps) => {
