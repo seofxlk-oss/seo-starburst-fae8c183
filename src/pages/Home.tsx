@@ -489,6 +489,47 @@ const Home = () => {
         </div>
       </section>
 
+      {/* ═══ SECTION 5c — SEO SRI LANKA (broad keyword cluster) ═══ */}
+      <section className="py-16 sm:py-20" aria-labelledby="seo-sri-lanka">
+        <div className="container-tight">
+          <div className="mx-auto max-w-3xl text-center">
+            <span className="badge-pill">SEO Sri Lanka</span>
+            <h2 id="seo-sri-lanka" className="mt-4 font-display text-3xl font-extrabold leading-tight sm:text-4xl md:text-5xl">
+              <span className="text-gradient-accent">SEO Sri Lanka</span> — Search Engine Optimisation Built for Sri Lankan Businesses in 2026
+            </h2>
+          </div>
+          <div className="mx-auto mt-8 max-w-3xl space-y-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
+            <p>
+              <strong className="text-foreground">SEO in Sri Lanka</strong> is the discipline of getting your website
+              ranked on the first page of Google.lk for the search terms your customers actually use — every single
+              day. With over 95% of Sri Lankan searches happening on Google and more than 70% performed on mobile
+              devices, ranking visibly is no longer optional. It is the single biggest determinant of whether your
+              business is found, considered and chosen — or quietly skipped over for a competitor on page one.
+            </p>
+            <p>
+              SeoFX is a dedicated <strong className="text-foreground">SEO company in Sri Lanka</strong> built around
+              one purpose: deliver measurable Google rankings that turn into qualified organic leads. Every campaign
+              combines technical SEO, local keyword research, on-page optimisation, white-hat link building and full
+              monthly reporting — backed by a 90-day ranking promise. No outsourcing, no black-hat shortcuts, no
+              vanity metrics. Just real results, transparent pricing and a senior SEO specialist personally owning
+              your strategy from day one.
+            </p>
+          </div>
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            <Button asChild variant="hero" size="lg">
+              <Link to="/blog/seo-sri-lanka-complete-guide-2025">
+                Read the Complete SEO Sri Lanka Guide (2026) <ArrowRight className="size-4" />
+              </Link>
+            </Button>
+            <Button asChild variant="outline" size="lg">
+              <Link to="/blog/seo-sri-lanka-2026-how-google-has-changed">
+                What's Changed in 2026
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* ═══ SECTION 6 — SERVICES GRID (6 SEO + Web Dev) ═══ */}
       <section className="bg-soft py-16 sm:py-20" aria-labelledby="services-heading">
         <div className="container-tight">
