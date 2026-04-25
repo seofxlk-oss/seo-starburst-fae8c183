@@ -9,8 +9,8 @@ export const Footer = () => {
       <div className="container-tight py-16">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
           <div className="lg:col-span-2">
-            <Link to="/" className="font-display text-3xl font-extrabold tracking-tight text-white">
-              Seo<span className="text-gradient-accent">FX</span>
+            <Link to="/" aria-label="SeoFX home" className="inline-flex items-center rounded-lg bg-white px-3 py-2">
+              <img src={logo} alt="SeoFX — SEO Company Sri Lanka" className="h-9 w-auto" width={160} height={40} />
             </Link>
             <p className="mt-4 max-w-md text-sm leading-relaxed text-white/70">
               SeoFX is one of the best SEO companies in Sri Lanka, specialising in strategic SEO solutions for small
