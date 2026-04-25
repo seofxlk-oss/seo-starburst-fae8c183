@@ -5,7 +5,9 @@ import { Layout } from "@/components/Layout";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/CTASection";
+import { RelatedArticles } from "@/components/RelatedArticles";
 import { SITE } from "@/lib/site";
+import { BLOG_INTERLINKS } from "@/lib/blogInterlinks";
 
 export interface BlogFAQ {
   q: string;
