@@ -393,12 +393,15 @@ const Home = () => {
       </section>
 
       {/* CASE STUDY TEASER */}
-      <section className="py-20 sm:py-28">
+      <section className="py-16 sm:py-24">
         <div className="container-tight">
-          <div className="rounded-3xl border border-border bg-soft p-8 sm:p-12 lg:p-16">
+          <div className="relative overflow-hidden rounded-3xl border border-border bg-card p-8 shadow-card sm:p-12 lg:p-16">
+            <div className="absolute inset-x-0 top-0 h-1 bg-gradient-google" aria-hidden />
             <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
               <div>
-                <span className="badge-pill"><Award className="size-3.5" /> Case Study</span>
+                <span className="inline-flex items-center gap-2 rounded-full border border-google-yellow/30 bg-google-yellow/15 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-foreground">
+                  <Award className="size-3.5 text-google-yellow" /> Case Study
+                </span>
                 <h2 className="mt-4 font-display text-3xl font-extrabold sm:text-4xl">
                   How SeoFX transformed PorKenDeli.lk's online presence with SEO
                 </h2>
@@ -408,26 +411,26 @@ const Home = () => {
                 </p>
                 <div className="mt-6 grid grid-cols-3 gap-4">
                   <div>
-                    <div className="font-display text-2xl font-extrabold text-accent">↑</div>
+                    <div className="font-display text-3xl font-extrabold text-google-blue">↑</div>
                     <div className="text-xs text-muted-foreground">Organic traffic surge</div>
                   </div>
                   <div>
-                    <div className="font-display text-2xl font-extrabold text-accent">★</div>
+                    <div className="font-display text-3xl font-extrabold text-google-yellow">★</div>
                     <div className="text-xs text-muted-foreground">Alexa rank skyrocketed</div>
                   </div>
                   <div>
-                    <div className="font-display text-2xl font-extrabold text-accent">+</div>
+                    <div className="font-display text-3xl font-extrabold text-google-green">+</div>
                     <div className="text-xs text-muted-foreground">National & intl. customers</div>
                   </div>
                 </div>
-                <Button asChild variant="hero" size="lg" className="mt-8">
+                <Button asChild size="lg" className="mt-8 bg-google-blue text-white hover:bg-google-blue/90">
                   <Link to="/case-studies/porkendeli-seo-case-study">
                     Read full case study <ArrowRight className="size-4" />
                   </Link>
                 </Button>
               </div>
               <div className="relative">
-                <div className="absolute -inset-4 rounded-3xl bg-accent/15 blur-2xl" aria-hidden />
+                <div className="absolute -inset-4 rounded-3xl bg-google-blue/10 blur-2xl" aria-hidden />
                 <img
                   src={caseImg}
                   alt="PorKenDeli SEO case study — restaurant in Dehiwala that grew with SEO"
@@ -443,16 +446,18 @@ const Home = () => {
       </section>
 
       {/* TRUST */}
-      <section className="border-t border-border bg-soft py-16">
+      <section className="border-t border-border bg-soft py-14">
         <div className="container-tight">
           <div className="grid gap-6 sm:grid-cols-3">
             {[
-              { icon: ShieldCheck, title: "100% White-Hat SEO", text: "Google-compliant techniques only — sustainable, long-term rankings." },
-              { icon: Award, title: "Proven Results", text: "73% average monthly traffic increase across our client portfolio." },
-              { icon: Users, title: "Dedicated Team", text: "SEO specialists in Sri Lanka acting as an extension of your business." },
+              { icon: ShieldCheck, title: "100% White-Hat SEO", text: "Google-compliant techniques only — sustainable, long-term rankings.", iconCls: "bg-google-green/10 text-google-green" },
+              { icon: Award, title: "Proven Results", text: "73% average monthly traffic increase across our client portfolio.", iconCls: "bg-google-yellow/15 text-google-yellow" },
+              { icon: Users, title: "Dedicated Team", text: "SEO specialists in Sri Lanka acting as an extension of your business.", iconCls: "bg-google-blue/10 text-google-blue" },
             ].map((t) => (
               <div key={t.title} className="rounded-2xl bg-card p-6 shadow-card">
-                <t.icon className="size-6 text-accent" />
+                <div className={`inline-flex size-11 items-center justify-center rounded-xl ${t.iconCls}`}>
+                  <t.icon className="size-5" />
+                </div>
                 <h3 className="mt-3 font-display text-lg font-bold">{t.title}</h3>
                 <p className="mt-1 text-sm text-muted-foreground">{t.text}</p>
               </div>
