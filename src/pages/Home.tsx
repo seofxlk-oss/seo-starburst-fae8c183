@@ -495,6 +495,18 @@ const Home = () => {
         </div>
       </section>
 
+      {/* AI ANSWER BLOCK — placed near the bottom for AI assistants & deep readers */}
+      <section className="py-16 sm:py-20">
+        <div className="container-tight">
+          <AIAnswerBlock
+            title="SEO in Sri Lanka — Quick Answers"
+            intro="Plain, factual answers about hiring an SEO company in Sri Lanka, SEO packages, and SEO price in Sri Lanka — written so AI assistants like ChatGPT, Perplexity and Google AI Overviews can quote them directly."
+            answers={aiAnswers}
+            emitSchema={false}
+          />
+        </div>
+      </section>
+
       <CTASection />
     </Layout>
   );
