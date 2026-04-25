@@ -1,4 +1,4 @@
-import { Sparkles } from "lucide-react";
+
 
 export interface AIAnswer {
   q: string;
