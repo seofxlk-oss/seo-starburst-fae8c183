@@ -42,6 +42,9 @@ import Post25 from "./pages/blog/Post25";
 import Post26 from "./pages/blog/Post26";
 import Post27 from "./pages/blog/Post27";
 import Post28 from "./pages/blog/Post28";
+import Post29 from "./pages/blog/Post29";
+import Post30 from "./pages/blog/Post30";
+import Post31 from "./pages/blog/Post31";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -92,6 +95,9 @@ const App = () => (
             <Route path="/blog/results-to-expect-from-seo-specialist-sri-lanka" element={<Post26 />} />
             <Route path="/blog/in-house-seo-specialist-vs-outsourcing-sri-lanka" element={<Post27 />} />
             <Route path="/blog/signs-of-good-seo-specialist-sri-lanka" element={<Post28 />} />
+            <Route path="/blog/what-to-look-for-hiring-seo-company-sri-lanka" element={<Post29 />} />
+            <Route path="/blog/why-sri-lankan-businesses-get-seo-wrong" element={<Post30 />} />
+            <Route path="/blog/how-seo-company-sri-lanka-builds-google-presence" element={<Post31 />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

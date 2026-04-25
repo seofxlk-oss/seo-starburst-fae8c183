@@ -443,4 +443,34 @@ export const BLOG_INTERLINKS: Record<string, PostInterlinks> = {
     ],
     next: { anchor: "What results to expect from an SEO specialist in Sri Lanka", slug: "results-to-expect-from-seo-specialist-sri-lanka", blurb: "Now align your expectations with what a great specialist can realistically deliver." },
   },
+
+  // 24. What to look for when hiring an SEO company in Sri Lanka
+  "what-to-look-for-hiring-seo-company-sri-lanka": {
+    related: [
+      { anchor: "Why most Sri Lankan businesses get SEO wrong", slug: "why-sri-lankan-businesses-get-seo-wrong", blurb: "The seven most common SEO mistakes — and the right approach instead." },
+      { anchor: "How an SEO company in Sri Lanka builds long-term Google presence", slug: "how-seo-company-sri-lanka-builds-google-presence", blurb: "The full step-by-step process behind durable rankings." },
+      { anchor: "10 questions to ask any SEO company in Sri Lanka before you sign", slug: "how-to-choose-seo-company-sri-lanka-questions", blurb: "The companion question set to test any provider on the spot." },
+    ],
+    next: { anchor: "Why most Sri Lankan businesses get SEO wrong", slug: "why-sri-lankan-businesses-get-seo-wrong", blurb: "Now learn which mistakes the wrong provider will quietly lock you into." },
+  },
+
+  // 25. Why Sri Lankan businesses get SEO wrong
+  "why-sri-lankan-businesses-get-seo-wrong": {
+    related: [
+      { anchor: "What to look for when hiring an SEO company in Sri Lanka", slug: "what-to-look-for-hiring-seo-company-sri-lanka", blurb: "The hiring framework that prevents every one of these mistakes." },
+      { anchor: "How an SEO company in Sri Lanka builds long-term Google presence", slug: "how-seo-company-sri-lanka-builds-google-presence", blurb: "The right process — step by step — for durable Google rankings." },
+      { anchor: "Complete guide to SEO in Sri Lanka (2026)", slug: "seo-sri-lanka-complete-guide-2025", blurb: "The definitive 2026 SEO playbook for Sri Lankan businesses." },
+    ],
+    next: { anchor: "How an SEO company in Sri Lanka builds long-term Google presence", slug: "how-seo-company-sri-lanka-builds-google-presence", blurb: "Now see exactly what the right approach looks like in practice — step by step." },
+  },
+
+  // 26. How SEO company builds Google presence
+  "how-seo-company-sri-lanka-builds-google-presence": {
+    related: [
+      { anchor: "What to look for when hiring an SEO company in Sri Lanka", slug: "what-to-look-for-hiring-seo-company-sri-lanka", blurb: "How to find a provider that can actually execute this process." },
+      { anchor: "Why most Sri Lankan businesses get SEO wrong", slug: "why-sri-lankan-businesses-get-seo-wrong", blurb: "The seven mistakes that derail this process — and how to avoid them." },
+      { anchor: "What an SEO company in Sri Lanka should deliver in month 1, 3 & 6", slug: "what-seo-company-sri-lanka-should-deliver", blurb: "Month-by-month benchmarks tied to the steps in this process." },
+    ],
+    next: { anchor: "What to look for when hiring an SEO company in Sri Lanka", slug: "what-to-look-for-hiring-seo-company-sri-lanka", blurb: "Ready to evaluate providers? Here's the full hiring checklist to apply." },
+  },
 };
