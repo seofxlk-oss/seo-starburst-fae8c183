@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom";
-import { CheckCircle2, ArrowRight, Sparkles } from "lucide-react";
+import {
+  CheckCircle2, ArrowRight, Sparkles, ShieldCheck, MessageCircle, Search,
+  TrendingUp, Trophy, Zap, Target, Award, Star,
+} from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { Layout } from "@/components/Layout";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
@@ -7,83 +10,107 @@ import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/CTASection";
 import { AIAnswerBlock } from "@/components/AIAnswerBlock";
 import { ConsultationSection } from "@/components/ConsultationSection";
+import { SITE } from "@/lib/site";
+
+const wa = (msg: string) =>
+  `https://wa.me/${SITE.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(msg)}`;
 
 const PRICING_AI_ANSWERS = [
   {
     q: "What is the SEO price in Sri Lanka?",
-    a: "SEO price in Sri Lanka typically ranges from LKR 25,000 to LKR 150,000+ per month depending on industry competition, the number of target keywords, and the scope of the campaign. SeoFX provides transparent SEO pricing in Sri Lanka with no hidden fees.",
+    a: "SEO price in Sri Lanka starts from LKR 29,900/month for the Starter package, LKR 59,900/month for Business, and LKR 99,900+/month for Premium at SeoFX. Every package is backed by a 90-Day Ranking Promise.",
   },
   {
     q: "What SEO packages in Sri Lanka does SeoFX offer?",
-    a: "SeoFX offers three SEO packages in Sri Lanka — Starter (small businesses and startups), Business (growing companies that need consistent leads), and Premium (competitive industries targeting #1 rankings). Each package includes consultation, keyword research, on-site SEO, link building and monthly reporting.",
+    a: "SeoFX offers three SEO packages in Sri Lanka — Starter (get visible on Google), Business (consistent leads + traffic), and Premium (rank #1 + dominate competitors). Each includes keyword targeting, on-page optimisation, link building, monthly reports and a 90-day ranking promise.",
   },
   {
     q: "How much should a small business pay for SEO in Sri Lanka?",
-    a: "A small Sri Lankan business should typically budget LKR 25,000–50,000 per month for SEO. The Starter SEO package from SeoFX is built for this segment and covers audit, keyword research, on-page optimisation and entry-level link building.",
+    a: "A small Sri Lankan business should budget LKR 29,900–59,900 per month for SEO. The Starter package from SeoFX targets up to 5 high-intent keywords, fixes technical issues and starts authority building.",
   },
   {
     q: "Are cheap SEO packages in Sri Lanka worth it?",
-    a: "Cheap SEO packages in Sri Lanka often use spammy or black-hat tactics that can get your site penalised by Google. SeoFX recommends investing in fairly priced, white-hat SEO packages that produce long-term results — see https://seofx.lk/seo-packages-sri-lanka.",
+    a: "Cheap SEO packages in Sri Lanka often use spammy black-hat tactics that get sites penalised. SeoFX uses 100% white-hat SEO with a 90-Day Ranking Promise — your keywords move in 90 days or we work free until they do.",
   },
 ];
 
-
+// ───────── High-converting packages ─────────
 const packages = [
   {
     name: "Starter",
-    tagline: "For businesses new to SEO",
-    desc: "Perfect for small businesses and startups in Sri Lanka looking to establish an online presence.",
+    icon: "🔥",
+    badge: "Best for small businesses",
+    price: "29,900",
+    unit: "/ month",
+    goal: "Get your site visible on Google",
+    desc: "Best for small businesses starting SEO in Sri Lanka",
     features: [
-      "SEO Consultation & Strategy",
-      "Keyword Research",
-      "Full Website SEO Audit",
-      "On-Page Optimisation",
-      "Meta Title & Description Optimisation",
-      "CTA-Based Content Development",
-      "Monthly Performance Monitoring",
+      "SEO Strategy + Setup",
+      "Keyword Targeting (Up to 5 Keywords)",
+      "Full Website SEO Audit + Fix Plan",
+      "1 Page Optimisation (High-Intent Page)",
+      "Meta Titles & CTR Optimisation",
+      "Google Indexing + Technical Setup",
       "Backlink Building",
-      "Monthly Recommendations Report",
+      "Monthly Ranking Report",
     ],
   },
   {
     name: "Business",
-    tagline: "For growing businesses",
-    desc: "Ideal for established Sri Lankan businesses ready to expand reach, outperform competitors and generate online leads consistently.",
+    icon: "🚀",
+    badge: "Most Popular",
+    price: "59,900",
+    unit: "/ month",
+    goal: "Increase traffic + generate leads",
+    desc: "For businesses that want consistent leads",
     featured: true,
     features: [
       "Everything in Starter, plus:",
-      "Advanced Keyword Research & Competitor Analysis",
-      "Enhanced On-Page & Technical SEO",
+      "10–15 Keywords Targeted",
+      "3 Page SEO Optimisations",
+      "Competitor Analysis (Top 5 competitors)",
+      "Technical SEO Fixes",
       "Backlink Building",
-      "Detailed Monthly Reporting",
+      "Content Optimisation (Conversion-focused)",
+      "Monthly Growth Strategy Call",
     ],
   },
   {
     name: "Premium",
-    tagline: "For businesses serious about #1",
-    desc: "Designed to dominate your industry on Google, outrank all competitors, and turn your website into your #1 lead generation tool.",
+    icon: "👑",
+    badge: "Dominate Google",
+    price: "99,900+",
+    unit: "/ month",
+    goal: "Rank #1 + dominate competitors",
+    desc: "For dominating Google in Sri Lanka",
     features: [
       "Everything in Business, plus:",
-      "High-Priority Keywords Targeted",
-      "Multiple URL On-Page Optimisations",
-      "Backlink Building",
-      "In-Depth Monthly Strategy & Ranking Review",
+      "20+ High-Intent Keywords",
+      "Full Website Optimisation",
+      "Aggressive Backlink Strategy",
+      "Authority Building (PR / Guest Posts)",
+      "Conversion Funnel Optimisation",
+      "Weekly Tracking + Priority Support",
     ],
   },
 ];
 
 const faqs = [
   {
+    q: "How does the 90-Day Ranking Promise work?",
+    a: "If your target keywords don't move significantly within 90 days of launch, we keep working on your campaign at no extra cost until they do. It's our written commitment that you only pay for results — not effort.",
+  },
+  {
     q: "How much does SEO cost in Sri Lanka?",
-    a: "SEO pricing in Sri Lanka varies depending on the scope of your campaign, competition in your industry, and your specific goals. SeoFX offers competitive, transparent pricing across three packages — Starter, Business, and Premium. Contact us for a free quote tailored to your business.",
+    a: "SEO pricing in Sri Lanka at SeoFX starts at LKR 29,900/month (Starter), LKR 59,900/month (Business), and LKR 99,900+/month (Premium). All packages are transparent with no hidden fees and include a free SEO audit before you commit.",
   },
   {
     q: "Is SEO worth the investment for a Sri Lankan business?",
-    a: "Absolutely. Unlike paid advertising which stops the moment you stop paying, SEO builds a lasting digital asset. Our clients see continuous improvement in organic traffic and leads month after month, making SEO one of the highest-ROI marketing investments available to Sri Lankan businesses.",
+    a: "Absolutely. Unlike paid ads which stop the moment you stop paying, SEO builds a lasting digital asset. Our clients average a 73% monthly traffic lift and 99% yearly organic growth — making SEO the highest-ROI marketing channel for Sri Lankan businesses.",
   },
   {
     q: "How long does it take to see SEO results in Sri Lanka?",
-    a: "Most clients begin seeing measurable improvements within 3–6 months. The exact timeline depends on your website's current condition, competition level, and the keywords targeted. Results only improve over time with consistent SEO.",
+    a: "Most clients see measurable ranking improvements within 60–90 days and strong page-one results in 4–6 months. Our 90-Day Ranking Promise guarantees you'll see movement — or we work free until you do.",
   },
 ];
 
@@ -98,54 +125,153 @@ const Pricing = () => {
     })),
   };
 
+  const offerJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: "Search Engine Optimization",
+    provider: { "@id": "https://seofx.lk/#organization" },
+    areaServed: { "@type": "Country", name: "Sri Lanka" },
+    name: "SEO Packages Sri Lanka",
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "SEO Packages Sri Lanka",
+      itemListElement: packages.map((p) => ({
+        "@type": "Offer",
+        name: `${p.name} SEO Package Sri Lanka`,
+        price: p.price.replace(/[^0-9]/g, ""),
+        priceCurrency: "LKR",
+        availability: "https://schema.org/InStock",
+        url: `https://seofx.lk/seo-packages-sri-lanka#${p.name.toLowerCase()}`,
+      })),
+    },
+  };
+
   return (
     <Layout>
       <SEO
-        title="SEO Packages in Sri Lanka | SEO Price in Sri Lanka | SeoFX"
-        description="SEO packages in Sri Lanka with transparent SEO price in Sri Lanka. Starter, Business & Premium SEO plans by SeoFX — Sri Lanka's leading SEO company. Free quote."
+        title="SEO Packages in Sri Lanka from LKR 29,900 | SEO Price | SeoFX"
+        description="Transparent SEO packages in Sri Lanka. Starter LKR 29,900, Business LKR 59,900, Premium LKR 99,900+. 90-Day Ranking Promise. Free SEO audit. Best SEO company in Sri Lanka."
         canonical="/seo-packages-sri-lanka"
         keywords="seo packages in sri lanka, seo price in sri lanka, seo packages sri lanka, seo cost sri lanka, affordable seo sri lanka, seo company sri lanka"
-        jsonLd={faqJsonLd}
+        jsonLd={[faqJsonLd, offerJsonLd]}
       />
       <Breadcrumbs items={[{ label: "SEO Packages" }]} />
 
-      <section className="container-tight py-16 sm:py-20">
+      {/* ═══ HERO ═══ */}
+      <section className="container-tight pt-12 pb-8 sm:pt-16">
         <div className="mx-auto max-w-4xl text-center">
-          <span className="badge-pill">SEO Packages & Price</span>
+          <span className="badge-pill">SEO Packages & Pricing</span>
           <h1 className="mt-4 font-display text-4xl font-extrabold leading-tight sm:text-5xl md:text-6xl">
-            <span className="text-gradient-accent">SEO Packages in Sri Lanka</span> &amp; Transparent <span className="text-gradient-accent">SEO Price in Sri Lanka</span>
+            <span className="text-gradient-accent">SEO Packages in Sri Lanka</span> Built to Deliver Real Results
           </h1>
           <p className="mt-5 text-lg text-muted-foreground">
-            Compare <strong className="text-foreground">SEO packages in Sri Lanka</strong> from SeoFX — Starter,
-            Business and Premium — with clear, honest <strong className="text-foreground">SEO price in Sri Lanka</strong>
-            built for startups, growing brands and competitive industries.
+            Transparent <strong className="text-foreground">SEO price in Sri Lanka</strong> from{" "}
+            <strong className="text-foreground">LKR 29,900/month</strong> — designed to generate{" "}
+            <strong className="text-foreground">leads, rankings and traffic</strong>, not just busywork.
           </p>
+        </div>
+
+        {/* 🔥 90-Day Promise hook — the conversion booster */}
+        <div className="relative mx-auto mt-10 max-w-4xl overflow-hidden rounded-3xl border-2 border-accent/40 bg-hero p-6 text-center text-white shadow-glow sm:p-8">
+          <div className="pointer-events-none absolute -top-10 left-1/2 h-40 w-40 -translate-x-1/2 rounded-full bg-accent/30 blur-3xl" aria-hidden />
+          <div className="relative">
+            <span className="inline-flex items-center gap-2 rounded-full border border-accent/40 bg-accent/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white">
+              <ShieldCheck className="size-3.5" /> Our 90-Day Ranking Promise
+            </span>
+            <h2 className="mt-4 font-display text-2xl font-extrabold leading-tight sm:text-3xl md:text-4xl">
+              Rank on Google in <span className="text-gradient-accent">90 Days</span> — or We Work Free Until You Do.
+            </h2>
+            <p className="mt-3 text-sm text-white/80 sm:text-base">
+              You only pay for results. If your target keywords don't move in 90 days, we keep working at no extra cost.
+            </p>
+          </div>
         </div>
       </section>
 
-      <section className="container-tight pb-20">
+      {/* ═══ PROOF STRIP ═══ */}
+      <section className="container-tight py-8">
+        <div className="grid gap-3 rounded-2xl border border-border bg-card p-6 shadow-card sm:grid-cols-4">
+          {[
+            { icon: TrendingUp, n: "73%", l: "Avg. monthly traffic lift" },
+            { icon: Trophy, n: "99%", l: "Yearly organic growth" },
+            { icon: ShieldCheck, n: "100%", l: "White-hat SEO" },
+            { icon: Star, n: "4.9★", l: "Google reviews (87+)" },
+          ].map((s) => (
+            <div key={s.l} className="flex items-center gap-3 text-left">
+              <div className="inline-flex size-10 shrink-0 items-center justify-center rounded-xl bg-accent/10 text-accent">
+                <s.icon className="size-5" />
+              </div>
+              <div>
+                <div className="font-display text-lg font-extrabold text-foreground">{s.n}</div>
+                <div className="text-xs text-muted-foreground">{s.l}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ═══ PACKAGES ═══ */}
+      <section className="container-tight pb-20 pt-4">
         <div className="grid gap-6 lg:grid-cols-3">
           {packages.map((p) => (
             <article
               key={p.name}
-              className={`relative rounded-3xl border p-8 transition-all hover:-translate-y-1 ${
+              id={p.name.toLowerCase()}
+              className={`relative flex flex-col rounded-3xl border p-7 transition-all hover:-translate-y-1 ${
                 p.featured
-                  ? "border-accent bg-hero text-white shadow-glow"
+                  ? "border-accent bg-hero text-white shadow-glow lg:scale-[1.03]"
                   : "border-border bg-card shadow-card"
               }`}
             >
               {p.featured && (
                 <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-accent-gradient px-4 py-1 text-xs font-bold uppercase tracking-wider text-accent-foreground shadow-glow">
-                  <Sparkles className="-mt-0.5 mr-1 inline size-3" /> Most Popular
+                  <Sparkles className="-mt-0.5 mr-1 inline size-3" /> {p.badge}
                 </span>
               )}
-              <h2 className="font-display text-2xl font-extrabold">{p.name}</h2>
-              <p className={`mt-1 text-sm ${p.featured ? "text-white/70" : "text-accent"}`}>{p.tagline}</p>
-              <p className={`mt-4 text-sm ${p.featured ? "text-white/75" : "text-muted-foreground"}`}>{p.desc}</p>
+
+              {/* Icon + Name */}
+              <div className="flex items-center gap-3">
+                <span className="text-3xl" aria-hidden>{p.icon}</span>
+                <h2 className="font-display text-2xl font-extrabold">{p.name}</h2>
+              </div>
+              <p className={`mt-2 text-sm ${p.featured ? "text-white/70" : "text-muted-foreground"}`}>
+                {p.desc}
+              </p>
+
+              {/* Price anchor */}
+              <div className="mt-5 flex items-baseline gap-1.5">
+                <span className={`text-xs font-semibold ${p.featured ? "text-white/60" : "text-muted-foreground"}`}>
+                  Starting at
+                </span>
+              </div>
+              <div className="mt-1 flex items-baseline gap-2">
+                <span className={`font-display text-xs ${p.featured ? "text-white/70" : "text-muted-foreground"}`}>LKR</span>
+                <span className="font-display text-4xl font-extrabold sm:text-5xl">{p.price}</span>
+                <span className={`text-sm ${p.featured ? "text-white/70" : "text-muted-foreground"}`}>{p.unit}</span>
+              </div>
+
+              {/* GOAL — the killer differentiator */}
+              <div className={`mt-4 rounded-xl border px-4 py-3 ${
+                p.featured
+                  ? "border-white/20 bg-white/10"
+                  : "border-accent/20 bg-accent/5"
+              }`}>
+                <div className="flex items-center gap-2">
+                  <Target className={`size-4 ${p.featured ? "text-accent" : "text-accent"}`} />
+                  <span className={`text-[11px] font-bold uppercase tracking-wider ${
+                    p.featured ? "text-accent" : "text-accent"
+                  }`}>
+                    Goal
+                  </span>
+                </div>
+                <p className={`mt-1 font-display text-sm font-bold ${p.featured ? "text-white" : "text-foreground"}`}>
+                  {p.goal}
+                </p>
+              </div>
 
               <div className={`my-6 h-px ${p.featured ? "bg-white/15" : "bg-border"}`} />
 
-              <ul className="space-y-2.5">
+              <ul className="flex-1 space-y-2.5">
                 {p.features.map((f) => (
                   <li key={f} className="flex items-start gap-2 text-sm">
                     <CheckCircle2 className={`mt-0.5 size-4 shrink-0 ${p.featured ? "text-accent" : "text-accent"}`} />
@@ -154,27 +280,78 @@ const Pricing = () => {
                 ))}
               </ul>
 
-              <Button asChild variant={p.featured ? "hero" : "outline"} size="lg" className="mt-8 w-full">
-                <Link to="/contact-us">Get a Quote <ArrowRight className="size-4" /></Link>
-              </Button>
+              {/* Dual CTAs — Free Audit + WhatsApp */}
+              <div className="mt-7 flex flex-col gap-2">
+                <Button asChild variant={p.featured ? "hero" : "default"} size="lg" className="w-full">
+                  <Link to="/contact-us#audit">
+                    <Search className="size-4" /> Get Free SEO Audit
+                  </Link>
+                </Button>
+                <Button asChild variant={p.featured ? "outline" : "whatsapp"} size="lg" className={`w-full ${p.featured ? "border-white/30 bg-white/10 text-white hover:bg-white/20" : ""}`}>
+                  <a
+                    href={wa(`Hi SeoFX, I'm interested in the ${p.name} SEO package (LKR ${p.price}${p.unit}). Can you share more?`)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <MessageCircle className="size-4" /> WhatsApp Us
+                  </a>
+                </Button>
+              </div>
+
+              {/* Trust footer */}
+              <p className={`mt-4 flex items-center justify-center gap-1.5 text-[11px] ${p.featured ? "text-white/70" : "text-muted-foreground"}`}>
+                <ShieldCheck className="size-3" /> 90-Day Ranking Promise included
+              </p>
             </article>
           ))}
         </div>
 
-        <p className="mt-10 text-center text-sm text-muted-foreground">
-          📞 Not sure which SEO package suits you? <Link to="/contact-us" className="font-semibold text-accent hover:underline">Contact us</Link> for a quote — or book a paid SEO consultation below for a complete strategy.
-        </p>
+        {/* Below-pricing trust line */}
+        <div className="mx-auto mt-10 max-w-2xl rounded-2xl border border-border bg-soft px-6 py-5 text-center">
+          <p className="text-sm text-muted-foreground">
+            <Zap className="-mt-0.5 mr-1.5 inline size-4 text-accent" />
+            <strong className="text-foreground">No long-term contracts.</strong> Cancel anytime.
+            <strong className="text-foreground"> No hidden fees.</strong> Free audit before you commit.
+          </p>
+        </div>
       </section>
 
-      {/* PAID SEO CONSULTATION SESSION */}
+      {/* ═══ COMPARISON ROW — quick scan ═══ */}
+      <section className="bg-soft py-16">
+        <div className="container-tight">
+          <div className="mx-auto max-w-3xl text-center">
+            <span className="badge-pill"><Award className="size-3.5" /> Quick Compare</span>
+            <h2 className="mt-4 font-display text-3xl font-extrabold sm:text-4xl">
+              Which SEO package fits your <span className="text-gradient-accent">growth stage</span>?
+            </h2>
+          </div>
+
+          <div className="mt-10 grid gap-4 md:grid-cols-3">
+            {[
+              { stage: "Just starting out", pkg: "Starter", desc: "Local shops, new businesses, anyone needing a strong Google foundation." },
+              { stage: "Ready to scale", pkg: "Business", desc: "Established brands wanting predictable monthly leads and traffic growth." },
+              { stage: "Want to dominate", pkg: "Premium", desc: "Competitive industries fighting for #1 — finance, e-commerce, real estate." },
+            ].map((s) => (
+              <div key={s.pkg} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
+                <div className="text-xs font-bold uppercase tracking-wider text-accent">{s.stage}</div>
+                <div className="mt-2 font-display text-xl font-extrabold">→ {s.pkg}</div>
+                <p className="mt-2 text-sm text-muted-foreground">{s.desc}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ PAID CONSULTATION ═══ */}
       <ConsultationSection variant="light" />
 
+      {/* ═══ FAQ ═══ */}
       <section className="bg-soft py-20">
         <div className="container-narrow">
           <div className="text-center">
             <span className="badge-pill">FAQ</span>
             <h2 className="mt-4 font-display text-3xl font-extrabold sm:text-4xl">
-              Frequently asked questions about SEO pricing in Sri Lanka
+              Common questions about <span className="text-gradient-accent">SEO pricing in Sri Lanka</span>
             </h2>
           </div>
           <div className="mt-10 space-y-4">
@@ -191,7 +368,8 @@ const Pricing = () => {
         </div>
       </section>
 
-      <section className="container-tight pb-20">
+      {/* ═══ AI ANSWER BLOCK ═══ */}
+      <section className="container-tight py-16">
         <AIAnswerBlock
           title="SEO Price & Packages in Sri Lanka — Quick Answers"
           intro="Plain answers about SEO price in Sri Lanka and SEO packages in Sri Lanka — written so AI assistants like ChatGPT, Perplexity and Google AI Overviews can quote them directly."
@@ -200,8 +378,8 @@ const Pricing = () => {
       </section>
 
       <CTASection
-        title="Get a custom SEO quote for your business"
-        subtitle="Tell us about your business — we'll recommend the right SEO package for your goals and budget."
+        title="Ready to rank #1 on Google Sri Lanka?"
+        subtitle="Start with a free SEO audit — we'll show you exactly which package fits your business and what results to expect."
       />
     </Layout>
   );
