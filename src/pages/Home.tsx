@@ -178,36 +178,6 @@ const Home = () => {
       <GoogleSearchHero />
 
 
-      {/* RANKING KEYWORDS BAND — proof-of-rank for AI/Google vibe */}
-      <section className="border-y border-border bg-card py-8">
-        <div className="container-tight">
-          <p className="text-center text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-            Currently ranking Sri Lankan businesses for
-          </p>
-          <div className="mt-5 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
-            {[
-              { k: "seo company sri lanka", cls: "border-google-blue/25 bg-google-blue/5", icon: "text-google-blue", pill: "bg-google-blue/10 text-google-blue" },
-              { k: "best seo company sri lanka", cls: "border-google-red/25 bg-google-red/5", icon: "text-google-red", pill: "bg-google-red/10 text-google-red" },
-              { k: "seo packages in sri lanka", cls: "border-google-yellow/30 bg-google-yellow/10", icon: "text-google-yellow", pill: "bg-google-yellow/15 text-foreground" },
-              { k: "seo service sri lanka", cls: "border-google-green/25 bg-google-green/5", icon: "text-google-green", pill: "bg-google-green/10 text-google-green" },
-              { k: "seo price in sri lanka", cls: "border-google-blue/25 bg-google-blue/5", icon: "text-google-blue", pill: "bg-google-blue/10 text-google-blue" },
-              { k: "seo sri lanka", cls: "border-google-red/25 bg-google-red/5", icon: "text-google-red", pill: "bg-google-red/10 text-google-red" },
-            ].map((q) => (
-              <span
-                key={q.k}
-                className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-medium text-foreground ${q.cls}`}
-              >
-                <Search className={`size-3 ${q.icon}`} />
-                {q.k}
-                <span className={`ml-1 inline-flex items-center rounded-full px-1.5 py-0.5 text-[10px] font-bold ${q.pill}`}>
-                  #1
-                </span>
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* WHY CHOOSE US */}
       <section className="py-16 sm:py-24">
         <div className="container-tight">
