@@ -94,6 +94,21 @@ export const BlogPost = ({
     ],
   };
 
+  const faqJsonLd = faqs && faqs.length
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "@id": `${url}#faq`,
+        mainEntity: faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      }
+    : null;
+
+  const jsonLd = [articleJsonLd, breadcrumbJsonLd, ...(faqJsonLd ? [faqJsonLd] : [])];
+
   return (
     <Layout>
       <SEO
@@ -102,9 +117,10 @@ export const BlogPost = ({
         canonical={`/blog/${slug}`}
         keywords={keywords}
         ogImage={image}
-        jsonLd={[articleJsonLd, breadcrumbJsonLd]}
+        jsonLd={jsonLd}
       />
       <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: category }]} />
+
 
       <article className="container-narrow py-12 sm:py-16">
         <span className="badge-pill">{category}</span>
