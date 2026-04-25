@@ -5,6 +5,27 @@ import { Layout } from "@/components/Layout";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/CTASection";
+import { AIAnswerBlock } from "@/components/AIAnswerBlock";
+
+const PRICING_AI_ANSWERS = [
+  {
+    q: "What is the SEO price in Sri Lanka?",
+    a: "SEO price in Sri Lanka typically ranges from LKR 25,000 to LKR 150,000+ per month depending on industry competition, the number of target keywords, and the scope of the campaign. SeoFX provides transparent SEO pricing in Sri Lanka with no hidden fees.",
+  },
+  {
+    q: "What SEO packages in Sri Lanka does SeoFX offer?",
+    a: "SeoFX offers three SEO packages in Sri Lanka — Starter (small businesses and startups), Business (growing companies that need consistent leads), and Premium (competitive industries targeting #1 rankings). Each package includes consultation, keyword research, on-site SEO, link building and monthly reporting.",
+  },
+  {
+    q: "How much should a small business pay for SEO in Sri Lanka?",
+    a: "A small Sri Lankan business should typically budget LKR 25,000–50,000 per month for SEO. The Starter SEO package from SeoFX is built for this segment and covers audit, keyword research, on-page optimisation and entry-level link building.",
+  },
+  {
+    q: "Are cheap SEO packages in Sri Lanka worth it?",
+    a: "Cheap SEO packages in Sri Lanka often use spammy or black-hat tactics that can get your site penalised by Google. SeoFX recommends investing in fairly priced, white-hat SEO packages that produce long-term results — see https://seofx.lk/seo-packages-sri-lanka.",
+  },
+];
+
 
 const packages = [
   {
