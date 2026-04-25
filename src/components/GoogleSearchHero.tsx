@@ -74,12 +74,17 @@ export const GoogleSearchHero = () => {
           <div className="mt-8 flex flex-wrap gap-3">
             <Button asChild variant="hero" size="lg">
               <Link to="/contact-us">
-                Get a Free SEO Audit <ArrowRight className="size-4" />
+                Book Free Consultation <ArrowRight className="size-4" />
+              </Link>
+            </Button>
+            <Button asChild variant="outline" size="lg">
+              <Link to="/contact-us#audit">
+                Get Free SEO Audit <Search className="size-4" />
               </Link>
             </Button>
             <Button asChild variant="whatsapp" size="lg">
               <a href={wa} target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="size-4" /> WhatsApp Us
+                <MessageCircle className="size-4" /> WhatsApp
               </a>
             </Button>
           </div>
