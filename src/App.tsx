@@ -7,6 +7,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
+import ServiceDetail from "./pages/ServiceDetail";
 import Pricing from "./pages/Pricing";
 import CaseStudies from "./pages/CaseStudies";
 import PorKenDeliCase from "./pages/PorKenDeliCase";
@@ -33,6 +34,7 @@ const App = () => (
             <Route path="/" element={<Home />} />
             <Route path="/seo-specialist-sri-lanka" element={<About />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/services/:slug" element={<ServiceDetail />} />
             <Route path="/seo-packages-sri-lanka" element={<Pricing />} />
             <Route path="/case-studies" element={<CaseStudies />} />
             <Route path="/case-studies/porkendeli-seo-case-study" element={<PorKenDeliCase />} />
