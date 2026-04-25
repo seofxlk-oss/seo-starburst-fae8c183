@@ -323,9 +323,9 @@ const Home = () => {
 
             <div className="grid gap-4 sm:grid-cols-3">
               {[
-                { name: "Starter", price: "29,900", goal: "Get visible on Google" },
-                { name: "Business", price: "59,900", goal: "Generate consistent leads", featured: true },
-                { name: "Premium", price: "99,900+", goal: "Dominate competitors" },
+                { name: "Starter", desc: "New to SEO" },
+                { name: "Business", desc: "Growing businesses", featured: true },
+                { name: "Premium", desc: "Rank #1 on Google" },
               ].map((p) => (
                 <div
                   key={p.name}
@@ -340,12 +340,13 @@ const Home = () => {
                     </>
                   )}
                   <h3 className={`font-display text-xl font-bold ${p.featured ? "text-accent" : "text-foreground"}`}>{p.name}</h3>
-                  <div className="mt-2 flex items-baseline gap-1">
-                    <span className="text-xs font-semibold text-muted-foreground">LKR</span>
-                    <span className="font-display text-2xl font-extrabold text-foreground">{p.price}</span>
-                    <span className="text-xs text-muted-foreground">/mo</span>
-                  </div>
-                  <p className="mt-1 text-xs text-muted-foreground">{p.goal}</p>
+                  <p className="mt-1 text-sm text-muted-foreground">{p.desc}</p>
+                  <ul className="mt-4 space-y-2 text-sm text-foreground">
+                    <li className="flex gap-2"><CheckCircle2 className="size-4 shrink-0 text-accent" /> SEO consultation</li>
+                    <li className="flex gap-2"><CheckCircle2 className="size-4 shrink-0 text-accent" /> Keyword research</li>
+                    <li className="flex gap-2"><CheckCircle2 className="size-4 shrink-0 text-accent" /> Backlink building</li>
+                    <li className="flex gap-2"><CheckCircle2 className="size-4 shrink-0 text-accent" /> Monthly reports</li>
+                  </ul>
                 </div>
               ))}
             </div>
