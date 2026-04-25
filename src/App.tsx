@@ -19,6 +19,15 @@ import Post2 from "./pages/blog/Post2";
 import Post3 from "./pages/blog/Post3";
 import Post4 from "./pages/blog/Post4";
 import Post5 from "./pages/blog/Post5";
+import Post6 from "./pages/blog/Post6";
+import Post7 from "./pages/blog/Post7";
+import Post8 from "./pages/blog/Post8";
+import Post9 from "./pages/blog/Post9";
+import Post10 from "./pages/blog/Post10";
+import Post11 from "./pages/blog/Post11";
+import Post12 from "./pages/blog/Post12";
+import Post13 from "./pages/blog/Post13";
+import Post14 from "./pages/blog/Post14";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -46,6 +55,15 @@ const App = () => (
             <Route path="/blog/why-online-presence-important-sri-lanka" element={<Post3 />} />
             <Route path="/blog/organic-traffic-importance-sri-lanka" element={<Post4 />} />
             <Route path="/blog/website-lead-generation-sri-lanka" element={<Post5 />} />
+            <Route path="/blog/how-to-choose-seo-company-sri-lanka" element={<Post6 />} />
+            <Route path="/blog/top-seo-companies-in-sri-lanka-2025" element={<Post7 />} />
+            <Route path="/blog/best-seo-company-sri-lanka-guide" element={<Post8 />} />
+            <Route path="/blog/seo-companies-sri-lanka-comparison-guide" element={<Post9 />} />
+            <Route path="/blog/seo-sri-lanka-complete-guide-2025" element={<Post10 />} />
+            <Route path="/blog/seo-service-sri-lanka-what-is-included" element={<Post11 />} />
+            <Route path="/blog/why-seofx-best-seo-company-in-sri-lanka" element={<Post12 />} />
+            <Route path="/blog/seo-packages-sri-lanka-guide" element={<Post13 />} />
+            <Route path="/blog/seo-price-sri-lanka-how-much-should-you-pay" element={<Post14 />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
