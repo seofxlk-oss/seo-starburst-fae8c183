@@ -12,6 +12,24 @@ const Post11 = () => (
     date="2025-01-13"
     readTime="8 min read"
     cta="Want a clear, transparent SEO service for your Sri Lankan business? Enquire about SeoFX's SEO service today."
+    faqs={[
+      {
+        q: "What does an SEO service in Sri Lanka actually include?",
+        a: "A complete SEO service in Sri Lanka includes an initial SEO audit, keyword research, on-page optimisation, technical SEO fixes, content creation, white-hat link building, and clear monthly reporting on rankings, organic traffic and lead growth.",
+      },
+      {
+        q: "How much does an SEO service in Sri Lanka cost per month?",
+        a: "Professional SEO services in Sri Lanka typically range from LKR 25,000 to 150,000+ per month depending on industry competitiveness, number of target keywords and depth of work. Cheaper SEO services usually rely on automated link spam that risks Google penalties.",
+      },
+      {
+        q: "What's the difference between on-page SEO and off-page SEO services in Sri Lanka?",
+        a: "On-page SEO services optimise your website itself — title tags, content, headings, internal links and technical health. Off-page SEO services build your website's authority externally through quality backlinks, digital PR and brand mentions. Both are essential to ranking in Sri Lanka.",
+      },
+      {
+        q: "Will my Sri Lankan business need monthly SEO services or just a one-off project?",
+        a: "SEO is an ongoing investment, not a one-off project. Google's algorithm, your competitors and search behaviour all change constantly. A monthly SEO service in Sri Lanka keeps your rankings improving and protects them from algorithm updates.",
+      },
+    ]}
   >
     <h2>Breaking Down What an SEO Service in Sri Lanka Actually Delivers</h2>
     <p>Many Sri Lankan business owners have heard of SEO but are unclear about what an SEO service actually involves on a practical, month-to-month basis. This article cuts through the jargon and explains exactly what you should expect when you engage an SEO service in Sri Lanka — and what each component is designed to achieve.</p>

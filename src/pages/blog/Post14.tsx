@@ -12,6 +12,24 @@ const Post14 = () => (
     date="2025-01-16"
     readTime="8 min read"
     cta="Want an honest SEO price quote tailored to your business? Contact SeoFX for a free audit and pricing consultation."
+    faqs={[
+      {
+        q: "What is the average SEO price in Sri Lanka?",
+        a: "The average SEO price in Sri Lanka ranges from around LKR 25,000 per month for starter campaigns to LKR 150,000+ per month for premium campaigns in competitive industries. Pricing depends on scope, keyword competitiveness and execution quality.",
+      },
+      {
+        q: "Why is SEO price in Sri Lanka so different between agencies?",
+        a: "SEO prices in Sri Lanka vary because of differences in scope of work, team experience, methodology (white-hat vs black-hat), reporting depth, and tools used. Cheap SEO almost always means automated link spam or minimal real work — both of which deliver no lasting results.",
+      },
+      {
+        q: "Is cheap SEO in Sri Lanka worth it?",
+        a: "No. Cheap SEO in Sri Lanka usually relies on bulk automated backlinks, generic AI content and shortcuts that violate Google's guidelines. The risk isn't just wasted money — black-hat SEO can trigger Google penalties that destroy your rankings and are very expensive to recover from.",
+      },
+      {
+        q: "How do I calculate ROI on SEO price in Sri Lanka?",
+        a: "Calculate SEO ROI by tracking new organic leads and customers each month, multiplying by your average customer value, and comparing to your monthly SEO retainer. For most Sri Lankan businesses, even 2–3 new clients per month from SEO easily justify the investment.",
+      },
+    ]}
   >
     <h2>The Real SEO Price in Sri Lanka — An Honest Breakdown</h2>
     <p>SEO price in Sri Lanka is one of the most searched topics by business owners considering their first SEO investment — and for good reason. Pricing in the market varies wildly, from a few thousand rupees per month to significant monthly retainers. Understanding what drives this variation is essential to making a smart investment.</p>
