@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/CTASection";
 import { SITE } from "@/lib/site";
 import heroImg from "@/assets/hero-seo.jpg";
+import caseImg from "@/assets/case-porkendeli.jpg";
 
 const Home = () => {
   const wa = `https://wa.me/${SITE.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
@@ -341,10 +342,14 @@ const Home = () => {
                 </Button>
               </div>
               <div className="relative">
+                <div className="absolute -inset-4 rounded-3xl bg-accent/15 blur-2xl" aria-hidden />
                 <img
-                  src={(await import("@/assets/case-porkendeli.jpg")).default || ""}
-                  alt=""
-                  className="hidden"
+                  src={caseImg}
+                  alt="PorKenDeli SEO case study — restaurant in Dehiwala that grew with SEO"
+                  loading="lazy"
+                  width={1024}
+                  height={768}
+                  className="relative aspect-[4/3] w-full rounded-2xl border border-border object-cover shadow-card"
                 />
               </div>
             </div>
