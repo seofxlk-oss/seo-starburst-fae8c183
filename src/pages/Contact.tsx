@@ -76,20 +76,6 @@ const Contact = () => {
               <ArrowRight className="size-5 text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:text-accent" />
             </a>
 
-            <a
-              href={`mailto:${SITE.email}`}
-              className="group flex items-center gap-5 rounded-2xl border border-border bg-card p-6 shadow-card transition-all hover:border-accent/50 hover:-translate-y-0.5"
-            >
-              <div className="grid size-14 shrink-0 place-items-center rounded-xl bg-primary text-primary-foreground shadow-card">
-                <Mail className="size-6" />
-              </div>
-              <div className="flex-1">
-                <div className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Email us</div>
-                <div className="mt-0.5 font-display text-xl font-bold">{SITE.email}</div>
-                <div className="mt-0.5 text-xs text-muted-foreground">Reply within 24 hours</div>
-              </div>
-              <ArrowRight className="size-5 text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:text-accent" />
-            </a>
           </div>
 
           <aside className="rounded-3xl bg-hero p-8 text-white sm:p-10">

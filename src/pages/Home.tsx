@@ -238,17 +238,14 @@ const Home = () => {
   // ───────── Section 8 — Testimonials ─────────
   const testimonials = [
     {
-      name: "Kasun P.",
       role: "Owner, PorKenDeli",
       text: "From near-zero traffic to a flood of online orders. SeoFX built our online presence from scratch — best marketing decision we've made.",
     },
     {
-      name: "Niroshan R.",
       role: "Director, Marketing Agency Colombo",
       text: "We white-label SeoFX to our clients. Reports are flawless, results are real, and our retainers grew 3x. Genuine partner.",
     },
     {
-      name: "Tharindu S.",
       role: "Co-founder, Web Studio",
       text: "Now we sell SEO with every website. Zero in-house headache, full margin, happy clients. SeoFX delivers — every single time.",
     },
@@ -638,7 +635,7 @@ const Home = () => {
           {/* Testimonials */}
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {testimonials.map((t) => (
-              <figure key={t.name} className="relative rounded-2xl border border-border bg-card p-6 shadow-card">
+              <figure key={t.role} className="relative rounded-2xl border border-border bg-card p-6 shadow-card">
                 <Quote className="absolute right-5 top-5 size-8 text-accent/15" />
                 <div className="flex gap-0.5">
                   {[...Array(5)].map((_, i) => (
@@ -647,7 +644,6 @@ const Home = () => {
                 </div>
                 <blockquote className="mt-3 text-sm leading-relaxed text-foreground">"{t.text}"</blockquote>
                 <figcaption className="mt-4 border-t border-border pt-4">
-                  <div className="font-display text-sm font-bold">{t.name}</div>
                   <div className="text-xs text-muted-foreground">{t.role}</div>
                 </figcaption>
               </figure>

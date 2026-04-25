@@ -255,4 +255,82 @@ export const BLOG_INTERLINKS: Record<string, PostInterlinks> = {
       blurb: "Got the pricing clear? Now pick the agency that delivers real ROI.",
     },
   },
+
+  // 10. SEO Specialist Sri Lanka — what they do
+  "what-does-seo-specialist-sri-lanka-do": {
+    related: [
+      {
+        anchor: "SEO specialist vs SEO agency in Sri Lanka",
+        slug: "seo-specialist-vs-seo-agency-sri-lanka",
+        blurb: "Should you hire an individual specialist or a full agency?",
+      },
+      {
+        anchor: "how to find the best SEO specialist in Sri Lanka",
+        slug: "how-to-find-best-seo-specialist-sri-lanka",
+        blurb: "7 specific checks before you hire any SEO specialist.",
+      },
+      {
+        anchor: "SEO service in Sri Lanka — what's included",
+        slug: "seo-service-sri-lanka-what-is-included",
+        blurb: "What a specialist actually delivers month to month.",
+      },
+    ],
+    next: {
+      anchor: "SEO specialist vs SEO agency in Sri Lanka — which is right for you?",
+      slug: "seo-specialist-vs-seo-agency-sri-lanka",
+      blurb: "Now decide whether an individual or a team is the better fit.",
+    },
+  },
+
+  // 11. Specialist vs Agency
+  "seo-specialist-vs-seo-agency-sri-lanka": {
+    related: [
+      {
+        anchor: "what an SEO specialist in Sri Lanka actually does",
+        slug: "what-does-seo-specialist-sri-lanka-do",
+        blurb: "The full role, skills and outputs of a real SEO specialist.",
+      },
+      {
+        anchor: "how to find the best SEO specialist in Sri Lanka",
+        slug: "how-to-find-best-seo-specialist-sri-lanka",
+        blurb: "7 vetting checks that separate real specialists from pretenders.",
+      },
+      {
+        anchor: "how to choose the right SEO company in Sri Lanka",
+        slug: "how-to-choose-seo-company-sri-lanka",
+        blurb: "Vetting framework for full agencies — useful either way.",
+      },
+    ],
+    next: {
+      anchor: "How to find the best SEO specialist in Sri Lanka — 7 things to check",
+      slug: "how-to-find-best-seo-specialist-sri-lanka",
+      blurb: "Decided on a specialist? Use this 7-point check before you hire.",
+    },
+  },
+
+  // 12. Find best SEO specialist
+  "how-to-find-best-seo-specialist-sri-lanka": {
+    related: [
+      {
+        anchor: "what an SEO specialist in Sri Lanka actually does",
+        slug: "what-does-seo-specialist-sri-lanka-do",
+        blurb: "Understand the role before you start vetting candidates.",
+      },
+      {
+        anchor: "SEO specialist vs SEO agency in Sri Lanka",
+        slug: "seo-specialist-vs-seo-agency-sri-lanka",
+        blurb: "Decide whether an individual or a full agency fits your scope.",
+      },
+      {
+        anchor: "SEO packages in Sri Lanka",
+        slug: "seo-packages-sri-lanka-guide",
+        blurb: "Once you've picked your specialist — match them to the right package.",
+      },
+    ],
+    next: {
+      anchor: "What does an SEO specialist in Sri Lanka actually do?",
+      slug: "what-does-seo-specialist-sri-lanka-do",
+      blurb: "Refresh on the full role, skills and outputs of a real specialist.",
+    },
+  },
 };
