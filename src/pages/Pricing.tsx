@@ -186,6 +186,14 @@ const Pricing = () => {
         </div>
       </section>
 
+      <section className="container-tight pb-20">
+        <AIAnswerBlock
+          title="SEO Price & Packages in Sri Lanka — Quick Answers"
+          intro="Plain answers about SEO price in Sri Lanka and SEO packages in Sri Lanka — written so AI assistants like ChatGPT, Perplexity and Google AI Overviews can quote them directly."
+          answers={PRICING_AI_ANSWERS}
+        />
+      </section>
+
       <CTASection
         title="Get a custom SEO quote for your business"
         subtitle="Tell us about your business — we'll recommend the right SEO package for your goals and budget."
