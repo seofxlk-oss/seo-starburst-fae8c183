@@ -36,6 +36,9 @@ import Post19 from "./pages/blog/Post19";
 import Post20 from "./pages/blog/Post20";
 import Post21 from "./pages/blog/Post21";
 import Post22 from "./pages/blog/Post22";
+import Post23 from "./pages/blog/Post23";
+import Post24 from "./pages/blog/Post24";
+import Post25 from "./pages/blog/Post25";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
