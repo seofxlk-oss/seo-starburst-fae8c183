@@ -46,11 +46,20 @@
 
     --radius: 0.875rem;
 
+    /* Google brand palette (used for SEO/Google-vibe sections) */
+    --google-blue: 217 89% 51%;
+    --google-red: 4 90% 58%;
+    --google-yellow: 45 100% 51%;
+    --google-green: 142 71% 39%;
+    --google-blue-soft: 217 89% 96%;
+
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(222 64% 17%) 0%, hsl(222 70% 12%) 60%, hsl(232 60% 20%) 100%);
     --gradient-accent: linear-gradient(135deg, hsl(19 96% 54%) 0%, hsl(28 100% 58%) 100%);
     --gradient-soft: linear-gradient(180deg, hsl(220 30% 99%) 0%, hsl(220 30% 96%) 100%);
     --gradient-radial: radial-gradient(circle at 50% 0%, hsl(19 96% 54% / 0.18), transparent 60%);
+    --gradient-google: linear-gradient(90deg, hsl(var(--google-blue)) 0%, hsl(var(--google-red)) 35%, hsl(var(--google-yellow)) 65%, hsl(var(--google-green)) 100%);
+    --gradient-google-soft: radial-gradient(circle at 20% 10%, hsl(var(--google-blue) / 0.10), transparent 45%), radial-gradient(circle at 80% 0%, hsl(var(--google-red) / 0.08), transparent 50%), radial-gradient(circle at 60% 90%, hsl(var(--google-green) / 0.08), transparent 50%);
 
     /* Shadows */
     --shadow-sm: 0 1px 2px 0 hsl(222 47% 11% / 0.05);
@@ -58,6 +67,7 @@
     --shadow-lg: 0 20px 45px -12px hsl(222 47% 11% / 0.18);
     --shadow-glow: 0 12px 40px -8px hsl(19 96% 54% / 0.45);
     --shadow-card: 0 2px 4px hsl(222 47% 11% / 0.04), 0 12px 28px -12px hsl(222 47% 11% / 0.12);
+    --shadow-google: 0 1px 6px hsl(217 89% 51% / 0.12), 0 12px 32px -12px hsl(217 89% 51% / 0.25);
 
     /* Transitions */
     --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
@@ -141,6 +151,39 @@
 
   .card-feature {
     @apply rounded-2xl border border-border bg-card p-6 shadow-[var(--shadow-card)] transition-all hover:-translate-y-1 hover:shadow-[var(--shadow-lg)];
+  }
+
+  /* Google-vibe utilities */
+  .bg-google-soft { background: var(--gradient-google-soft), hsl(0 0% 100%); }
+  .text-gradient-google {
+    background: var(--gradient-google);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .border-google-rainbow {
+    position: relative;
+  }
+  .border-google-rainbow::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: var(--gradient-google);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+            mask-composite: exclude;
+    pointer-events: none;
+  }
+  .google-search-bar {
+    @apply flex w-full items-center gap-3 rounded-full border border-border bg-card px-5 py-4 text-left shadow-[var(--shadow-card)] transition-all;
+    box-shadow: var(--shadow-card);
+  }
+  .google-search-bar:hover,
+  .google-search-bar:focus-within {
+    box-shadow: var(--shadow-google);
+    border-color: hsl(var(--google-blue) / 0.4);
   }
 }
 

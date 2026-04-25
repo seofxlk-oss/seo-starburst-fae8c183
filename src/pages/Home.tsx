@@ -8,8 +8,8 @@ import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/CTASection";
 import { AIAnswerBlock } from "@/components/AIAnswerBlock";
+import { GoogleSearchHero } from "@/components/GoogleSearchHero";
 import { SITE } from "@/lib/site";
-import heroImg from "@/assets/hero-seo.jpg";
 import caseImg from "@/assets/case-porkendeli.jpg";
 
 const Home = () => {
@@ -173,67 +173,8 @@ const Home = () => {
         jsonLd={jsonLd}
       />
 
-      {/* HERO */}
-      <section className="relative overflow-hidden bg-hero text-white">
-        <div className="absolute inset-0 bg-gradient-radial opacity-80" aria-hidden />
-        <div
-          className="absolute -top-40 right-0 h-96 w-96 rounded-full bg-accent/20 blur-3xl"
-          aria-hidden
-        />
-        <div className="container-tight relative grid items-center gap-12 py-16 sm:py-24 lg:grid-cols-2 lg:py-28">
-          <div className="animate-fade-up">
-            <span className="badge-pill-light">
-              <Sparkles className="size-3.5" /> Sri Lanka's #1 SEO Company
-            </span>
-            <h1 className="mt-5 font-display text-4xl font-extrabold leading-[1.05] sm:text-5xl md:text-6xl">
-              Generate Qualified Sales Leads &{" "}
-              <span className="text-gradient-accent">Grow Your Business</span> with SEO
-            </h1>
-            <p className="mt-5 max-w-xl text-base text-white/80 sm:text-lg">
-              Need more website traffic? Need more customers and increased sales for your Sri Lankan business?
-              At SeoFX — the best <strong className="font-semibold text-white">SEO company in Sri Lanka</strong> — we
-              make that happen with proven, data-driven SEO services built specifically for the Sri Lankan market.
-            </p>
-
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Button asChild variant="hero" size="lg">
-                <Link to="/contact-us">Get a Free SEO Audit <ArrowRight className="size-4" /></Link>
-              </Button>
-              <Button asChild variant="whatsapp" size="lg">
-                <a href={wa} target="_blank" rel="noopener noreferrer">
-                  <MessageCircle className="size-4" /> WhatsApp Us
-                </a>
-              </Button>
-            </div>
-
-            <div className="mt-10 grid grid-cols-3 gap-4 border-t border-white/10 pt-6 max-w-md">
-              <div>
-                <div className="font-display text-2xl font-extrabold text-accent sm:text-3xl">73%</div>
-                <div className="mt-1 text-xs text-white/60">Avg. monthly traffic lift</div>
-              </div>
-              <div>
-                <div className="font-display text-2xl font-extrabold text-accent sm:text-3xl">99%</div>
-                <div className="mt-1 text-xs text-white/60">Yearly organic growth</div>
-              </div>
-              <div>
-                <div className="font-display text-2xl font-extrabold text-accent sm:text-3xl">100%</div>
-                <div className="mt-1 text-xs text-white/60">White-hat SEO</div>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative animate-fade-in">
-            <div className="absolute -inset-6 rounded-[2rem] bg-accent/15 blur-2xl" aria-hidden />
-            <img
-              src={heroImg}
-              alt="SeoFX SEO growth chart showing higher Google rankings for Sri Lankan businesses"
-              width={1024}
-              height={1024}
-              className="relative w-full rounded-3xl border border-white/10 shadow-glow"
-            />
-          </div>
-        </div>
-      </section>
+      {/* HERO — Google-vibe with mocked SERP */}
+      <GoogleSearchHero />
 
 
       {/* WHY CHOOSE US */}

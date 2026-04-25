@@ -61,6 +61,13 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        google: {
+          blue: "hsl(var(--google-blue))",
+          red: "hsl(var(--google-red))",
+          yellow: "hsl(var(--google-yellow))",
+          green: "hsl(var(--google-green))",
+          "blue-soft": "hsl(var(--google-blue-soft))",
+        },
       },
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
@@ -76,10 +83,12 @@ export default {
         "gradient-accent": "var(--gradient-accent)",
         "gradient-soft": "var(--gradient-soft)",
         "gradient-radial": "var(--gradient-radial)",
+        "gradient-google": "var(--gradient-google)",
       },
       boxShadow: {
         glow: "var(--shadow-glow)",
         card: "var(--shadow-card)",
+        google: "var(--shadow-google)",
       },
       keyframes: {
         "accordion-down": {
