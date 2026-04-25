@@ -132,8 +132,6 @@ const Pricing = () => {
       itemListElement: packages.map((p) => ({
         "@type": "Offer",
         name: `${p.name} SEO Package Sri Lanka`,
-        price: p.price.replace(/[^0-9]/g, ""),
-        priceCurrency: "LKR",
         availability: "https://schema.org/InStock",
         url: `https://seofx.lk/seo-packages-sri-lanka#${p.name.toLowerCase()}`,
       })),
@@ -143,8 +141,8 @@ const Pricing = () => {
   return (
     <Layout>
       <SEO
-        title="SEO Packages in Sri Lanka from LKR 29,900 | SEO Price | SeoFX"
-        description="Transparent SEO packages in Sri Lanka. Starter LKR 29,900, Business LKR 59,900, Premium LKR 99,900+. 90-Day Ranking Promise. Free SEO audit. Best SEO company in Sri Lanka."
+        title="SEO Packages in Sri Lanka | SEO Services & Plans | SeoFX"
+        description="SEO packages in Sri Lanka by SeoFX — Starter, Business & Premium SEO plans built for real results. 90-Day Ranking Promise. WhatsApp us for a custom quote today."
         canonical="/seo-packages-sri-lanka"
         keywords="seo packages in sri lanka, seo price in sri lanka, seo packages sri lanka, seo cost sri lanka, affordable seo sri lanka, seo company sri lanka"
         jsonLd={[faqJsonLd, offerJsonLd]}
@@ -232,17 +230,8 @@ const Pricing = () => {
                 {p.desc}
               </p>
 
-              {/* Price anchor */}
-              <div className="mt-5 flex items-baseline gap-1.5">
-                <span className={`text-xs font-semibold ${p.featured ? "text-white/60" : "text-muted-foreground"}`}>
-                  Starting at
-                </span>
-              </div>
-              <div className="mt-1 flex items-baseline gap-2">
-                <span className={`font-display text-xs ${p.featured ? "text-white/70" : "text-muted-foreground"}`}>LKR</span>
-                <span className="font-display text-4xl font-extrabold sm:text-5xl">{p.price}</span>
-                <span className={`text-sm ${p.featured ? "text-white/70" : "text-muted-foreground"}`}>{p.unit}</span>
-              </div>
+              {/* spacer */}
+              <div className="mt-5" />
 
               {/* GOAL — the killer differentiator */}
               <div className={`mt-4 rounded-xl border px-4 py-3 ${
@@ -274,16 +263,16 @@ const Pricing = () => {
                 ))}
               </ul>
 
-              {/* Dual CTAs — Free Audit + WhatsApp */}
-              <div className="mt-7 flex flex-col gap-2">
-                <Button asChild variant={p.featured ? "hero" : "default"} size="lg" className="w-full">
-                  <Link to="/contact-us#audit">
-                    <Search className="size-4" /> Get Free SEO Audit
-                  </Link>
-                </Button>
-                <Button asChild variant={p.featured ? "outline" : "whatsapp"} size="lg" className={`w-full ${p.featured ? "border-white/30 bg-white/10 text-white hover:bg-white/20" : ""}`}>
+              {/* WhatsApp CTA */}
+              <div className="mt-7">
+                <Button
+                  asChild
+                  variant={p.featured ? "hero" : "whatsapp"}
+                  size="lg"
+                  className="w-full"
+                >
                   <a
-                    href={wa(`Hi SeoFX, I'm interested in the ${p.name} SEO package (LKR ${p.price}${p.unit}). Can you share more?`)}
+                    href={wa(`Hi SeoFX, I'm interested in the ${p.name} SEO package. Can you share more details and pricing?`)}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
