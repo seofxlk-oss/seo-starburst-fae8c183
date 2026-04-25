@@ -6,6 +6,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/CTASection";
 import { AIAnswerBlock } from "@/components/AIAnswerBlock";
+import { ConsultationSection } from "@/components/ConsultationSection";
 
 const PRICING_AI_ANSWERS = [
   {
@@ -160,9 +161,12 @@ const Pricing = () => {
         </div>
 
         <p className="mt-10 text-center text-sm text-muted-foreground">
-          📞 Not sure which SEO package suits you? <Link to="/contact-us" className="font-semibold text-accent hover:underline">Contact us</Link> for a free consultation.
+          📞 Not sure which SEO package suits you? <Link to="/contact-us" className="font-semibold text-accent hover:underline">Contact us</Link> for a quote — or book a paid SEO consultation below for a complete strategy.
         </p>
       </section>
+
+      {/* PAID SEO CONSULTATION SESSION */}
+      <ConsultationSection variant="light" />
 
       <section className="bg-soft py-20">
         <div className="container-narrow">
