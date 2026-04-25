@@ -413,4 +413,34 @@ export const BLOG_INTERLINKS: Record<string, PostInterlinks> = {
     ],
     next: { anchor: "What SEO services in Sri Lanka should include", slug: "seo-services-sri-lanka-what-is-included", blurb: "Whichever option you choose — make sure these components are covered." },
   },
+
+  // 21. Results to expect from an SEO specialist
+  "results-to-expect-from-seo-specialist-sri-lanka": {
+    related: [
+      { anchor: "What an SEO specialist in Sri Lanka actually does", slug: "what-does-seo-specialist-sri-lanka-do", blurb: "The full role and outputs of a real SEO specialist." },
+      { anchor: "8 signs of a genuinely good SEO specialist in Sri Lanka", slug: "signs-of-good-seo-specialist-sri-lanka", blurb: "Spot real expertise vs convincing presentation." },
+      { anchor: "In-house SEO specialist vs outsourcing in Sri Lanka", slug: "in-house-seo-specialist-vs-outsourcing-sri-lanka", blurb: "Which delivery model fits your business?" },
+    ],
+    next: { anchor: "8 signs of a genuinely good SEO specialist in Sri Lanka", slug: "signs-of-good-seo-specialist-sri-lanka", blurb: "Now make sure the specialist behind those results is the real deal." },
+  },
+
+  // 22. In-house vs outsourcing
+  "in-house-seo-specialist-vs-outsourcing-sri-lanka": {
+    related: [
+      { anchor: "SEO specialist vs SEO agency in Sri Lanka", slug: "seo-specialist-vs-seo-agency-sri-lanka", blurb: "Specialist or agency? The companion decision framework." },
+      { anchor: "What results to expect from an SEO specialist in Sri Lanka", slug: "results-to-expect-from-seo-specialist-sri-lanka", blurb: "Realistic timelines and KPIs for any specialist engagement." },
+      { anchor: "8 signs of a genuinely good SEO specialist in Sri Lanka", slug: "signs-of-good-seo-specialist-sri-lanka", blurb: "Vetting marks for individual specialists — internal or external." },
+    ],
+    next: { anchor: "8 signs of a genuinely good SEO specialist in Sri Lanka", slug: "signs-of-good-seo-specialist-sri-lanka", blurb: "Whichever path you choose — use these 8 signs to evaluate the person." },
+  },
+
+  // 23. 8 signs of a good SEO specialist
+  "signs-of-good-seo-specialist-sri-lanka": {
+    related: [
+      { anchor: "How to find the best SEO specialist in Sri Lanka", slug: "how-to-find-best-seo-specialist-sri-lanka", blurb: "The 7-point check before you hire any SEO specialist." },
+      { anchor: "What results to expect from an SEO specialist in Sri Lanka", slug: "results-to-expect-from-seo-specialist-sri-lanka", blurb: "Realistic timelines and KPIs once you've found the right specialist." },
+      { anchor: "In-house SEO specialist vs outsourcing in Sri Lanka", slug: "in-house-seo-specialist-vs-outsourcing-sri-lanka", blurb: "Decide whether to embed the specialist or engage them externally." },
+    ],
+    next: { anchor: "What results to expect from an SEO specialist in Sri Lanka", slug: "results-to-expect-from-seo-specialist-sri-lanka", blurb: "Now align your expectations with what a great specialist can realistically deliver." },
+  },
 };
