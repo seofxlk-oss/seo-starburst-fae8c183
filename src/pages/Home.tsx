@@ -238,15 +238,15 @@ const Home = () => {
   // ───────── Section 8 — Testimonials ─────────
   const testimonials = [
     {
-      role: "Owner, PorKenDeli",
+      role: "Client",
       text: "From near-zero traffic to a flood of online orders. SeoFX built our online presence from scratch — best marketing decision we've made.",
     },
     {
-      role: "Director, Marketing Agency Colombo",
+      role: "Client",
       text: "We white-label SeoFX to our clients. Reports are flawless, results are real, and our retainers grew 3x. Genuine partner.",
     },
     {
-      role: "Co-founder, Web Studio",
+      role: "Client",
       text: "Now we sell SEO with every website. Zero in-house headache, full margin, happy clients. SeoFX delivers — every single time.",
     },
   ];
