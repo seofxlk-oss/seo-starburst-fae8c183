@@ -40,8 +40,6 @@ const packages = [
     name: "Starter",
     icon: "🔥",
     badge: "Best for small businesses",
-    price: "29,900",
-    unit: "/ month",
     goal: "Get your site visible on Google",
     desc: "Best for small businesses starting SEO in Sri Lanka",
     features: [
@@ -59,8 +57,6 @@ const packages = [
     name: "Business",
     icon: "🚀",
     badge: "Most Popular",
-    price: "59,900",
-    unit: "/ month",
     goal: "Increase traffic + generate leads",
     desc: "For businesses that want consistent leads",
     featured: true,
@@ -79,8 +75,6 @@ const packages = [
     name: "Premium",
     icon: "👑",
     badge: "Dominate Google",
-    price: "99,900+",
-    unit: "/ month",
     goal: "Rank #1 + dominate competitors",
     desc: "For dominating Google in Sri Lanka",
     features: [

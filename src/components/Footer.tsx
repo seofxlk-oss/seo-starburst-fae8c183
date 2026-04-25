@@ -21,9 +21,6 @@ export const Footer = () => {
               <a href={`tel:${SITE.phoneRaw}`} className="flex items-center gap-2 hover:text-accent">
                 <Phone className="size-4" /> {SITE.phone}
               </a>
-              <a href={`tel:${SITE.phone2Raw}`} className="flex items-center gap-2 hover:text-accent">
-                <Phone className="size-4" /> {SITE.phone2}
-              </a>
               <a href={`mailto:${SITE.email}`} className="flex items-center gap-2 hover:text-accent">
                 <Mail className="size-4" /> {SITE.email}
               </a>
