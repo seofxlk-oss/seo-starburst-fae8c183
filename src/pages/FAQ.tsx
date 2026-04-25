@@ -59,7 +59,7 @@ const FAQ = () => {
       <section className="container-tight py-16 sm:py-20">
         <div className="mx-auto max-w-4xl text-center">
           <span className="badge-pill">FAQ</span>
-          <h1 className="mt-4 font-display text-4xl font-extrabold leading-tight sm:text-5xl md:text-6xl">
+          <h1 className="mt-4 font-display text-3xl font-extrabold leading-tight sm:text-5xl md:text-6xl">
             SEO Questions Answered by Sri Lanka's <span className="text-gradient-accent">Leading SEO Experts</span>
           </h1>
           <p className="mt-5 text-lg text-muted-foreground">

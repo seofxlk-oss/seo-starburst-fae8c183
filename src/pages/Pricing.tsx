@@ -153,7 +153,7 @@ const Pricing = () => {
       <section className="container-tight pt-12 pb-8 sm:pt-16">
         <div className="mx-auto max-w-4xl text-center">
           <span className="badge-pill">SEO Packages & Pricing</span>
-          <h1 className="mt-4 font-display text-4xl font-extrabold leading-tight sm:text-5xl md:text-6xl">
+          <h1 className="mt-4 font-display text-3xl font-extrabold leading-tight sm:text-5xl md:text-6xl">
             <span className="text-gradient-accent">SEO Packages in Sri Lanka</span> Built to Deliver Real Results
           </h1>
           <p className="mt-5 text-lg text-muted-foreground">

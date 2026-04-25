@@ -33,7 +33,7 @@ export const GoogleSearchHero = () => {
             <span className="text-muted-foreground">Page 1 SEO Specialists · Sri Lanka</span>
           </div>
 
-          <h1 className="mt-6 font-display text-4xl font-extrabold leading-[1.05] text-foreground sm:text-5xl md:text-6xl">
+          <h1 className="mt-6 font-display text-[1.625rem] font-extrabold leading-[1.15] text-foreground xs:text-3xl sm:text-5xl md:text-6xl">
             <span className="text-gradient-accent">SEO Company Sri Lanka</span> — Rank #1 on Google &amp; Grow Your Business
           </h1>
 
@@ -118,8 +118,8 @@ export const GoogleSearchHero = () => {
               <span className="size-2.5 rounded-full bg-google-red" />
               <span className="size-2.5 rounded-full bg-google-yellow" />
               <span className="size-2.5 rounded-full bg-google-green" />
-              <div className="ml-3 flex flex-1 items-center gap-2 truncate rounded-full bg-muted px-3 py-1.5 text-xs text-muted-foreground">
-                <span className="text-google-green">●</span> google.lk/search?q=seo+company+sri+lanka
+              <div className="ml-3 flex flex-1 items-center gap-2 truncate rounded-full bg-muted px-3 py-1.5 text-[10px] sm:text-xs text-muted-foreground min-w-0">
+                <span className="text-google-green">●</span> <span className="truncate">google.lk/search?q=seo+company+sri+lanka</span>
               </div>
             </div>
 

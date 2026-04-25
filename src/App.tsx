@@ -31,20 +31,6 @@ import Post14 from "./pages/blog/Post14";
 import Post15 from "./pages/blog/Post15";
 import Post16 from "./pages/blog/Post16";
 import Post17 from "./pages/blog/Post17";
-import Post18 from "./pages/blog/Post18";
-import Post19 from "./pages/blog/Post19";
-import Post20 from "./pages/blog/Post20";
-import Post21 from "./pages/blog/Post21";
-import Post22 from "./pages/blog/Post22";
-import Post23 from "./pages/blog/Post23";
-import Post24 from "./pages/blog/Post24";
-import Post25 from "./pages/blog/Post25";
-import Post26 from "./pages/blog/Post26";
-import Post27 from "./pages/blog/Post27";
-import Post28 from "./pages/blog/Post28";
-import Post29 from "./pages/blog/Post29";
-import Post30 from "./pages/blog/Post30";
-import Post31 from "./pages/blog/Post31";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -84,20 +70,6 @@ const App = () => (
             <Route path="/blog/what-does-seo-specialist-sri-lanka-do" element={<Post15 />} />
             <Route path="/blog/seo-specialist-vs-seo-agency-sri-lanka" element={<Post16 />} />
             <Route path="/blog/how-to-find-best-seo-specialist-sri-lanka" element={<Post17 />} />
-            <Route path="/blog/seo-sri-lanka-2026-how-google-has-changed" element={<Post18 />} />
-            <Route path="/blog/is-seo-worth-it-sri-lanka" element={<Post19 />} />
-            <Route path="/blog/how-to-choose-seo-company-sri-lanka-questions" element={<Post20 />} />
-            <Route path="/blog/what-seo-company-sri-lanka-should-deliver" element={<Post21 />} />
-            <Route path="/blog/seo-company-sri-lanka-red-flags-green-flags" element={<Post22 />} />
-            <Route path="/blog/seo-services-sri-lanka-what-is-included" element={<Post23 />} />
-            <Route path="/blog/on-page-vs-off-page-seo-services-sri-lanka" element={<Post24 />} />
-            <Route path="/blog/monthly-seo-services-vs-one-time-audit-sri-lanka" element={<Post25 />} />
-            <Route path="/blog/results-to-expect-from-seo-specialist-sri-lanka" element={<Post26 />} />
-            <Route path="/blog/in-house-seo-specialist-vs-outsourcing-sri-lanka" element={<Post27 />} />
-            <Route path="/blog/signs-of-good-seo-specialist-sri-lanka" element={<Post28 />} />
-            <Route path="/blog/what-to-look-for-hiring-seo-company-sri-lanka" element={<Post29 />} />
-            <Route path="/blog/why-sri-lankan-businesses-get-seo-wrong" element={<Post30 />} />
-            <Route path="/blog/how-seo-company-sri-lanka-builds-google-presence" element={<Post31 />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>

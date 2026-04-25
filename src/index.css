@@ -112,10 +112,21 @@
   html {
     scroll-behavior: smooth;
   }
-  body {
+  html, body {
     @apply bg-background text-foreground antialiased;
+    overflow-x: hidden;
+  }
+  body {
     font-family: 'Inter', system-ui, -apple-system, sans-serif;
     font-feature-settings: "rlig" 1, "calt" 1, "ss01" 1;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+  /* Prevent long unbroken strings (URLs, code) from breaking mobile layouts */
+  p, li, dd, dt, blockquote, summary, a, span {
+    overflow-wrap: break-word;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
@@ -128,8 +139,8 @@
 }
 
 @layer components {
-  .container-tight { @apply mx-auto max-w-6xl px-5 sm:px-8; }
-  .container-narrow { @apply mx-auto max-w-4xl px-5 sm:px-8; }
+  .container-tight { @apply mx-auto w-full max-w-6xl px-3 sm:px-6 lg:px-8; }
+  .container-narrow { @apply mx-auto w-full max-w-4xl px-3 sm:px-6 lg:px-8; }
 
   .text-gradient-accent {
     background: var(--gradient-accent);
