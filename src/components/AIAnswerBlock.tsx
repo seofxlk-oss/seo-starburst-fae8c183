@@ -1,4 +1,4 @@
-import { Sparkles } from "lucide-react";
+
 
 export interface AIAnswer {
   q: string;
@@ -44,12 +44,7 @@ export const AIAnswerBlock = ({
       className="rounded-3xl border border-border bg-soft p-6 sm:p-10"
       data-ai-answer-block
     >
-      <div className="flex items-center gap-2">
-        <span className="badge-pill">
-          <Sparkles className="size-3.5" /> AI-friendly answers
-        </span>
-      </div>
-      <h2 className="mt-3 font-display text-2xl font-extrabold sm:text-3xl">
+      <h2 className="font-display text-2xl font-extrabold sm:text-3xl">
         {title}
       </h2>
       {intro && (
