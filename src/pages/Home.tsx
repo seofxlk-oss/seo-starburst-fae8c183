@@ -178,11 +178,43 @@ const Home = () => {
       <GoogleSearchHero />
 
 
+      {/* RANKING KEYWORDS BAND — proof-of-rank for AI/Google vibe */}
+      <section className="border-y border-border bg-card py-8">
+        <div className="container-tight">
+          <p className="text-center text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+            Currently ranking Sri Lankan businesses for
+          </p>
+          <div className="mt-5 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+            {[
+              { k: "seo company sri lanka", color: "google-blue" },
+              { k: "best seo company sri lanka", color: "google-red" },
+              { k: "seo packages in sri lanka", color: "google-yellow" },
+              { k: "seo service sri lanka", color: "google-green" },
+              { k: "seo price in sri lanka", color: "google-blue" },
+              { k: "seo sri lanka", color: "google-red" },
+            ].map((q) => (
+              <span
+                key={q.k}
+                className={`inline-flex items-center gap-1.5 rounded-full border border-${q.color}/25 bg-${q.color}/5 px-3 py-1.5 text-xs font-medium text-foreground`}
+              >
+                <Search className={`size-3 text-${q.color}`} />
+                {q.k}
+                <span className={`ml-1 inline-flex items-center rounded-full bg-${q.color}/10 px-1.5 py-0.5 text-[10px] font-bold text-${q.color}`}>
+                  #1
+                </span>
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* WHY CHOOSE US */}
-      <section className="py-20 sm:py-28">
+      <section className="py-16 sm:py-24">
         <div className="container-tight">
           <div className="mx-auto max-w-3xl text-center">
-            <span className="badge-pill">Why Choose Us</span>
+            <span className="inline-flex items-center gap-2 rounded-full border border-google-blue/20 bg-google-blue/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-google-blue">
+              Why Choose Us
+            </span>
             <h2 className="mt-4 font-display text-3xl font-extrabold sm:text-4xl md:text-5xl">
               Professional SEO Solutions in Sri Lanka — Trusted by Businesses Across the Island
             </h2>
@@ -191,22 +223,17 @@ const Home = () => {
               measurable results. As a trusted SEO service provider in Sri Lanka, we increase leads, build brand
               authority, enhance online visibility, and deliver real ROI for businesses of all sizes.
             </p>
-            <p className="mt-4 text-base text-muted-foreground">
-              Our expert team of SEO consultants in Sri Lanka uses cutting-edge, white-hat techniques to boost your
-              SERP rankings while maintaining a high return on investment. We are not just any SEO agency in Sri
-              Lanka — we are your growth partners.
-            </p>
           </div>
 
-          <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              { icon: TrendingUp, title: "We Lift You Up", text: "We focus on your business goals — more customers, more sales, sustainable growth." },
-              { icon: MessageCircle, title: "We Keep You Informed", text: "Full transparency. Regular updates and clear reporting on every campaign." },
-              { icon: Target, title: "Custom SEO Strategies", text: "Tailored to your industry, business size, customers, and competitors in Sri Lanka." },
-              { icon: Users, title: "Part of Your Team", text: "We work as an extension of your business — aligned to your goals and your market." },
+              { icon: TrendingUp, title: "We Lift You Up", text: "We focus on your business goals — more customers, more sales, sustainable growth.", color: "google-blue" },
+              { icon: MessageCircle, title: "We Keep You Informed", text: "Full transparency. Regular updates and clear reporting on every campaign.", color: "google-red" },
+              { icon: Target, title: "Custom SEO Strategies", text: "Tailored to your industry, business size, customers, and competitors in Sri Lanka.", color: "google-yellow" },
+              { icon: Users, title: "Part of Your Team", text: "We work as an extension of your business — aligned to your goals and your market.", color: "google-green" },
             ].map((f) => (
               <article key={f.title} className="card-feature">
-                <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-accent-gradient text-accent-foreground shadow-glow">
+                <div className={`inline-flex h-12 w-12 items-center justify-center rounded-xl bg-${f.color}/10 text-${f.color}`}>
                   <f.icon className="size-5" />
                 </div>
                 <h3 className="mt-4 font-display text-lg font-bold">{f.title}</h3>
