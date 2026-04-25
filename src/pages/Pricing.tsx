@@ -355,7 +355,6 @@ const Pricing = () => {
       <section className="container-tight py-16">
         <AIAnswerBlock
           title="SEO Price & Packages in Sri Lanka — Quick Answers"
-          intro="Plain answers about SEO price in Sri Lanka and SEO packages in Sri Lanka — written so AI assistants like ChatGPT, Perplexity and Google AI Overviews can quote them directly."
           answers={PRICING_AI_ANSWERS}
         />
       </section>
