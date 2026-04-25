@@ -20,29 +20,21 @@ export const GoogleSearchHero = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-google-soft">
-      {/* Top rainbow strip — Google's signature 4-color bar */}
-      <div className="h-1 w-full bg-gradient-google" aria-hidden />
+    <section className="relative overflow-hidden bg-soft">
+      {/* Subtle top accent strip */}
+      <div className="h-0.5 w-full bg-gradient-accent opacity-70" aria-hidden />
 
       <div className="container-tight relative grid items-center gap-12 py-16 sm:py-20 lg:grid-cols-2 lg:py-24">
         {/* LEFT — Pitch + Google-style search bar */}
         <div className="animate-fade-up">
-          {/* "G" pill — playful Google nod */}
+          {/* Brand pill */}
           <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-xs font-semibold tracking-wide shadow-card">
-            <span className="font-display text-base font-extrabold leading-none">
-              <span className="text-google-blue">G</span>
-              <span className="text-google-red">o</span>
-              <span className="text-google-yellow">o</span>
-              <span className="text-google-blue">g</span>
-              <span className="text-google-green">l</span>
-              <span className="text-google-red">e</span>
-            </span>
-            <span className="h-3 w-px bg-border" />
+            <span className="size-2 rounded-full bg-accent" />
             <span className="text-muted-foreground">Page 1 SEO Specialists · Sri Lanka</span>
           </div>
 
           <h1 className="mt-6 font-display text-4xl font-extrabold leading-[1.05] text-foreground sm:text-5xl md:text-6xl">
-            <span className="text-gradient-google">SEO Company Sri Lanka</span> — Rank #1 on Google &amp; Grow Your Business
+            <span className="text-gradient-accent">SEO Company Sri Lanka</span> — Rank #1 on Google &amp; Grow Your Business
           </h1>
 
           <p className="mt-5 max-w-xl text-base text-muted-foreground sm:text-lg">
@@ -56,23 +48,23 @@ export const GoogleSearchHero = () => {
           {/* Google-style search bar */}
           <div className="mt-7">
             <div className="google-search-bar">
-              <Search className="size-5 shrink-0 text-google-blue" />
+              <Search className="size-5 shrink-0 text-muted-foreground" />
               <span className="truncate font-medium text-foreground">
                 seo company sri lanka
               </span>
-              <span className="ml-auto hidden items-center gap-1 rounded-full bg-google-blue/10 px-2.5 py-1 text-[11px] font-bold text-google-blue sm:inline-flex">
+              <span className="ml-auto hidden items-center gap-1 rounded-full bg-accent/10 px-2.5 py-1 text-[11px] font-bold text-accent sm:inline-flex">
                 <ChevronUp className="size-3" /> #1 Result
               </span>
             </div>
 
-            {/* Suggestion chips — animated keyword targets */}
+            {/* Suggestion chips — keyword targets */}
             <div className="mt-3 flex flex-wrap gap-2">
               {queries.map((q) => (
                 <span
                   key={q}
                   className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-3 py-1 text-xs text-muted-foreground"
                 >
-                  <Search className="size-3 text-google-blue" />
+                  <Search className="size-3 text-muted-foreground" />
                   {q}
                 </span>
               ))}
@@ -80,7 +72,7 @@ export const GoogleSearchHero = () => {
           </div>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <Button asChild size="lg" className="bg-google-blue text-white hover:bg-google-blue/90">
+            <Button asChild variant="hero" size="lg">
               <Link to="/contact-us">
                 Get a Free SEO Audit <ArrowRight className="size-4" />
               </Link>
@@ -92,18 +84,18 @@ export const GoogleSearchHero = () => {
             </Button>
           </div>
 
-          {/* Trust strip with Google-color stats */}
+          {/* Trust strip */}
           <div className="mt-10 grid grid-cols-3 gap-4 border-t border-border pt-6 max-w-md">
             <div>
-              <div className="font-display text-2xl font-extrabold text-google-blue sm:text-3xl">73%</div>
+              <div className="font-display text-2xl font-extrabold text-accent sm:text-3xl">73%</div>
               <div className="mt-1 text-xs text-muted-foreground">Avg. monthly traffic lift</div>
             </div>
             <div>
-              <div className="font-display text-2xl font-extrabold text-google-green sm:text-3xl">99%</div>
+              <div className="font-display text-2xl font-extrabold text-accent sm:text-3xl">99%</div>
               <div className="mt-1 text-xs text-muted-foreground">Yearly organic growth</div>
             </div>
             <div>
-              <div className="font-display text-2xl font-extrabold text-google-red sm:text-3xl">100%</div>
+              <div className="font-display text-2xl font-extrabold text-accent sm:text-3xl">100%</div>
               <div className="mt-1 text-xs text-muted-foreground">White-hat SEO</div>
             </div>
           </div>
@@ -111,10 +103,9 @@ export const GoogleSearchHero = () => {
 
         {/* RIGHT — Mocked Google SERP */}
         <div className="relative animate-fade-in">
-          {/* Decorative blurs in Google colors */}
-          <div className="pointer-events-none absolute -top-10 -left-6 h-40 w-40 rounded-full bg-google-blue/15 blur-3xl" aria-hidden />
-          <div className="pointer-events-none absolute -bottom-10 -right-6 h-48 w-48 rounded-full bg-google-yellow/20 blur-3xl" aria-hidden />
-          <div className="pointer-events-none absolute top-1/2 right-1/4 h-32 w-32 rounded-full bg-google-red/15 blur-3xl" aria-hidden />
+          {/* Soft brand-tinted blurs */}
+          <div className="pointer-events-none absolute -top-10 -left-6 h-40 w-40 rounded-full bg-accent/10 blur-3xl" aria-hidden />
+          <div className="pointer-events-none absolute -bottom-10 -right-6 h-48 w-48 rounded-full bg-primary/10 blur-3xl" aria-hidden />
 
           <div className="relative rounded-3xl border border-border bg-card p-5 shadow-[var(--shadow-lg)] sm:p-6">
             {/* Browser chrome */}
