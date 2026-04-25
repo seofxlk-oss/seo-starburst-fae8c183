@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { NAV_LINKS, SITE } from "@/lib/site";
 import { SERVICES } from "@/lib/services";
 import { cn } from "@/lib/utils";
+import logo from "@/assets/logo.png";
 
 export const Header = () => {
   const [open, setOpen] = useState(false);
@@ -46,10 +47,14 @@ export const Header = () => {
       )}
     >
       <div className="container-tight flex h-16 items-center justify-between gap-4">
-        <Link to="/" aria-label="SeoFX home" className="flex items-center gap-2">
-          <span className="font-display text-2xl font-extrabold tracking-tight text-primary">
-            Seo<span className="text-gradient-accent">FX</span>
-          </span>
+        <Link to="/" aria-label="SeoFX home" className="flex items-center">
+          <img
+            src={logo}
+            alt="SeoFX — SEO Company Sri Lanka"
+            className="h-8 w-auto sm:h-9"
+            width={140}
+            height={36}
+          />
         </Link>
 
         <nav className="hidden lg:flex items-center gap-1" aria-label="Main">
