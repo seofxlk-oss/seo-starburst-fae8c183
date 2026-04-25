@@ -115,7 +115,7 @@ const Services = () => {
 
       <section className="container-tight pb-16 sm:pb-20">
         <AIAnswerBlock
-          title="SEO Services in Sri Lanka — Quick Answers"
+          title="SEO Services in Sri Lanka"
           answers={SERVICES_AI_ANSWERS}
         />
       </section>

@@ -682,7 +682,7 @@ const Home = () => {
         {/* AI answer block for LLM crawlers */}
         <div className="container-tight mt-16">
           <AIAnswerBlock
-            title="SEO in Sri Lanka — Quick Answers for AI Assistants"
+            title="SEO in Sri Lanka"
             answers={faqs}
             emitSchema={false}
           />

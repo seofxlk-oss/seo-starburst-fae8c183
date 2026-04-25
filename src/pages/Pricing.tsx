@@ -354,7 +354,7 @@ const Pricing = () => {
       {/* ═══ AI ANSWER BLOCK ═══ */}
       <section className="container-tight py-16">
         <AIAnswerBlock
-          title="SEO Price & Packages in Sri Lanka — Quick Answers"
+          title="SEO Price & Packages in Sri Lanka"
           answers={PRICING_AI_ANSWERS}
         />
       </section>
