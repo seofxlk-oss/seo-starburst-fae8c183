@@ -182,9 +182,7 @@ const Home = () => {
       <section className="py-16 sm:py-24">
         <div className="container-tight">
           <div className="mx-auto max-w-3xl text-center">
-            <span className="inline-flex items-center gap-2 rounded-full border border-google-blue/20 bg-google-blue/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-google-blue">
-              Why Choose Us
-            </span>
+            <span className="badge-pill">Why Choose Us</span>
             <h2 className="mt-4 font-display text-3xl font-extrabold sm:text-4xl md:text-5xl">
               Professional SEO Solutions in Sri Lanka — Trusted by Businesses Across the Island
             </h2>
@@ -197,13 +195,13 @@ const Home = () => {
 
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              { icon: TrendingUp, title: "We Lift You Up", text: "We focus on your business goals — more customers, more sales, sustainable growth.", iconCls: "bg-google-blue/10 text-google-blue" },
-              { icon: MessageCircle, title: "We Keep You Informed", text: "Full transparency. Regular updates and clear reporting on every campaign.", iconCls: "bg-google-red/10 text-google-red" },
-              { icon: Target, title: "Custom SEO Strategies", text: "Tailored to your industry, business size, customers, and competitors in Sri Lanka.", iconCls: "bg-google-yellow/15 text-google-yellow" },
-              { icon: Users, title: "Part of Your Team", text: "We work as an extension of your business — aligned to your goals and your market.", iconCls: "bg-google-green/10 text-google-green" },
+              { icon: TrendingUp, title: "We Lift You Up", text: "We focus on your business goals — more customers, more sales, sustainable growth." },
+              { icon: MessageCircle, title: "We Keep You Informed", text: "Full transparency. Regular updates and clear reporting on every campaign." },
+              { icon: Target, title: "Custom SEO Strategies", text: "Tailored to your industry, business size, customers, and competitors in Sri Lanka." },
+              { icon: Users, title: "Part of Your Team", text: "We work as an extension of your business — aligned to your goals and your market." },
             ].map((f) => (
               <article key={f.title} className="card-feature">
-                <div className={`inline-flex h-12 w-12 items-center justify-center rounded-xl ${f.iconCls}`}>
+                <div className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent">
                   <f.icon className="size-5" />
                 </div>
                 <h3 className="mt-4 font-display text-lg font-bold">{f.title}</h3>
@@ -219,32 +217,30 @@ const Home = () => {
         <div className="container-tight">
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div>
-              <span className="inline-flex items-center gap-2 rounded-full border border-google-green/25 bg-google-green/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-google-green">
-                SEO Benefits
-              </span>
+              <span className="badge-pill">SEO Benefits</span>
               <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight sm:text-4xl">
-                What You Gain When You Invest in <span className="text-gradient-google">SEO in Sri Lanka</span>
+                What You Gain When You Invest in <span className="text-gradient-accent">SEO in Sri Lanka</span>
               </h2>
               <p className="mt-5 text-muted-foreground">
                 Whether you are a startup or an established Sri Lankan business, professional SEO drives more sales,
                 generates new leads, and fuels rapid growth — without the recurring cost of paid ads.
               </p>
-              <Button asChild size="lg" className="mt-8 bg-google-blue text-white hover:bg-google-blue/90">
+              <Button asChild variant="hero" size="lg" className="mt-8">
                 <Link to="/services">Explore SEO Services <ArrowRight className="size-4" /></Link>
               </Button>
             </div>
 
             <div className="grid gap-4 sm:grid-cols-2">
               {[
-                { icon: Globe, title: "Increase Google Visibility", text: "Higher SERP rankings = more customers finding your business on Google Sri Lanka.", color: "text-google-blue" },
-                { icon: Users, title: "Expand Customer Base", text: "Quality traffic — visitors actively searching for what you offer.", color: "text-google-red" },
-                { icon: BarChart3, title: "Increase Sales & Revenue", text: "More leads, more sales, more growth — without recurring ad spend.", color: "text-google-green" },
-                { icon: Search, title: "Full Website Audit", text: "Complete optimisation from technical fixes to content enhancement.", color: "text-google-yellow" },
-                { icon: Zap, title: "Page-by-Page Optimisation", text: "We fix what holds each page back and boost keyword targeting.", color: "text-google-blue" },
-                { icon: LineChart, title: "Performance Monitoring", text: "Continuous tracking with advanced tools for cost-effective results.", color: "text-google-red" },
+                { icon: Globe, title: "Increase Google Visibility", text: "Higher SERP rankings = more customers finding your business on Google Sri Lanka." },
+                { icon: Users, title: "Expand Customer Base", text: "Quality traffic — visitors actively searching for what you offer." },
+                { icon: BarChart3, title: "Increase Sales & Revenue", text: "More leads, more sales, more growth — without recurring ad spend." },
+                { icon: Search, title: "Full Website Audit", text: "Complete optimisation from technical fixes to content enhancement." },
+                { icon: Zap, title: "Page-by-Page Optimisation", text: "We fix what holds each page back and boost keyword targeting." },
+                { icon: LineChart, title: "Performance Monitoring", text: "Continuous tracking with advanced tools for cost-effective results." },
               ].map((b) => (
-                <div key={b.title} className="rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-google-blue/40 hover:shadow-google">
-                  <b.icon className={`size-5 ${b.color}`} />
+                <div key={b.title} className="rounded-2xl border border-border bg-card p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-card">
+                  <b.icon className="size-5 text-accent" />
                   <h3 className="mt-3 font-display text-base font-bold">{b.title}</h3>
                   <p className="mt-1.5 text-sm text-muted-foreground">{b.text}</p>
                 </div>
@@ -259,9 +255,7 @@ const Home = () => {
         <div className="container-tight">
           <div className="flex flex-col items-end justify-between gap-6 sm:flex-row">
             <div className="max-w-2xl">
-              <span className="inline-flex items-center gap-2 rounded-full border border-google-red/25 bg-google-red/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-google-red">
-                SEO Services
-              </span>
+              <span className="badge-pill">SEO Services</span>
               <h2 className="mt-4 font-display text-3xl font-extrabold sm:text-4xl">
                 Complete SEO services for Sri Lankan businesses
               </h2>
@@ -277,12 +271,12 @@ const Home = () => {
 
           <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {[
-              { title: "SEO Consulting", text: "Free initial consultation, business + competitor analysis, monthly strategy reviews.", numCls: "text-google-blue" },
-              { title: "Website SEO Audit", text: "Full technical audit, content gap analysis, Core Web Vitals & penalty risk.", numCls: "text-google-red" },
-              { title: "Keyword Research", text: "High-intent, localised Sri Lanka keywords mapped to the right pages.", numCls: "text-google-yellow" },
-              { title: "On-Site SEO", text: "Title tags, headers, URLs, internal links, schema, mobile & speed.", numCls: "text-google-green" },
-              { title: "Off-Site SEO", text: "Quality backlinks, guest posting, citations, brand mentions, outreach.", numCls: "text-google-blue" },
-              { title: "Link Building", text: "Manual, white-hat link building from high-DA, niche-relevant sites.", numCls: "text-google-red" },
+              { title: "SEO Consulting", text: "Free initial consultation, business + competitor analysis, monthly strategy reviews." },
+              { title: "Website SEO Audit", text: "Full technical audit, content gap analysis, Core Web Vitals & penalty risk." },
+              { title: "Keyword Research", text: "High-intent, localised Sri Lanka keywords mapped to the right pages." },
+              { title: "On-Site SEO", text: "Title tags, headers, URLs, internal links, schema, mobile & speed." },
+              { title: "Off-Site SEO", text: "Quality backlinks, guest posting, citations, brand mentions, outreach." },
+              { title: "Link Building", text: "Manual, white-hat link building from high-DA, niche-relevant sites." },
             ].map((s, i) => (
               <Link
                 key={s.title}
@@ -290,8 +284,8 @@ const Home = () => {
                 className="card-feature group block"
               >
                 <div className="flex items-center justify-between">
-                  <span className={`font-display text-xs font-bold tracking-widest ${s.numCls}`}>0{i + 1}</span>
-                  <ArrowRight className="size-4 text-muted-foreground transition-all group-hover:translate-x-1 group-hover:text-google-blue" />
+                  <span className="font-display text-xs font-bold tracking-widest text-accent">0{i + 1}</span>
+                  <ArrowRight className="size-4 text-muted-foreground transition-all group-hover:translate-x-1 group-hover:text-accent" />
                 </div>
                 <h3 className="mt-4 font-display text-lg font-bold">{s.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{s.text}</p>
@@ -304,23 +298,21 @@ const Home = () => {
       {/* SEO CONSULTATION SESSION — paid 1-on-1 booking */}
       <ConsultationSection variant="soft" />
 
-      {/* PRICING TEASER — light Google-vibe */}
-      <section className="bg-google-soft py-16 sm:py-24">
+      {/* PRICING TEASER */}
+      <section className="bg-soft py-16 sm:py-24">
         <div className="container-tight">
           <div className="grid gap-12 lg:grid-cols-[1fr,1.1fr] lg:items-center">
             <div>
-              <span className="inline-flex items-center gap-2 rounded-full border border-google-blue/20 bg-google-blue/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-google-blue">
-                Transparent Pricing
-              </span>
+              <span className="badge-pill">Transparent Pricing</span>
               <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight sm:text-4xl md:text-5xl">
-                Affordable <span className="text-gradient-google">SEO Packages</span> in Sri Lanka
+                Affordable <span className="text-gradient-accent">SEO Packages</span> in Sri Lanka
               </h2>
               <p className="mt-5 text-muted-foreground">
                 Looking for the best SEO packages in Sri Lanka at a fair price? SeoFX offers three clearly structured
                 SEO plans designed to suit businesses at every stage — Starter, Business, and Premium.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <Button asChild size="lg" className="bg-google-blue text-white hover:bg-google-blue/90">
+                <Button asChild variant="hero" size="lg">
                   <Link to="/seo-packages-sri-lanka">View SEO Packages <ArrowRight className="size-4" /></Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
@@ -331,29 +323,29 @@ const Home = () => {
 
             <div className="grid gap-4 sm:grid-cols-3">
               {[
-                { name: "Starter", desc: "New to SEO", accent: "text-google-blue", border: "border-border" },
-                { name: "Business", desc: "Growing businesses", accent: "text-google-red", border: "border-google-blue/40", featured: true },
-                { name: "Premium", desc: "Rank #1 on Google", accent: "text-google-green", border: "border-border" },
+                { name: "Starter", desc: "New to SEO" },
+                { name: "Business", desc: "Growing businesses", featured: true },
+                { name: "Premium", desc: "Rank #1 on Google" },
               ].map((p) => (
                 <div
                   key={p.name}
-                  className={`relative rounded-2xl border bg-card p-5 shadow-card transition-all hover:shadow-google ${p.border} ${p.featured ? "lg:-translate-y-2" : ""}`}
+                  className={`relative rounded-2xl border bg-card p-5 shadow-card transition-all hover:shadow-glow ${p.featured ? "border-accent/50 lg:-translate-y-2" : "border-border"}`}
                 >
                   {p.featured && (
                     <>
-                      <div className="absolute inset-x-0 top-0 h-1 rounded-t-2xl bg-gradient-google" aria-hidden />
-                      <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 rounded-full bg-gradient-google px-3 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white">
+                      <div className="absolute inset-x-0 top-0 h-1 rounded-t-2xl bg-gradient-accent" aria-hidden />
+                      <span className="absolute -top-2.5 left-1/2 -translate-x-1/2 rounded-full bg-gradient-accent px-3 py-0.5 text-[10px] font-bold uppercase tracking-wider text-accent-foreground">
                         Popular
                       </span>
                     </>
                   )}
-                  <h3 className={`font-display text-xl font-bold ${p.accent}`}>{p.name}</h3>
+                  <h3 className={`font-display text-xl font-bold ${p.featured ? "text-accent" : "text-foreground"}`}>{p.name}</h3>
                   <p className="mt-1 text-sm text-muted-foreground">{p.desc}</p>
                   <ul className="mt-4 space-y-2 text-sm text-foreground">
-                    <li className="flex gap-2"><CheckCircle2 className="size-4 shrink-0 text-google-green" /> SEO consultation</li>
-                    <li className="flex gap-2"><CheckCircle2 className="size-4 shrink-0 text-google-green" /> Keyword research</li>
-                    <li className="flex gap-2"><CheckCircle2 className="size-4 shrink-0 text-google-green" /> Backlink building</li>
-                    <li className="flex gap-2"><CheckCircle2 className="size-4 shrink-0 text-google-green" /> Monthly reports</li>
+                    <li className="flex gap-2"><CheckCircle2 className="size-4 shrink-0 text-accent" /> SEO consultation</li>
+                    <li className="flex gap-2"><CheckCircle2 className="size-4 shrink-0 text-accent" /> Keyword research</li>
+                    <li className="flex gap-2"><CheckCircle2 className="size-4 shrink-0 text-accent" /> Backlink building</li>
+                    <li className="flex gap-2"><CheckCircle2 className="size-4 shrink-0 text-accent" /> Monthly reports</li>
                   </ul>
                 </div>
               ))}
