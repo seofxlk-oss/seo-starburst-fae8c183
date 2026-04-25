@@ -46,34 +46,34 @@ const Contact = () => {
           <div className="flex flex-col gap-4">
             <a
               href={`tel:${SITE.phoneRaw}`}
-              className="group flex items-center gap-5 rounded-2xl border border-border bg-card p-6 shadow-card transition-all hover:border-accent/50 hover:-translate-y-0.5"
+              className="group flex items-center gap-4 rounded-2xl border border-border bg-card p-4 shadow-card transition-all hover:border-accent/50 hover:-translate-y-0.5 sm:gap-5 sm:p-6"
             >
-              <div className="grid size-14 shrink-0 place-items-center rounded-xl bg-accent-gradient text-accent-foreground shadow-glow">
-                <Phone className="size-6" />
+              <div className="grid size-12 shrink-0 place-items-center rounded-xl bg-accent-gradient text-accent-foreground shadow-glow sm:size-14">
+                <Phone className="size-5 sm:size-6" />
               </div>
-              <div className="flex-1">
+              <div className="min-w-0 flex-1">
                 <div className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Call us now</div>
-                <div className="mt-0.5 font-display text-xl font-bold">{SITE.phone}</div>
+                <div className="mt-0.5 font-display text-base font-bold sm:text-xl">{SITE.phone}</div>
                 <div className="mt-0.5 text-xs text-muted-foreground">Secondary: {SITE.phone2}</div>
               </div>
-              <ArrowRight className="size-5 text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:text-accent" />
+              <ArrowRight className="size-5 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:text-accent" />
             </a>
 
             <a
               href={wa}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-5 rounded-2xl border border-border bg-card p-6 shadow-card transition-all hover:border-accent/50 hover:-translate-y-0.5"
+              className="group flex items-center gap-4 rounded-2xl border border-border bg-card p-4 shadow-card transition-all hover:border-accent/50 hover:-translate-y-0.5 sm:gap-5 sm:p-6"
             >
-              <div className="grid size-14 shrink-0 place-items-center rounded-xl bg-[#25D366] text-white shadow-glow">
-                <MessageCircle className="size-6" />
+              <div className="grid size-12 shrink-0 place-items-center rounded-xl bg-[#25D366] text-white shadow-glow sm:size-14">
+                <MessageCircle className="size-5 sm:size-6" />
               </div>
-              <div className="flex-1">
+              <div className="min-w-0 flex-1">
                 <div className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Chat on WhatsApp</div>
-                <div className="mt-0.5 font-display text-xl font-bold">Get instant reply</div>
+                <div className="mt-0.5 font-display text-base font-bold sm:text-xl">Get instant reply</div>
                 <div className="mt-0.5 text-xs text-muted-foreground">Fastest way to reach us</div>
               </div>
-              <ArrowRight className="size-5 text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:text-accent" />
+              <ArrowRight className="size-5 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:text-accent" />
             </a>
 
           </div>
