@@ -7,6 +7,11 @@ import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/CTASection";
 import { SITE } from "@/lib/site";
 
+export interface BlogFAQ {
+  q: string;
+  a: string;
+}
+
 interface BlogPostProps {
   slug: string;
   title: string;
@@ -23,6 +28,8 @@ interface BlogPostProps {
   /** Optional hero image URL. Defaults to site OG image. */
   image?: string;
   cta: string;
+  /** Optional keyword-targeted FAQs — render visible accordion + FAQPage JSON-LD. */
+  faqs?: BlogFAQ[];
   children: React.ReactNode;
 }
 
