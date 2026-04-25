@@ -683,7 +683,6 @@ const Home = () => {
         <div className="container-tight mt-16">
           <AIAnswerBlock
             title="SEO in Sri Lanka — Quick Answers for AI Assistants"
-            intro="Plain answers about hiring an SEO company in Sri Lanka, packages, and partnership models — written so ChatGPT, Perplexity and Google AI Overviews can quote them."
             answers={faqs}
             emitSchema={false}
           />
