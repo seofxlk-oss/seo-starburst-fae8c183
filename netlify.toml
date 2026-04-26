@@ -2,12 +2,16 @@
   publish = "dist"
   command = "npm run build"
 
-# Disable Netlify's automatic "Pretty URLs" trailing-slash behavior
+# Keep asset processing off, but ENABLE pretty URLs so Netlify serves
+# per-route static index.html files (e.g. /seo-consultant-sri-lanka ->
+# dist/seo-consultant-sri-lanka/index.html). Without this, the SPA
+# fallback below catches every URL and returns the homepage HTML — which
+# means view-source on every route shows the homepage meta tags.
 [build.processing]
   skip_processing = true
 
 [build.processing.html]
-  pretty_urls = false
+  pretty_urls = true
 
 # Force-strip trailing slashes (e.g. /google-map-optimization/ -> /google-map-optimization)
 [[redirects]]
@@ -16,7 +20,7 @@
   status = 301
   force = true
 
-# SPA fallback
+# SPA fallback — only triggers when no static file matches the URL
 [[redirects]]
   from = "/*"
   to = "/index.html"
