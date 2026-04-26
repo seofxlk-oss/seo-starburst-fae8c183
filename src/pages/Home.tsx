@@ -3,6 +3,7 @@ import {
   ArrowRight, Search, TrendingUp, Users, Target, BarChart3, MessageCircle,
   CheckCircle2, Award, ShieldCheck, Sparkles, Phone, Globe, Zap, LineChart,
   Briefcase, Megaphone, Code2, Handshake, Star, Quote, Trophy, Calendar,
+  Rocket, Crown, MapPin,
 } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { Layout } from "@/components/Layout";
@@ -145,6 +146,7 @@ const Home = () => {
       unit: "/ session",
       tagline: "One-time strategy session",
       goal: "Get a clear roadmap before you spend",
+      icon: Calendar,
       features: ["60-min 1-on-1 with senior SEO", "Keyword & competitor report", "Written SEO roadmap", "Budget & agency advice"],
       cta: "Book Session",
       href: "/contact-us",
@@ -154,6 +156,7 @@ const Home = () => {
       name: "Starter",
       tagline: "Small business & startups",
       goal: "Establish your Google presence",
+      icon: Rocket,
       features: ["SEO audit & strategy", "Keyword research", "On-page optimisation", "Backlink building", "Monthly report"],
       cta: "WhatsApp Us",
       href: wa,
@@ -164,6 +167,7 @@ const Home = () => {
       tagline: "Growing businesses",
       goal: "Generate consistent monthly leads",
       featured: true,
+      icon: TrendingUp,
       features: ["Everything in Starter", "Advanced competitor analysis", "Technical SEO", "Stronger link building", "Detailed reporting"],
       cta: "WhatsApp Us",
       href: wa,
@@ -173,6 +177,7 @@ const Home = () => {
       name: "Premium",
       tagline: "Dominate competitive industries",
       goal: "Outrank every competitor & own page 1",
+      icon: Crown,
       features: ["Everything in Business", "High-priority keywords", "Multi-page optimisation", "Aggressive link building", "Strategy reviews"],
       cta: "WhatsApp Us",
       href: wa,
@@ -182,6 +187,7 @@ const Home = () => {
       name: "Google Map Optimization",
       tagline: "Local businesses & service areas",
       goal: "Rank in the Google Maps 3-Pack",
+      icon: MapPin,
       features: [
         "Google Business Profile setup & optimisation",
         "Local keyword & geo targeting",
@@ -451,62 +457,98 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
-            {packages.map((p) => (
-              <article
-                key={p.name}
-                className={`relative flex flex-col rounded-3xl border p-6 transition-all hover:-translate-y-1 ${
-                  p.featured
-                    ? "border-accent bg-hero text-white shadow-glow"
-                    : "border-border bg-card shadow-card"
-                }`}
-              >
-                {p.featured && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-accent-gradient px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-accent-foreground shadow-glow">
-                    <Sparkles className="-mt-0.5 mr-1 inline size-3" /> Most Popular
-                  </span>
-                )}
-                <h3 className="font-display text-xl font-extrabold">{p.name}</h3>
-                <p className={`mt-1 text-xs ${p.featured ? "text-white/70" : "text-accent"}`}>{p.tagline}</p>
-
-                {p.price ? (
-                  <div className="mt-4 flex items-baseline gap-1">
-                    <span className="font-display text-2xl font-extrabold sm:text-3xl">{p.price}</span>
-                    <span className={`text-xs ${p.featured ? "text-white/70" : "text-muted-foreground"}`}>{p.unit}</span>
-                  </div>
-                ) : (
-                  <div className="mt-4" />
-                )}
-
-                <p className={`mt-3 rounded-lg px-3 py-2 text-xs font-semibold ${p.featured ? "bg-white/10 text-white" : "bg-accent/10 text-accent"}`}>
-                  🎯 {p.goal}
-                </p>
-
-                <ul className="mt-5 flex-1 space-y-2 text-sm">
-                  {p.features.map((f) => (
-                    <li key={f} className="flex gap-2">
-                      <CheckCircle2 className={`mt-0.5 size-4 shrink-0 ${p.featured ? "text-accent" : "text-accent"}`} />
-                      <span>{f}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <Button
-                  asChild
-                  variant={p.featured ? "hero" : p.external ? "whatsapp" : "outline"}
-                  size="lg"
-                  className="mt-6 w-full"
+          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+            {packages.map((p) => {
+              const Icon = p.icon;
+              return (
+                <article
+                  key={p.name}
+                  className={`group relative flex flex-col overflow-hidden rounded-3xl border p-6 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-glow ${
+                    p.featured
+                      ? "border-accent/60 bg-hero text-white shadow-glow ring-1 ring-accent/40 xl:scale-[1.03]"
+                      : "border-border bg-card shadow-card hover:border-accent/40"
+                  }`}
                 >
-                  {p.external ? (
-                    <a href={p.href} target="_blank" rel="noopener noreferrer">
-                      <MessageCircle className="size-4" /> {p.cta}
-                    </a>
-                  ) : (
-                    <Link to={p.href}>{p.cta} <ArrowRight className="size-4" /></Link>
+                  {/* Top accent stripe */}
+                  <div
+                    className={`absolute inset-x-0 top-0 h-1 ${
+                      p.featured ? "bg-accent-gradient" : "bg-gradient-to-r from-transparent via-accent/40 to-transparent opacity-0 transition-opacity group-hover:opacity-100"
+                    }`}
+                  />
+
+                  {p.featured && (
+                    <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-accent-gradient px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-accent-foreground shadow-glow">
+                      <Sparkles className="-mt-0.5 mr-1 inline size-3" /> Most Popular
+                    </span>
                   )}
-                </Button>
-              </article>
-            ))}
+
+                  {/* Icon badge */}
+                  <div
+                    className={`mb-4 inline-flex size-12 items-center justify-center rounded-2xl ${
+                      p.featured
+                        ? "bg-white/15 text-white ring-1 ring-white/20"
+                        : "bg-accent/10 text-accent ring-1 ring-accent/20 group-hover:bg-accent group-hover:text-accent-foreground"
+                    } transition-colors`}
+                  >
+                    {Icon && <Icon className="size-6" />}
+                  </div>
+
+                  <h3 className="font-display text-xl font-extrabold leading-tight">{p.name}</h3>
+                  <p className={`mt-1 text-xs font-medium ${p.featured ? "text-white/70" : "text-accent"}`}>{p.tagline}</p>
+
+                  {/* Price area — fixed height so all cards align */}
+                  <div className="mt-4 min-h-[44px]">
+                    {p.price ? (
+                      <div className="flex items-baseline gap-1">
+                        <span className="font-display text-2xl font-extrabold sm:text-3xl">{p.price}</span>
+                        <span className={`text-xs ${p.featured ? "text-white/70" : "text-muted-foreground"}`}>{p.unit}</span>
+                      </div>
+                    ) : (
+                      <span className={`text-xs font-semibold uppercase tracking-wider ${p.featured ? "text-white/60" : "text-muted-foreground"}`}>
+                        Custom quote
+                      </span>
+                    )}
+                  </div>
+
+                  <p
+                    className={`mt-3 flex items-start gap-2 rounded-xl px-3 py-2 text-xs font-semibold leading-relaxed ${
+                      p.featured ? "bg-white/10 text-white" : "bg-accent/10 text-accent"
+                    }`}
+                  >
+                    <Target className="mt-0.5 size-3.5 shrink-0" />
+                    <span>{p.goal}</span>
+                  </p>
+
+                  <ul className="mt-5 flex-1 space-y-2.5 text-sm">
+                    {p.features.map((f) => (
+                      <li key={f} className="flex gap-2">
+                        <CheckCircle2
+                          className={`mt-0.5 size-4 shrink-0 ${p.featured ? "text-accent" : "text-accent"}`}
+                        />
+                        <span className={p.featured ? "text-white/90" : "text-foreground/80"}>{f}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  <Button
+                    asChild
+                    variant={p.featured ? "hero" : p.external ? "whatsapp" : "outline"}
+                    size="lg"
+                    className="mt-6 w-full"
+                  >
+                    {p.external ? (
+                      <a href={p.href} target="_blank" rel="noopener noreferrer">
+                        <MessageCircle className="size-4" /> {p.cta}
+                      </a>
+                    ) : (
+                      <Link to={p.href}>
+                        {p.cta} <ArrowRight className="size-4" />
+                      </Link>
+                    )}
+                  </Button>
+                </article>
+              );
+            })}
           </div>
 
           <p className="mt-8 text-center text-sm text-muted-foreground">
