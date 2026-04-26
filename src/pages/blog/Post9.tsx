@@ -57,7 +57,7 @@ const Post9 = () => (
     <p>Any SEO company promising dramatically faster results should be viewed with scepticism unless they have verifiable proof of achieving this for comparable businesses.</p>
 
     <h2>In-House SEO vs. Hiring an SEO Company in Sri Lanka</h2>
-    <p>Some businesses consider building an in-house SEO capability rather than outsourcing to an SEO company. While this can work, it requires significant investment in training, tools, and management. For most SMEs in Sri Lanka, partnering with an experienced SEO company delivers better results faster and at a lower total cost.</p>
+    <p>Some businesses consider building an in-house SEO capability rather than outsourcing to an SEO company. While this can work, it requires significant investment in training, tools, and management. For most SMEs in Sri Lanka, partnering with an experienced <Link to="/seo-specialist-sri-lanka" className="text-accent underline-offset-4 hover:underline">SEO expert in Sri Lanka</Link> or full agency delivers better results faster and at a lower total cost. Start with a free <Link to="/seo-consultant-sri-lanka" className="text-accent underline-offset-4 hover:underline">SEO consultation in Sri Lanka</Link> to scope your needs.</p>
 
     <h2>SeoFX — The SEO Company Sri Lankan Businesses Trust</h2>
     <p>SeoFX has worked with businesses across Sri Lanka from diverse industries, helping them increase organic traffic, improve Google rankings, and build sustainable lead generation engines through strategic SEO. We bring deep local market knowledge, proven methodology, and genuine commitment to every campaign we run.</p>

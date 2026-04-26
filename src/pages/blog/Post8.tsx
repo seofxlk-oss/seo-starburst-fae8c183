@@ -45,7 +45,7 @@ const Post8 = () => (
     <p>SEO in Sri Lanka is different from SEO in the UK or the US. Search volumes, competitor landscapes, and consumer behaviour in Sri Lanka require local expertise. The best SEO company understands the Sri Lankan market at a granular level — which keywords drive real business, which local competitors dominate which niches, and how to outrank them.</p>
 
     <h2>Criterion 4: Full-Spectrum SEO Capability</h2>
-    <p>The best SEO companies in Sri Lanka do not specialise in just one area. They deliver comprehensive campaigns covering technical SEO, on-page optimisation, content strategy, and backlink building — because all of these elements work together. A company that only focuses on one aspect will deliver incomplete results.</p>
+    <p>The best SEO companies in Sri Lanka do not specialise in just one area. They deliver comprehensive campaigns covering technical SEO, on-page optimisation, content strategy, and backlink building — because all of these elements work together. A company that only focuses on one aspect will deliver incomplete results. Browse our full <Link to="/services" className="text-accent underline-offset-4 hover:underline">SEO services in Sri Lanka</Link> and see what's covered in each <Link to="/seo-packages-sri-lanka" className="text-accent underline-offset-4 hover:underline">SEO package and price tier in Sri Lanka</Link>.</p>
 
     <h2>Criterion 5: Long-Term Partnership Mindset</h2>
     <p>SEO is not a one-off project. It is a long-term investment that compounds over time. The best SEO company in Sri Lanka will approach your campaign as a long-term partnership, continuously monitoring, adjusting, and improving your strategy as Google's algorithm and your competitive landscape evolve.</p>
