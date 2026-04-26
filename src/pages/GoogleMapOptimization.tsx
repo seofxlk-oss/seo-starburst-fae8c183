@@ -568,7 +568,84 @@ const GoogleMapOptimization = () => {
         </div>
       </section>
 
-      {/* COMPARISON */}
+      {/* INDUSTRIES + REAL SEARCH TERMS */}
+      <section className="bg-background py-20 sm:py-24">
+        <div className="container-tight">
+          <div className="max-w-3xl">
+            <p className="text-xs font-bold uppercase tracking-[0.14em] text-primary">
+              Industry-specific search demand
+            </p>
+            <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl">
+              Google Map Optimization Sri Lanka for Every Industry
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-muted-foreground">
+              These are the exact searches your future customers are typing into Google right now. If your business is not in the top 3, someone else is taking the call.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {INDUSTRY_SEARCHES.map((ind) => (
+              <article
+                key={ind.name}
+                className="group relative flex flex-col rounded-2xl border border-border bg-card p-6 transition-all hover:-translate-y-1 hover:shadow-card"
+              >
+                {/* Google color accent bar */}
+                <div className="absolute left-0 top-0 h-[3px] w-full overflow-hidden rounded-t-2xl flex">
+                  <div className="h-full flex-1 bg-google-blue" />
+                  <div className="h-full flex-1 bg-google-red" />
+                  <div className="h-full flex-1 bg-google-yellow" />
+                  <div className="h-full flex-1 bg-google-green" />
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <div className="flex size-10 items-center justify-center rounded-lg bg-google-blue/10">
+                    <ind.icon className="size-5 text-google-blue" aria-hidden />
+                  </div>
+                  <h3 className="font-display text-lg font-bold text-foreground">{ind.name}</h3>
+                </div>
+
+                <p className="mt-5 text-[11px] font-bold uppercase tracking-[0.14em] text-muted-foreground">
+                  What people search on Google
+                </p>
+                <ul className="mt-2 space-y-1.5">
+                  {ind.searches.map((s) => (
+                    <li
+                      key={s}
+                      className="flex items-start gap-2 text-sm text-foreground"
+                    >
+                      <Search className="mt-0.5 size-3.5 shrink-0 text-google-blue" aria-hidden />
+                      <span className="italic text-muted-foreground">"{s}"</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mt-5 rounded-lg border-l-2 border-google-green bg-soft px-3 py-2.5">
+                  <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-google-green">
+                    Why it matters
+                  </p>
+                  <p className="mt-1 text-[13px] leading-relaxed text-foreground">{ind.why}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-12 rounded-2xl border border-border bg-soft p-8 text-center">
+            <p className="font-display text-lg font-bold text-foreground">
+              Don't see your industry?
+            </p>
+            <p className="mt-2 text-sm text-muted-foreground">
+              If your customers search locally on Google, Google Map Optimization will work for you.
+            </p>
+            <Button asChild className="mt-5">
+              <Link to="/contact">
+                Talk to a consultant <ArrowRight className="ml-2 size-4" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+
       <section className="bg-soft py-20 sm:py-24">
         <div className="container-tight max-w-5xl">
           <div className="text-center">
