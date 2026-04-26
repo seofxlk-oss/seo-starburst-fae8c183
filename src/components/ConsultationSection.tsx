@@ -115,7 +115,7 @@ export const ConsultationSection = ({
       price: priceLkr,
       priceCurrency: "LKR",
       availability: "https://schema.org/InStock",
-      url: "https://seofx.lk/seo-consultation-sri-lanka",
+      url: "https://seofx.lk/seo-consultant-sri-lanka",
     },
   };
 
@@ -195,7 +195,7 @@ export const ConsultationSection = ({
 
           {/* Pricing card — entire card links to consultation page */}
           <Link
-            to="/seo-consultation-sri-lanka"
+            to="/seo-consultant-sri-lanka"
             aria-label="View full SEO Consultation Session details"
             className="group relative block overflow-hidden rounded-3xl border-2 border-google-blue/30 bg-card p-7 sm:p-9 shadow-google transition-all hover:-translate-y-1 hover:border-google-blue/60 hover:shadow-google focus:outline-none focus-visible:ring-2 focus-visible:ring-google-blue focus-visible:ring-offset-2"
           >

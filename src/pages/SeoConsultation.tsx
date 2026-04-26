@@ -272,7 +272,7 @@ const SeoConsultation = () => {
       priceCurrency: "LKR",
       name: "SEO Consultation Package",
     },
-    url: "https://seofx.lk/seo-consultation-sri-lanka",
+    url: "https://seofx.lk/seo-consultant-sri-lanka",
   };
 
   const faqJsonLd = faqSchema(FAQS);
@@ -282,7 +282,7 @@ const SeoConsultation = () => {
       <SEO
         title="SEO Consultant Sri Lanka – #1 SEO Consulting Services & Strategy"
         description="SEO consultant Sri Lanka offering SEO consulting services, audits, keyword research & ranking strategies to grow your business online. Get started today."
-        canonical="/seo-consultation-sri-lanka"
+        canonical="/seo-consultant-sri-lanka"
         keywords="SEO consultant Sri Lanka, SEO consulting services Sri Lanka, SEO consultation Sri Lanka, SEO strategy Sri Lanka, SEO audit Sri Lanka, keyword research Sri Lanka, SEO before website, website SEO planning"
         jsonLd={[orgSchema(), websiteSchema(), serviceSchema, faqJsonLd]}
       />
@@ -387,7 +387,7 @@ const SeoConsultation = () => {
                   </div>
                   <div className="leading-tight">
                     <div className="font-semibold text-foreground">SeoFX</div>
-                    <div className="text-muted-foreground">https://seofx.lk › seo-consultation-sri-lanka</div>
+                    <div className="text-muted-foreground">https://seofx.lk › seo-consultant-sri-lanka</div>
                   </div>
                   <span className="ml-auto inline-flex items-center gap-1 rounded-full bg-google-green/10 px-2 py-0.5 text-[10px] font-bold text-google-green">
                     <TrendingUp className="size-3" /> #1

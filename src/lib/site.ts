@@ -16,7 +16,7 @@ export const NAV_LINKS = [
   { label: "About", href: "/seo-specialist-sri-lanka" },
   { label: "Services", href: "/services" },
   { label: "Industries", href: "/industries" },
-  { label: "SEO Consultation", href: "/seo-consultation-sri-lanka" },
+  { label: "SEO Consultation", href: "/seo-consultant-sri-lanka" },
   { label: "Pricing", href: "/seo-packages-sri-lanka" },
 ];
 
