@@ -3,7 +3,7 @@ import {
   Search, Target, Trophy, ClipboardList, Wallet, Handshake,
   CheckCircle2, Clock, FileText, MapPin, CreditCard, ArrowRight, Sparkles,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+
 
 interface ConsultationSectionProps {
   /** Section variant — `light` for white pages, `soft` for sections with subtle bg. */
