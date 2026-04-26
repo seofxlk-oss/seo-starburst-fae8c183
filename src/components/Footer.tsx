@@ -62,8 +62,11 @@ export const Footer = () => {
 
         <div className="mt-12 border-t border-white/10 pt-6">
           <p className="text-center text-xs font-medium text-white/60">
-            SEO Sri Lanka <span className="mx-2 text-white/30">|</span> SEO Company Sri Lanka{" "}
-            <span className="mx-2 text-white/30">|</span> SEO Specialist Sri Lanka
+            <a href="https://seofx.lk/services" className="hover:text-accent">SEO Services in Sri Lanka</a>
+            <span className="mx-2 text-white/30">|</span>
+            <a href="https://seofx.lk/seo-consultant-sri-lanka" className="hover:text-accent">SEO Consultant Sri Lanka</a>
+            <span className="mx-2 text-white/30">|</span>
+            <a href="https://seofx.lk/" className="hover:text-accent">SEO Company in Sri Lanka</a>
           </p>
           <div className="mt-4 flex flex-col gap-3 text-xs text-white/50 md:flex-row md:items-center md:justify-between">
             <p>© {new Date().getFullYear()} SeoFX. All Rights Reserved. Best SEO Company in Sri Lanka.</p>
