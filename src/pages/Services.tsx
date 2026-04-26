@@ -181,6 +181,38 @@ const Services = () => {
             <strong className="text-foreground"> SEO service</strong> a Sri Lankan business needs to rank #1 on Google,
             generate quality leads and grow revenue, all under one trusted <strong className="text-foreground">SEO company in Sri Lanka</strong>.
           </p>
+
+          <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
+            {STATS.map((s) => (
+              <div key={s.label} className="rounded-2xl border border-border bg-card p-4 text-center shadow-sm">
+                <div className="font-display text-2xl font-extrabold text-accent sm:text-3xl">{s.num}</div>
+                <div className="mt-1 text-xs text-muted-foreground sm:text-sm">{s.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Intro long-form copy for SEO */}
+      <section className="container-tight pb-12">
+        <div className="mx-auto max-w-4xl space-y-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
+          <p>
+            Looking for the best <strong className="text-foreground">SEO services in Sri Lanka</strong>? SeoFX is a results-driven
+            <strong className="text-foreground"> SEO company in Sri Lanka</strong> helping local businesses, e-commerce stores and
+            global brands dominate Google search. Whether you're in Colombo, Kandy, Galle or Jaffna, our
+            <strong className="text-foreground"> SEO service</strong> is built to deliver qualified organic traffic, higher rankings and real revenue.
+          </p>
+          <p>
+            Unlike agencies that focus only on rankings, our <strong className="text-foreground">SEO services in Sri Lanka</strong> are
+            engineered around business outcomes — leads, sales and ROI. We combine deep technical SEO, strategic content,
+            ethical link building and conversion-focused on-page optimisation to make sure every visitor we send to your site
+            becomes a customer.
+          </p>
+          <p>
+            From SEO audits and keyword research to local SEO, e-commerce SEO and enterprise SEO consulting, our Sri Lankan
+            SEO specialists work as an extension of your team. Every campaign is custom-built for your industry, market and
+            competition — never templated, never outsourced.
+          </p>
         </div>
       </section>
 
