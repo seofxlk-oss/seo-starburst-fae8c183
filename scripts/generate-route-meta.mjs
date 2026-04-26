@@ -103,6 +103,13 @@ const pageMeta = new Map([
     keywords: "google map optimization sri lanka, google maps seo sri lanka, google my business sri lanka, google business profile sri lanka, local seo sri lanka, gmb optimization sri lanka, local 3-pack sri lanka, near me seo sri lanka",
     ogImageAlt: "Google Map Optimization Sri Lanka by SeoFX — one-time investment, lifetime visibility",
   }],
+  ["/seo-sri-lanka", {
+    title: "SEO Sri Lanka — Professional SEO Services to Rank on Google | SeoFX",
+    description: "Looking for SEO in Sri Lanka? Learn how SEO works, why page-one rankings transform a business, and how SeoFX helps Sri Lankan businesses dominate Google.",
+    canonical: "/seo-sri-lanka",
+    keywords: "seo sri lanka, seo company sri lanka, seo specialist sri lanka, seo services sri lanka, search engine optimisation sri lanka, google ranking sri lanka, local seo sri lanka",
+    ogImageAlt: "SEO Sri Lanka — Professional SEO services by SeoFX",
+  }],
   ["/industries", {
     title: "Industry SEO Sri Lanka — Hotels, Travel, Ecommerce & More | SeoFX",
     description: "Industry-specific SEO services in Sri Lanka — hotels, travel, furniture, education, healthcare, ecommerce, exports & fashion. Rank locally and globally.",
