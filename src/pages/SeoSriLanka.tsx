@@ -588,6 +588,59 @@ const SeoSriLanka = () => {
         </ol>
       </section>
 
+      {/* MID-PAGE CTA BANNER */}
+      <section className="relative overflow-hidden bg-hero py-14 text-white">
+        <div className="absolute inset-0 bg-gradient-radial opacity-70" aria-hidden />
+        <div className="container-tight relative">
+          <div className="grid gap-8 lg:grid-cols-12 lg:items-center">
+            <div className="lg:col-span-7">
+              <span className="badge-pill-light">Free SEO Audit · No Obligation</span>
+              <h2 className="mt-3 font-display text-3xl font-extrabold leading-tight sm:text-4xl">
+                Find out exactly where your business ranks in Sri Lanka — and what it would take to reach page one.
+              </h2>
+              <p className="mt-3 max-w-2xl text-base text-white/75">
+                Get a free SEO Sri Lanka audit covering your current rankings, competitor gap analysis, technical
+                health and a clear, no-jargon roadmap to grow with SEO. Delivered by real SEO specialists — not bots.
+              </p>
+              <ul className="mt-5 grid gap-2 text-sm text-white/85 sm:grid-cols-2">
+                <li className="flex items-center gap-2"><Check className="size-4 text-accent" /> Real keyword opportunities</li>
+                <li className="flex items-center gap-2"><Check className="size-4 text-accent" /> Competitor gap analysis</li>
+                <li className="flex items-center gap-2"><Check className="size-4 text-accent" /> Technical SEO health check</li>
+                <li className="flex items-center gap-2"><Check className="size-4 text-accent" /> 6-month action roadmap</li>
+              </ul>
+            </div>
+            <div className="lg:col-span-5">
+              <div className="rounded-2xl border border-white/15 bg-white/5 p-6 backdrop-blur-sm">
+                <p className="font-display text-lg font-bold">Talk to a Sri Lankan SEO specialist today</p>
+                <p className="mt-1 text-sm text-white/70">No call centre. No sales script. Straight answers.</p>
+
+                <div className="mt-5 flex flex-col gap-3">
+                  <Button asChild variant="hero" size="lg">
+                    <Link to="/contact-us">
+                      Get My Free SEO Audit <ArrowRight className="size-4" />
+                    </Link>
+                  </Button>
+                  <Button asChild variant="whatsapp" size="lg">
+                    <a href={wa} target="_blank" rel="noopener noreferrer">
+                      <MessageCircle className="size-4" /> WhatsApp Us Now
+                    </a>
+                  </Button>
+                  <Button asChild variant="outlineLight" size="lg">
+                    <a href={`tel:${SITE.phoneRaw}`}>
+                      <Phone className="size-4" /> Call {SITE.phone}
+                    </a>
+                  </Button>
+                </div>
+
+                <p className="mt-4 text-center text-[11px] text-white/55">
+                  Trusted by Sri Lankan businesses across hotels, healthcare, e-commerce, education &amp; professional services.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* COMPARISON TABLE */}
       <section id="comparison" className="bg-soft py-16 sm:py-20">
         <div className="container-tight">
