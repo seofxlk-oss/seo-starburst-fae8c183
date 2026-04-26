@@ -18,6 +18,9 @@ export const NAV_LINKS = [
   { label: "Industries", href: "/industries" },
   { label: "Pricing", href: "/seo-packages-sri-lanka" },
   { label: "Case Studies", href: "/case-studies" },
+];
+
+export const FOOTER_LINKS = [
   { label: "Blog", href: "/blog" },
   { label: "FAQ", href: "/faq" },
 ];
