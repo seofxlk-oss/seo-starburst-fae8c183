@@ -1,4 +1,4 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { ArrowRight, CheckCircle2, MapPin, Phone } from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { Layout } from "@/components/Layout";
@@ -23,7 +23,8 @@ const intentClasses: Record<IntentBucket, string> = {
 };
 
 const IndustryPage = () => {
-  const { slug } = useParams<{ slug: string }>();
+  const { pathname } = useLocation();
+  const slug = pathname.replace(/^\/+/, "").split("/")[0];
   const industry = getIndustryBySlug(slug);
 
   if (!industry) return <NotFound />;
