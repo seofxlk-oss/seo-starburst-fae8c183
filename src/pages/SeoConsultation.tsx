@@ -290,18 +290,22 @@ const SeoConsultation = () => {
       <Breadcrumbs items={[{ label: "SEO Consultation" }]} />
 
       {/* HERO */}
-      <section className="relative overflow-hidden bg-hero py-20 text-white sm:py-28">
-        <div className="absolute inset-0 bg-gradient-radial opacity-60" aria-hidden />
+      <section className="relative overflow-hidden bg-soft py-20 sm:py-28">
+        {/* Soft Google-tinted blurs */}
+        <div className="pointer-events-none absolute -top-20 -left-20 h-72 w-72 rounded-full bg-google-blue/10 blur-3xl" aria-hidden />
+        <div className="pointer-events-none absolute -bottom-20 -right-20 h-80 w-80 rounded-full bg-accent/10 blur-3xl" aria-hidden />
+        <div className="h-0.5 w-full bg-gradient-accent opacity-70 absolute top-0 left-0" aria-hidden />
+
         <div className="container-tight relative text-center">
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-accent">
+          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-google-red shadow-card">
             <AlertTriangle className="size-3.5" /> Critical Advice for Every Business in Sri Lanka
           </span>
-          <h1 className="mx-auto mt-6 max-w-4xl font-display text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl md:text-6xl">
+          <h1 className="mx-auto mt-6 max-w-4xl font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-foreground sm:text-5xl md:text-6xl">
             Building a Website Without SEO is Like Building a{" "}
-            <span className="text-red-300">House Without</span> an{" "}
-            <span className="text-accent">Architect.</span>
+            <span className="text-google-red">House Without</span> an{" "}
+            <span className="text-gradient-accent">Architect.</span>
           </h1>
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/75 sm:text-lg">
+          <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
             You will spend millions. You will get something that looks finished. But the foundations
             will be wrong — and rebuilding costs 5× more than planning correctly from day one.
           </p>
@@ -309,11 +313,11 @@ const SeoConsultation = () => {
             <Button asChild variant="hero" size="lg">
               <a href="#package">See the Rs. 50,000 Consultation Package</a>
             </Button>
-            <Button asChild variant="outlineLight" size="lg">
+            <Button asChild variant="outline" size="lg">
               <a href="#who">Is This For You? ↓</a>
             </Button>
           </div>
-          <p className="mt-6 text-xs text-white/55">
+          <p className="mt-6 text-xs text-muted-foreground">
             For businesses, web development agencies & marketing companies in Sri Lanka
           </p>
         </div>
