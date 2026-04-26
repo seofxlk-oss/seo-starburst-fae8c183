@@ -192,7 +192,6 @@ const Home = () => {
     features: [
       "Google Business Profile setup & optimisation",
       "Local keyword & geo targeting",
-      "Citations & NAP consistency",
       "Review generation strategy",
       "Monthly local ranking report",
     ],
