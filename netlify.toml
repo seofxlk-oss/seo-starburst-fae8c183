@@ -2,6 +2,21 @@
   publish = "dist"
   command = "npm run build"
 
+# Disable Netlify's automatic "Pretty URLs" trailing-slash behavior
+[build.processing]
+  skip_processing = true
+
+[build.processing.html]
+  pretty_urls = false
+
+# Force-strip trailing slashes (e.g. /google-map-optimization/ -> /google-map-optimization)
+[[redirects]]
+  from = "/*/"
+  to = "/:splat"
+  status = 301
+  force = true
+
+# SPA fallback
 [[redirects]]
   from = "/*"
   to = "/index.html"
