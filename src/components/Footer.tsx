@@ -60,9 +60,15 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 text-xs text-white/50 md:flex-row md:items-center md:justify-between">
-          <p>© {new Date().getFullYear()} SeoFX. All Rights Reserved. Best SEO Company in Sri Lanka.</p>
-          <p>SeoFX — Sri Lanka's #1 SEO Company</p>
+        <div className="mt-12 border-t border-white/10 pt-6">
+          <p className="text-center text-xs font-medium text-white/60">
+            SEO Sri Lanka <span className="mx-2 text-white/30">|</span> SEO Company Sri Lanka{" "}
+            <span className="mx-2 text-white/30">|</span> SEO Specialist Sri Lanka
+          </p>
+          <div className="mt-4 flex flex-col gap-3 text-xs text-white/50 md:flex-row md:items-center md:justify-between">
+            <p>© {new Date().getFullYear()} SeoFX. All Rights Reserved. Best SEO Company in Sri Lanka.</p>
+            <p>SeoFX — Sri Lanka's #1 SEO Company</p>
+          </div>
         </div>
       </div>
     </footer>

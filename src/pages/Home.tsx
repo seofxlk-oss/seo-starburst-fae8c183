@@ -352,12 +352,15 @@ const Home = () => {
       <section className="py-16 sm:py-20" aria-labelledby="why-seo">
         <div className="container-tight">
           <div className="mx-auto max-w-3xl text-center">
-            <span className="badge-pill">Why SEO</span>
+            <span className="badge-pill">Why Choose Us</span>
             <h2 id="why-seo" className="mt-4 font-display text-3xl font-extrabold sm:text-4xl">
-              Why <span className="text-gradient-accent">SEO beats every other channel</span> in Sri Lanka
+              Why choose our <span className="text-gradient-accent">SEO Company in Sri Lanka</span>
             </h2>
             <p className="mt-5 text-base text-muted-foreground sm:text-lg">
-              Ads stop the moment you stop paying. SEO compounds. Here's why it's the highest-ROI marketing investment Sri Lankan businesses make.
+              Choosing the right <strong className="text-foreground">SEO specialist Sri Lanka</strong> can make a
+              significant difference in your business growth. We combine data-driven{" "}
+              <strong className="text-foreground">SEO Sri Lanka</strong> strategies with industry expertise to deliver
+              long-term success — ads stop the moment you stop paying, but SEO compounds.
             </p>
           </div>
 
@@ -404,10 +407,13 @@ const Home = () => {
             <div className="max-w-2xl">
               <span className="badge-pill">SEO Services</span>
               <h2 id="services-heading" className="mt-4 font-display text-3xl font-extrabold sm:text-4xl">
-                Everything you need to <span className="text-gradient-accent">rank #1 on Google.lk</span>
+                Our <span className="text-gradient-accent">SEO Sri Lanka</span> services to rank #1 on Google.lk
               </h2>
               <p className="mt-4 text-muted-foreground">
-                Complete SEO services in Sri Lanka — plus web development for businesses building from scratch.
+                As a leading <strong className="text-foreground">SEO company Sri Lanka</strong> businesses trust, we
+                offer complete SEO services — technical SEO, on-page optimisation, keyword research and link building.
+                Our team of experienced <strong className="text-foreground">SEO specialists in Sri Lanka</strong>{" "}
+                ensures your website ranks for competitive keywords and drives consistent results.
               </p>
             </div>
             <Button asChild variant="outline" size="lg" className="shrink-0">
