@@ -63,6 +63,7 @@ const Home = () => {
         { name: "Starter SEO Package", url: `${SITE.url}/seo-packages-sri-lanka#starter`, price: "29900" },
         { name: "Business SEO Package", url: `${SITE.url}/seo-packages-sri-lanka#business`, price: "59900" },
         { name: "Premium SEO Package", url: `${SITE.url}/seo-packages-sri-lanka#premium`, price: "99900" },
+        { name: "Google Map Optimization", url: `${SITE.url}/google-map-optimization` },
       ],
     }),
     faqSchema(faqs, { pageUrl: `${SITE.url}/` }),
@@ -176,6 +177,21 @@ const Home = () => {
       cta: "WhatsApp Us",
       href: wa,
       external: true,
+    },
+    {
+      name: "Google Map Optimization",
+      tagline: "Local businesses & service areas",
+      goal: "Rank in the Google Maps 3-Pack",
+      features: [
+        "Google Business Profile setup & optimisation",
+        "Local keyword & geo targeting",
+        "Citations & NAP consistency",
+        "Review generation strategy",
+        "Monthly local ranking report",
+      ],
+      cta: "Explore Map SEO",
+      href: "/google-map-optimization",
+      external: false,
     },
   ];
 
@@ -435,7 +451,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
             {packages.map((p) => (
               <article
                 key={p.name}
