@@ -83,7 +83,130 @@ const WHO = [
   { icon: Scale, type: "Professional services", desc: "Lawyers, accountants, consultants — trust starts on Google." },
 ];
 
-const PROCESS = [
+const INDUSTRY_SEARCHES = [
+  {
+    icon: Sofa,
+    name: "Furniture Shops",
+    searches: ["furniture shop near me", "sofa shop Colombo", "best furniture store Sri Lanka"],
+    why: "Google Map Optimization Sri Lanka helps furniture stores increase showroom visits and high-value sales.",
+  },
+  {
+    icon: Shirt,
+    name: "Clothing Stores",
+    searches: ["clothing shops near me", "ladies fashion Colombo", "best clothing store Sri Lanka"],
+    why: "Ranking on Google Maps increases foot traffic and impulse buying.",
+  },
+  {
+    icon: Smartphone,
+    name: "Electronics Shops",
+    searches: ["mobile shop near me", "phone shop Colombo", "electronics store Sri Lanka"],
+    why: "High-intent buyers choose top map results instantly.",
+  },
+  {
+    icon: ShoppingCart,
+    name: "Supermarkets",
+    searches: ["supermarket near me", "grocery store Colombo", "food store near me"],
+    why: "Daily searches equal daily revenue.",
+  },
+  {
+    icon: Utensils,
+    name: "Restaurants",
+    searches: ["restaurants near me", "best restaurant Colombo", "food near me open now"],
+    why: "Top 3 results capture the majority of hungry customers.",
+  },
+  {
+    icon: Hotel,
+    name: "Hotels & Villas",
+    searches: ["hotel near me", "villa in Galle Sri Lanka", "places to stay near me"],
+    why: "Tourists rely heavily on Google Maps to choose where to stay.",
+  },
+  {
+    icon: Scissors,
+    name: "Salons & Spas",
+    searches: ["salon near me", "hair salon Colombo", "spa near me"],
+    why: "Beauty bookings happen instantly from the top map result.",
+  },
+  {
+    icon: Dumbbell,
+    name: "Gyms",
+    searches: ["gym near me", "fitness center Colombo", "best gym near me"],
+    why: "Local visibility converts directly into new memberships.",
+  },
+  {
+    icon: Stethoscope,
+    name: "Clinics & Doctors",
+    searches: ["doctor near me", "clinic Colombo", "dentist near me"],
+    why: "Urgent health searches turn into fast conversions.",
+  },
+  {
+    icon: Pill,
+    name: "Pharmacies",
+    searches: ["pharmacy near me", "medical shop Colombo", "drug store near me"],
+    why: "High-frequency local searches drive daily walk-ins.",
+  },
+  {
+    icon: HomeIcon,
+    name: "Real Estate",
+    searches: ["real estate agent Colombo", "property for sale near me", "land for sale Sri Lanka"],
+    why: "High-value property leads come straight from Google Maps.",
+  },
+  {
+    icon: Car,
+    name: "Car Dealers",
+    searches: ["car sale near me", "vehicle showroom Colombo", "used cars Sri Lanka"],
+    why: "Buyers visit the top nearby dealers first.",
+  },
+  {
+    icon: KeyRound,
+    name: "Car Rentals",
+    searches: ["rent a car near me", "car rental Colombo", "vehicle hire Sri Lanka"],
+    why: "Tourists almost always choose from the top map results.",
+  },
+  {
+    icon: Wrench,
+    name: "Repair Services",
+    searches: ["phone repair near me", "laptop repair Colombo", "ac repair near me"],
+    why: "Urgent need means an instant call to the #1 result.",
+  },
+  {
+    icon: HardHat,
+    name: "Construction",
+    searches: ["construction company Colombo", "builders near me", "house builders Sri Lanka"],
+    why: "Local trust signals on Maps drive million-rupee projects.",
+  },
+  {
+    icon: Scale,
+    name: "Lawyers",
+    searches: ["lawyer near me", "attorney Colombo", "legal services Sri Lanka"],
+    why: "Map visibility builds the credibility legal clients need.",
+  },
+  {
+    icon: Calculator,
+    name: "Accountants",
+    searches: ["accountant near me", "tax consultant Colombo", "audit firm Sri Lanka"],
+    why: "Trust-based services win when visibility is highest.",
+  },
+  {
+    icon: GraduationCap,
+    name: "Education & Tuition",
+    searches: ["tuition classes near me", "institute Colombo", "best classes Sri Lanka"],
+    why: "Parents and students search locally before enrolling.",
+  },
+  {
+    icon: CalendarHeart,
+    name: "Event & Wedding Services",
+    searches: ["wedding planner Colombo", "event planner near me", "wedding services Sri Lanka"],
+    why: "High-value bookings start with a Google Maps search.",
+  },
+  {
+    icon: Wrench,
+    name: "Home Services",
+    searches: ["plumber near me", "electrician Colombo", "cleaning service near me"],
+    why: "Top result equals the instant job — every single time.",
+  },
+];
+
+
   {
     n: "01",
     title: "Google Business Profile Optimization",
