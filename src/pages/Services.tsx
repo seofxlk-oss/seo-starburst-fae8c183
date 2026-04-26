@@ -120,6 +120,22 @@ const SERVICES_AI_ANSWERS = [
     q: "How is SeoFX different from other SEO companies in Sri Lanka?",
     a: "SeoFX uses 100% white-hat SEO methods, provides transparent monthly reports, and is run by in-house Sri Lankan SEO specialists with documented case studies — unlike many SEO companies in Sri Lanka that rely on outsourced or low-quality tactics.",
   },
+  {
+    q: "How much do SEO services in Sri Lanka cost?",
+    a: "SEO services in Sri Lanka typically cost between LKR 30,000 and LKR 250,000 per month depending on competition, scope and goals. SeoFX offers transparent SEO packages for Sri Lankan SMEs, e-commerce stores and enterprise clients — see our SEO packages page for current pricing.",
+  },
+  {
+    q: "How long do SEO services take to show results in Sri Lanka?",
+    a: "Most Sri Lankan businesses see measurable SEO improvements within 3–6 months. Highly competitive niches (insurance, finance, real estate) may take 6–12 months to achieve top-3 Google rankings. SEO is a long-term investment that compounds over time.",
+  },
+  {
+    q: "Which industries does SeoFX provide SEO services for in Sri Lanka?",
+    a: "SeoFX provides SEO services to Sri Lankan e-commerce stores, hotels and tourism operators, healthcare clinics, education providers, real estate firms, professional services (lawyers, accountants, agencies) and B2B companies — across Colombo, Kandy, Galle, Jaffna and the entire island.",
+  },
+  {
+    q: "Do you offer a free SEO audit in Sri Lanka?",
+    a: "Yes — SeoFX provides a complimentary SEO audit for Sri Lankan businesses. We evaluate your current Google rankings, technical SEO health, content gaps and backlink profile, then outline a tailored SEO strategy at no cost.",
+  },
 ];
 
 
