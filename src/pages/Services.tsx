@@ -257,7 +257,125 @@ const Services = () => {
         </div>
       </section>
 
+      {/* WHY CHOOSE SEOFX */}
       <section className="container-tight pb-16 sm:pb-20">
+        <div className="mx-auto max-w-3xl text-center">
+          <span className="badge-pill">Why SeoFX</span>
+          <h2 className="mt-4 font-display text-3xl font-extrabold sm:text-4xl">
+            Why Sri Lankan Businesses Choose SeoFX for SEO Services
+          </h2>
+          <p className="mt-4 text-muted-foreground">
+            We combine deep local Sri Lankan market knowledge with world-class SEO methodology to deliver results
+            that actually impact your bottom line — not just vanity rankings.
+          </p>
+        </div>
+        <div className="mt-10 grid gap-6 sm:grid-cols-2">
+          {WHY_CHOOSE.map((w, i) => {
+            const Icon = w.icon;
+            return (
+              <article key={w.title} className="rounded-2xl border border-border bg-card p-6 shadow-sm">
+                <div className="flex items-start gap-4">
+                  <div className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-accent-gradient text-accent-foreground shadow-glow">
+                    <Icon className="size-5" />
+                  </div>
+                  <div>
+                    <div className="font-display text-xs font-bold tracking-widest text-muted-foreground">
+                      0{i + 1}
+                    </div>
+                    <h3 className="mt-1 font-display text-lg font-bold">{w.title}</h3>
+                    <p className="mt-2 text-sm text-muted-foreground">{w.text}</p>
+                  </div>
+                </div>
+              </article>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* PROCESS */}
+      <section className="bg-soft py-16 sm:py-20">
+        <div className="container-tight">
+          <div className="mx-auto max-w-3xl text-center">
+            <span className="badge-pill">Our SEO Process</span>
+            <h2 className="mt-4 font-display text-3xl font-extrabold sm:text-4xl">
+              How We Deliver SEO Services in Sri Lanka
+            </h2>
+            <p className="mt-4 text-muted-foreground">
+              A proven 5-step SEO process that takes Sri Lankan businesses from invisible to page one of Google.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
+            {PROCESS_STEPS.map((p) => {
+              const Icon = p.icon;
+              return (
+                <article key={p.title} className="rounded-2xl border border-border bg-card p-5 text-center shadow-sm">
+                  <div className="mx-auto inline-flex h-11 w-11 items-center justify-center rounded-xl bg-accent-gradient text-accent-foreground shadow-glow">
+                    <Icon className="size-5" />
+                  </div>
+                  <div className="mt-3 font-display text-xs font-bold tracking-widest text-accent">{p.step}</div>
+                  <h3 className="mt-1 font-display text-base font-bold">{p.title}</h3>
+                  <p className="mt-2 text-sm text-muted-foreground">{p.text}</p>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* INDUSTRIES */}
+      <section className="container-tight py-16 sm:py-20">
+        <div className="mx-auto max-w-3xl text-center">
+          <span className="badge-pill">Industries</span>
+          <h2 className="mt-4 font-display text-3xl font-extrabold sm:text-4xl">
+            SEO Services for Every Industry in Sri Lanka
+          </h2>
+          <p className="mt-4 text-muted-foreground">
+            From e-commerce and hospitality to healthcare and B2B — SeoFX delivers specialised SEO services tailored to your industry.
+          </p>
+        </div>
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {INDUSTRIES.map((ind) => {
+            const Icon = ind.icon;
+            return (
+              <article key={ind.name} className="rounded-2xl border border-border bg-card p-5 shadow-sm">
+                <div className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-accent/10 text-accent">
+                  <Icon className="size-5" />
+                </div>
+                <h3 className="mt-3 font-display text-base font-bold">{ind.name}</h3>
+                <p className="mt-1 text-sm text-muted-foreground">{ind.text}</p>
+              </article>
+            );
+          })}
+        </div>
+      </section>
+
+      {/* LOCATIONS */}
+      <section className="bg-soft py-16 sm:py-20">
+        <div className="container-tight">
+          <div className="mx-auto max-w-3xl text-center">
+            <span className="badge-pill">Locations</span>
+            <h2 className="mt-4 font-display text-3xl font-extrabold sm:text-4xl">
+              SEO Services Across Sri Lanka
+            </h2>
+            <p className="mt-4 text-muted-foreground">
+              Headquartered in Colombo and serving SEO clients island-wide — and Sri Lankan businesses targeting global markets in the UK, Australia, USA and the Middle East.
+            </p>
+          </div>
+          <div className="mx-auto mt-8 flex max-w-3xl flex-wrap justify-center gap-2">
+            {LOCATIONS.map((loc) => (
+              <span
+                key={loc}
+                className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-3 py-1.5 text-sm text-foreground shadow-sm"
+              >
+                <MapPin className="size-3.5 text-accent" />
+                SEO in {loc}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="container-tight pb-16 sm:pb-20 pt-16 sm:pt-20">
         <AIAnswerBlock
           title="SEO Services in Sri Lanka"
           answers={SERVICES_AI_ANSWERS}
