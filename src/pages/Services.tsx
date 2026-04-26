@@ -385,6 +385,7 @@ const Services = () => {
         <AIAnswerBlock
           title="SEO Services in Sri Lanka"
           answers={SERVICES_AI_ANSWERS}
+          emitSchema={false}
         />
       </section>
 

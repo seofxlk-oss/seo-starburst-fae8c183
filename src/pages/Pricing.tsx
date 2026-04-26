@@ -361,6 +361,7 @@ const Pricing = () => {
         <AIAnswerBlock
           title="SEO Price & Packages in Sri Lanka"
           answers={PRICING_AI_ANSWERS}
+          emitSchema={false}
         />
       </section>
 
