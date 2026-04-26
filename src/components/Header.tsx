@@ -145,6 +145,75 @@ export const Header = () => {
               );
             }
 
+            if (l.href === "/industries") {
+              return (
+                <div
+                  key={l.href}
+                  className="relative"
+                  onMouseEnter={openIndustries}
+                  onMouseLeave={scheduleCloseIndustries}
+                >
+                  <Link
+                    to={l.href}
+                    aria-haspopup="menu"
+                    aria-expanded={industriesOpen}
+                    onFocus={openIndustries}
+                    className={cn(
+                      "inline-flex items-center gap-1 rounded-full px-4 py-2 text-sm font-medium transition-colors",
+                      active ? "text-accent" : "text-foreground/70 hover:text-foreground"
+                    )}
+                  >
+                    {l.label}
+                    <ChevronDown className={cn("size-4 transition-transform", industriesOpen && "rotate-180")} />
+                  </Link>
+
+                  {industriesOpen && (
+                    <div
+                      role="menu"
+                      onMouseEnter={openIndustries}
+                      onMouseLeave={scheduleCloseIndustries}
+                      className="absolute left-1/2 top-full z-50 mt-2 w-[640px] -translate-x-1/2 animate-fade-in"
+                    >
+                      <div className="overflow-hidden rounded-2xl border border-border bg-background shadow-xl">
+                        <div className="h-1 w-full bg-gradient-google" />
+                        <div className="grid grid-cols-2 gap-1 p-3">
+                          {INDUSTRIES.map((ind) => {
+                            const Icon = ind.icon;
+                            return (
+                              <Link
+                                key={ind.slug}
+                                to={`/${ind.slug}`}
+                                role="menuitem"
+                                className="group flex items-start gap-3 rounded-xl px-3 py-2.5 hover:bg-muted transition-colors"
+                              >
+                                <span className="mt-0.5 inline-flex size-9 shrink-0 items-center justify-center rounded-lg bg-accent/10 text-accent group-hover:bg-accent group-hover:text-accent-foreground transition-colors">
+                                  <Icon className="size-4" />
+                                </span>
+                                <span className="min-w-0">
+                                  <span className="block text-sm font-semibold text-foreground group-hover:text-accent">
+                                    {ind.navLabel}
+                                  </span>
+                                  <span className="line-clamp-2 text-xs text-muted-foreground">
+                                    {ind.hubTagline}
+                                  </span>
+                                </span>
+                              </Link>
+                            );
+                          })}
+                        </div>
+                        <Link
+                          to="/industries"
+                          className="block border-t border-border bg-muted/40 px-4 py-2.5 text-center text-xs font-semibold text-accent hover:bg-muted"
+                        >
+                          View all industries →
+                        </Link>
+                      </div>
+                    </div>
+                  )}
+                </div>
+              );
+            }
+
             return (
               <Link
                 key={l.href}
