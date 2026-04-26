@@ -3,6 +3,7 @@ import { Layout } from "@/components/Layout";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { CTASection } from "@/components/CTASection";
 import { orgSchema, websiteSchema, localBusinessSchema, faqSchema } from "@/lib/schema";
+import { SITE } from "@/lib/site";
 
 const faqs = [
   {
@@ -40,7 +41,7 @@ const FAQ = () => {
     orgSchema(),
     websiteSchema(),
     localBusinessSchema(),
-    faqSchema(faqs),
+    faqSchema(faqs, { pageUrl: `${SITE.url}/faq` }),
   ];
 
   return (

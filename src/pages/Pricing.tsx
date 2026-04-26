@@ -148,8 +148,9 @@ const Pricing = () => {
           websiteSchema(),
           localBusinessSchema(),
           offerService,
-          faqSchema(faqs),
-          faqSchema(PRICING_AI_ANSWERS),
+          faqSchema([...faqs, ...PRICING_AI_ANSWERS], {
+            pageUrl: `${SITE.url}/seo-packages-sri-lanka`,
+          }),
         ]}
       />
       <Breadcrumbs items={[{ label: "SEO Packages" }]} />
@@ -361,6 +362,7 @@ const Pricing = () => {
         <AIAnswerBlock
           title="SEO Price & Packages in Sri Lanka"
           answers={PRICING_AI_ANSWERS}
+          emitSchema={false}
         />
       </section>
 

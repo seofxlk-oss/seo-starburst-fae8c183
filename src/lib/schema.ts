@@ -125,15 +125,59 @@ export const localBusinessSchema = () => ({
   },
 });
 
-export const faqSchema = (faqs: { q: string; a: string }[]) => ({
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: faqs.map((f) => ({
-    "@type": "Question",
-    name: f.q,
-    acceptedAnswer: { "@type": "Answer", text: f.a },
-  })),
-});
+/**
+ * Normalises Q&A text so JSON-LD answers exactly match the visible text.
+ * - Collapses runs of whitespace (multiline JSX strings → single spaces)
+ * - Trims leading/trailing whitespace
+ * - Strips any accidental HTML tags so Google receives plain text
+ *   (Google's FAQPage spec allows limited HTML, but plain text is safest
+ *    and guarantees a 1:1 match with the rendered <p>{f.a}</p>).
+ */
+const normaliseFaqText = (s: string): string =>
+  s
+    .replace(/<[^>]+>/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+
+export const faqSchema = (
+  faqs: { q: string; a: string }[],
+  opts?: { pageUrl?: string },
+) => {
+  // Dedupe by question to avoid Google flagging duplicate Question entities.
+  const seen = new Set<string>();
+  const unique = faqs.filter((f) => {
+    const key = normaliseFaqText(f.q).toLowerCase();
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    inLanguage: "en-LK",
+    ...(opts?.pageUrl ? { url: opts.pageUrl } : {}),
+    mainEntity: unique.map((f, i) => {
+      const q = normaliseFaqText(f.q);
+      const a = normaliseFaqText(f.a);
+      return {
+        "@type": "Question",
+        name: q,
+        // Stable per-question anchor so each Question has a unique @id.
+        ...(opts?.pageUrl
+          ? { "@id": `${opts.pageUrl}#faq-${i + 1}` }
+          : {}),
+        answerCount: 1,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: a,
+          inLanguage: "en-LK",
+          ...(opts?.pageUrl ? { url: `${opts.pageUrl}#faq-${i + 1}` } : {}),
+        },
+      };
+    }),
+  };
+};
 
 export const serviceSchema = (opts: {
   name: string;

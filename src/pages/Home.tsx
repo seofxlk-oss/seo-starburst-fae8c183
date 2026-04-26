@@ -65,7 +65,7 @@ const Home = () => {
         { name: "Premium SEO Package", url: `${SITE.url}/seo-packages-sri-lanka#premium`, price: "99900" },
       ],
     }),
-    faqSchema(faqs),
+    faqSchema(faqs, { pageUrl: `${SITE.url}/` }),
   ];
 
   // ───────── Section 2 — Who We Serve ─────────

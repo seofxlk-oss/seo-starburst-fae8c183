@@ -1,4 +1,4 @@
-
+import { faqSchema } from "@/lib/schema";
 
 export interface AIAnswer {
   q: string;
@@ -11,6 +11,8 @@ interface AIAnswerBlockProps {
   answers: AIAnswer[];
   /** When true, also emits FAQPage JSON-LD (skip if parent already emits one). */
   emitSchema?: boolean;
+  /** Optional canonical URL of the page — adds stable @ids to each Question. */
+  pageUrl?: string;
 }
 
 /**
@@ -25,18 +27,9 @@ export const AIAnswerBlock = ({
   intro,
   answers,
   emitSchema = true,
+  pageUrl,
 }: AIAnswerBlockProps) => {
-  const schema = emitSchema
-    ? {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: answers.map((a) => ({
-          "@type": "Question",
-          name: a.q,
-          acceptedAnswer: { "@type": "Answer", text: a.a },
-        })),
-      }
-    : null;
+  const schema = emitSchema ? faqSchema(answers, { pageUrl }) : null;
 
   return (
     <section

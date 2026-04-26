@@ -171,7 +171,7 @@ const Services = () => {
               description: s.cardIntro,
             })),
           }),
-          faqSchema(SERVICES_AI_ANSWERS),
+          faqSchema(SERVICES_AI_ANSWERS, { pageUrl: `${SITE.url}/services` }),
         ]}
       />
       <Breadcrumbs items={[{ label: "Services" }]} />
@@ -385,6 +385,7 @@ const Services = () => {
         <AIAnswerBlock
           title="SEO Services in Sri Lanka"
           answers={SERVICES_AI_ANSWERS}
+          emitSchema={false}
         />
       </section>
 
