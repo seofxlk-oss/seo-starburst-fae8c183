@@ -11,10 +11,11 @@ const CaseStudies = () => {
   return (
     <Layout>
       <SEO
-        title="SEO Case Studies Sri Lanka | Proven SEO Results | SeoFX"
-        description="SEO case studies Sri Lanka — real results from SeoFX, the best SEO company in Sri Lanka. See how our SEO services grew traffic, leads & revenue for Sri Lankan brands."
+        title="SEO Case Studies Sri Lanka — Real Ranking Results | SeoFX"
+        description="See real SEO results from Sri Lankan brands. 73% avg. monthly traffic lift, 99% yearly organic growth. Browse SeoFX case studies & client wins."
         canonical="/case-studies"
-        keywords="seo case studies sri lanka, seo results sri lanka, seo company sri lanka, best seo company sri lanka, seo service sri lanka"
+        keywords="seo case studies sri lanka, seo results sri lanka, seo success stories sri lanka, sri lanka seo portfolio, seo company sri lanka, best seo company sri lanka, proven seo results sri lanka"
+        ogImageAlt="SEO case studies from Sri Lankan brands — real ranking & traffic results by SeoFX"
       />
       <Breadcrumbs items={[{ label: "Case Studies" }]} />
 
