@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { BlogPost } from "@/components/BlogPost";
 
 const Post2 = () => (
@@ -12,8 +13,8 @@ const Post2 = () => (
     readTime="5 min read"
     cta="Planning a new website for your Sri Lankan business? Contact SeoFX for a free pre-build SEO consultation today."
   >
-    <p>Building a website is one of the most important steps a Sri Lankan business can take toward digital growth. But too many businesses make the costly mistake of building a website first and thinking about SEO later — only to spend double the time and money fixing it.</p>
-    <p>At SeoFX, we strongly recommend involving SEO strategy in your website planning from day one.</p>
+    <p>Building a website is one of the most important steps a Sri Lankan business can take toward digital growth. But too many businesses make the costly mistake of building a website first and thinking about SEO later — only to spend double the time and money fixing it. This is exactly why working with an experienced <Link to="/seo-specialist-sri-lanka" className="text-accent underline-offset-4 hover:underline">SEO specialist in Sri Lanka</Link> from day one matters.</p>
+    <p>At SeoFX — a trusted <Link to="/" className="text-accent underline-offset-4 hover:underline">SEO agency in Sri Lanka</Link> — we strongly recommend involving SEO strategy in your website planning from day one.</p>
     <h2>Why Does SEO Matter Before a Website Exists?</h2>
     <p>To have a website that works as a real business asset — one that attracts organic traffic and converts visitors into customers — it must be built with search engine optimisation in mind from the start. An SEO-ready website from day one means:</p>
     <ul>
@@ -29,7 +30,7 @@ const Post2 = () => (
     <p>An SEO-optimised website from day one is a competitive advantage. While your competitors are paying to fix their old sites, yours is already ranking.</p>
     <h2>SEO is Not Just for Your Marketing Team</h2>
     <p>Many Sri Lankan business owners assume SEO is simply a marketing task. In reality, SEO touches every part of your website — from the technical architecture built by developers to the content written by your team. Getting it wrong can seriously harm your search rankings.</p>
-    <p>Before you build your website, talk to an SEO specialist. The investment in proper planning now will save you far more in costs later.</p>
+    <p>Before you build your website, talk to an <Link to="/seo-consultant-sri-lanka" className="text-accent underline-offset-4 hover:underline">SEO consultant in Sri Lanka</Link>. The investment in proper planning now will save you far more in costs later. You can also explore our full <Link to="/services" className="text-accent underline-offset-4 hover:underline">SEO services in Sri Lanka</Link> or compare <Link to="/seo-packages-sri-lanka" className="text-accent underline-offset-4 hover:underline">SEO packages and pricing in Sri Lanka</Link> before committing to a build.</p>
   </BlogPost>
 );
 export default Post2;

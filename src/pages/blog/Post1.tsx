@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { BlogPost } from "@/components/BlogPost";
 
 const Post1 = () => (
@@ -12,7 +13,7 @@ const Post1 = () => (
     readTime="6 min read"
     cta="Ready to turn your website into a lead generation machine? Contact SeoFX — the best SEO company in Sri Lanka — for a free consultation today."
   >
-    <p>Are you spending thousands of rupees every month on Google Ads or Facebook Ads, only to see leads dry up the moment you stop paying? You are not alone. This is the single most common frustration we hear from Sri Lankan business owners — and SEO is the answer.</p>
+    <p>Are you spending thousands of rupees every month on Google Ads or Facebook Ads, only to see leads dry up the moment you stop paying? You are not alone. This is the single most common frustration we hear from Sri Lankan business owners — and partnering with a results-driven <Link to="/" className="text-accent underline-offset-4 hover:underline">SEO company in Sri Lanka</Link> is the answer.</p>
     <h2>The Problem with Paid Ads for Sri Lankan Businesses</h2>
     <p>A few years ago, a Sri Lankan company was entirely dependent on traditional advertising — newspaper ads, printed flyers, brochures, and cold calls. Eventually they moved to Google Ads and Facebook Ads, which brought more visibility and website traffic. But the marketing costs were extremely high, and profits were being eaten up.</p>
     <p>The moment they paused their ad spend, the leads stopped completely. Sound familiar?</p>
@@ -27,7 +28,7 @@ const Post1 = () => (
       <li>SEO builds brand credibility and trust — being found organically signals authority.</li>
       <li>Unlike paid ads, SEO cannot be simply outbid by a competitor with a bigger budget.</li>
     </ul>
-    <p>Your business can achieve this. The first step is to optimise your website with a proven SEO strategy. Stop renting visibility — start owning it.</p>
+    <p>Your business can achieve this. The first step is to optimise your website with a proven SEO strategy. Explore our full range of <Link to="/services" className="text-accent underline-offset-4 hover:underline">SEO services in Sri Lanka</Link>, review transparent <Link to="/seo-packages-sri-lanka" className="text-accent underline-offset-4 hover:underline">SEO packages and pricing in Sri Lanka</Link>, or read our deep-dive on <Link to="/blog/seo-sri-lanka-complete-guide-2025" className="text-accent underline-offset-4 hover:underline">SEO in Sri Lanka — the complete 2025 guide</Link>. Stop renting visibility — start owning it.</p>
   </BlogPost>
 );
 export default Post1;
