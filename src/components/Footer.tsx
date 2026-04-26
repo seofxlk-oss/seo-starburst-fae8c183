@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin } from "lucide-react";
-import { NAV_LINKS, SITE } from "@/lib/site";
+import { NAV_LINKS, FOOTER_LINKS, SITE } from "@/lib/site";
 import logo from "@/assets/logo.png";
 
 export const Footer = () => {
@@ -32,6 +32,11 @@ export const Footer = () => {
             <h3 className="font-display text-sm font-bold uppercase tracking-wider text-white">Navigate</h3>
             <ul className="mt-4 space-y-2 text-sm text-white/70">
               {NAV_LINKS.map((l) => (
+                <li key={l.href}>
+                  <Link to={l.href} className="hover:text-accent">{l.label}</Link>
+                </li>
+              ))}
+              {FOOTER_LINKS.map((l) => (
                 <li key={l.href}>
                   <Link to={l.href} className="hover:text-accent">{l.label}</Link>
                 </li>
