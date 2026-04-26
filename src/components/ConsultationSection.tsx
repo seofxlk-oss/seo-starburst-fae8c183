@@ -3,7 +3,7 @@ import {
   Search, Target, Trophy, ClipboardList, Wallet, Handshake,
   CheckCircle2, Clock, FileText, MapPin, CreditCard, ArrowRight, Sparkles,
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+
 
 interface ConsultationSectionProps {
   /** Section variant — `light` for white pages, `soft` for sections with subtle bg. */
@@ -115,7 +115,7 @@ export const ConsultationSection = ({
       price: priceLkr,
       priceCurrency: "LKR",
       availability: "https://schema.org/InStock",
-      url: "https://seofx.lk/contact-us",
+      url: "https://seofx.lk/seo-consultation-sri-lanka",
     },
   };
 
@@ -193,8 +193,12 @@ export const ConsultationSection = ({
             </blockquote>
           </div>
 
-          {/* Pricing card */}
-          <div className="relative overflow-hidden rounded-3xl border-2 border-google-blue/30 bg-card p-7 sm:p-9 shadow-google">
+          {/* Pricing card — entire card links to consultation page */}
+          <Link
+            to="/seo-consultation-sri-lanka"
+            aria-label="View full SEO Consultation Session details"
+            className="group relative block overflow-hidden rounded-3xl border-2 border-google-blue/30 bg-card p-7 sm:p-9 shadow-google transition-all hover:-translate-y-1 hover:border-google-blue/60 hover:shadow-google focus:outline-none focus-visible:ring-2 focus-visible:ring-google-blue focus-visible:ring-offset-2"
+          >
             {/* rainbow strip */}
             <div className="absolute inset-x-0 top-0 h-1 bg-gradient-google" aria-hidden />
 
@@ -207,6 +211,7 @@ export const ConsultationSection = ({
                   SEO Consultation Session
                 </h3>
               </div>
+              <ArrowRight className="size-5 shrink-0 text-google-blue transition-transform group-hover:translate-x-1" />
             </div>
 
             {/* Price */}
@@ -249,20 +254,14 @@ export const ConsultationSection = ({
               </div>
             </dl>
 
-            <Button
-              asChild
-              size="lg"
-              className="mt-7 w-full bg-accent text-accent-foreground hover:bg-accent/90"
-            >
-              <Link to="/contact-us">
-                Book My SEO Consultation Session <ArrowRight className="size-4" />
-              </Link>
-            </Button>
+            <div className="mt-7 inline-flex w-full items-center justify-center gap-2 rounded-md bg-accent px-4 py-3 text-sm font-semibold text-accent-foreground transition-colors group-hover:bg-accent/90">
+              View Full Consultation Details <ArrowRight className="size-4" />
+            </div>
 
             <p className="mt-3 text-center text-xs text-muted-foreground">
               Limited sessions available each month. Secure your slot today.
             </p>
-          </div>
+          </Link>
         </div>
       </div>
 

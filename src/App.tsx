@@ -1,5 +1,5 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
@@ -74,7 +74,8 @@ const App = () => (
             <Route path="/blog/what-does-seo-specialist-sri-lanka-do" element={<Post15 />} />
             <Route path="/blog/seo-specialist-vs-seo-agency-sri-lanka" element={<Post16 />} />
             <Route path="/blog/how-to-find-best-seo-specialist-sri-lanka" element={<Post17 />} />
-            <Route path="/seo-consultation" element={<SeoConsultation />} />
+            <Route path="/seo-consultation-sri-lanka" element={<SeoConsultation />} />
+            <Route path="/seo-consultation" element={<Navigate to="/seo-consultation-sri-lanka" replace />} />
             <Route path="/industries" element={<IndustriesHub />} />
             {INDUSTRIES.map((ind) => (
               <Route
