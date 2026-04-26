@@ -76,6 +76,14 @@ const extractSlugBlocks = (source) => {
   return blocks;
 };
 
+const normalizeTemplateLiterals = (source) =>
+  source
+    .replace(/`([^`\\]*(?:\\.[^`\\]*)*)`/g, (_match, inner) => JSON.stringify(inner.replace(/\$\{SITE\.url\}/g, SITE_URL)))
+    .replace(/(\s*)([A-Za-z0-9_]+)\s*:/g, '$1"$2":')
+    .replace(/,\s*([}\]])/g, "$1");
+
+const parseArrayLiteral = (source, constName) => JSON.parse(normalizeTemplateLiterals(extractObjectArray(source, constName)));
+
 const blogPosts = parseArrayLiteral(siteModule, "BLOG_POSTS");
 const services = extractSlugBlocks(servicesModule).map(({ slug, block }) => ({
   slug,
