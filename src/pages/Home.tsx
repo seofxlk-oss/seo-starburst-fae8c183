@@ -183,23 +183,22 @@ const Home = () => {
       href: wa,
       external: true,
     },
-    {
-      name: "Google Map Optimization",
-      tagline: "Local businesses & service areas",
-      goal: "Rank in the Google Maps 3-Pack",
-      icon: MapPin,
-      features: [
-        "Google Business Profile setup & optimisation",
-        "Local keyword & geo targeting",
-        "Citations & NAP consistency",
-        "Review generation strategy",
-        "Monthly local ranking report",
-      ],
-      cta: "Explore Map SEO",
-      href: "/google-map-optimization",
-      external: false,
-    },
   ];
+
+  const mapPackage = {
+    name: "Google Map Optimization",
+    tagline: "Local businesses & service areas in Sri Lanka",
+    goal: "Rank in the Google Maps 3-Pack",
+    features: [
+      "Google Business Profile setup & optimisation",
+      "Local keyword & geo targeting",
+      "Citations & NAP consistency across 30+ Sri Lankan directories",
+      "Review generation strategy",
+      "Monthly local ranking report",
+    ],
+    cta: "Explore Map SEO",
+    href: "/google-map-optimization",
+  };
 
   // ───────── Section 8 — Testimonials ─────────
   const testimonials = [
