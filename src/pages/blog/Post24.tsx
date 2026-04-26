@@ -15,7 +15,7 @@ const Post24 = () => (
   >
     <p>Every day, millions of searches are made on Google by people in Sri Lanka — and by people around the world looking for Sri Lankan products, services, hotels, and businesses. Each of those searches is an opportunity. The businesses that appear on page one capture that opportunity. The businesses that do not, remain invisible.</p>
     <p>Search engine optimisation — SEO — is the discipline that determines which businesses appear and which do not.</p>
-    <p>This guide explains exactly what SEO is, why it matters specifically in the Sri Lankan context, how it works in practice, and what a sound SEO strategy looks like for a Sri Lankan business in 2026.</p>
+    <p>This guide explains exactly what SEO is, why it matters specifically in the Sri Lankan context, how it works in practice, and what a sound SEO strategy looks like for a Sri Lankan business in 2026. For a high-level overview of the discipline, you can also visit our dedicated <Link to="/seo-sri-lanka" className="text-accent underline-offset-4 hover:underline">SEO Sri Lanka</Link> page.</p>
 
     <h2>What Is SEO?</h2>
     <p>Search engine optimisation is the process of improving a website so that it ranks higher in unpaid (organic) search engine results — primarily on Google, which accounts for over 95% of all search engine usage in Sri Lanka.</p>

@@ -15,7 +15,7 @@ const Post25 = () => (
   >
     <p>It is a fair question — and one that deserves a straight answer rather than a sales pitch.</p>
     <p>Is SEO worth the investment for your Sri Lankan business? The honest answer is: it depends. For the right business, in the right circumstances, with the right approach, SEO is one of the highest-return investments available in digital marketing. For businesses that approach it with unrealistic expectations, inadequate commitment, or the wrong provider, it can feel like money lost with little to show for it.</p>
-    <p>This article lays out the honest reasoning behind both outcomes — so you can make a clear-eyed decision about whether SEO makes sense for your specific situation.</p>
+    <p>This article lays out the honest reasoning behind both outcomes — so you can make a clear-eyed decision about whether SEO makes sense for your specific situation. If you want a structured walkthrough of how the discipline works first, start with our <Link to="/seo-sri-lanka" className="text-accent underline-offset-4 hover:underline">SEO Sri Lanka overview</Link>.</p>
 
     <h2>What SEO Actually Delivers — and What It Does Not</h2>
     <p>Before evaluating worth, it helps to be precise about what SEO actually produces.</p>
