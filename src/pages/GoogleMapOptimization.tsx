@@ -13,6 +13,20 @@ import {
   Hotel,
   Wrench,
   GraduationCap,
+  Sofa,
+  Shirt,
+  Smartphone,
+  ShoppingCart,
+  Scissors,
+  Dumbbell,
+  Stethoscope,
+  Pill,
+  Home as HomeIcon,
+  Car,
+  KeyRound,
+  HardHat,
+  Calculator,
+  CalendarHeart,
   Sparkles,
   Check,
   Phone,
@@ -67,6 +81,129 @@ const WHO = [
   { icon: GraduationCap, type: "Education institutes", desc: "Parents and students search locally first." },
   { icon: Wrench, type: "Local service businesses", desc: "Plumbers, electricians, repairs — urgency searches." },
   { icon: Scale, type: "Professional services", desc: "Lawyers, accountants, consultants — trust starts on Google." },
+];
+
+const INDUSTRY_SEARCHES = [
+  {
+    icon: Sofa,
+    name: "Furniture Shops",
+    searches: ["furniture shop near me", "sofa shop Colombo", "best furniture store Sri Lanka"],
+    why: "Google Map Optimization Sri Lanka helps furniture stores increase showroom visits and high-value sales.",
+  },
+  {
+    icon: Shirt,
+    name: "Clothing Stores",
+    searches: ["clothing shops near me", "ladies fashion Colombo", "best clothing store Sri Lanka"],
+    why: "Ranking on Google Maps increases foot traffic and impulse buying.",
+  },
+  {
+    icon: Smartphone,
+    name: "Electronics Shops",
+    searches: ["mobile shop near me", "phone shop Colombo", "electronics store Sri Lanka"],
+    why: "High-intent buyers choose top map results instantly.",
+  },
+  {
+    icon: ShoppingCart,
+    name: "Supermarkets",
+    searches: ["supermarket near me", "grocery store Colombo", "food store near me"],
+    why: "Daily searches equal daily revenue.",
+  },
+  {
+    icon: Utensils,
+    name: "Restaurants",
+    searches: ["restaurants near me", "best restaurant Colombo", "food near me open now"],
+    why: "Top 3 results capture the majority of hungry customers.",
+  },
+  {
+    icon: Hotel,
+    name: "Hotels & Villas",
+    searches: ["hotel near me", "villa in Galle Sri Lanka", "places to stay near me"],
+    why: "Tourists rely heavily on Google Maps to choose where to stay.",
+  },
+  {
+    icon: Scissors,
+    name: "Salons & Spas",
+    searches: ["salon near me", "hair salon Colombo", "spa near me"],
+    why: "Beauty bookings happen instantly from the top map result.",
+  },
+  {
+    icon: Dumbbell,
+    name: "Gyms",
+    searches: ["gym near me", "fitness center Colombo", "best gym near me"],
+    why: "Local visibility converts directly into new memberships.",
+  },
+  {
+    icon: Stethoscope,
+    name: "Clinics & Doctors",
+    searches: ["doctor near me", "clinic Colombo", "dentist near me"],
+    why: "Urgent health searches turn into fast conversions.",
+  },
+  {
+    icon: Pill,
+    name: "Pharmacies",
+    searches: ["pharmacy near me", "medical shop Colombo", "drug store near me"],
+    why: "High-frequency local searches drive daily walk-ins.",
+  },
+  {
+    icon: HomeIcon,
+    name: "Real Estate",
+    searches: ["real estate agent Colombo", "property for sale near me", "land for sale Sri Lanka"],
+    why: "High-value property leads come straight from Google Maps.",
+  },
+  {
+    icon: Car,
+    name: "Car Dealers",
+    searches: ["car sale near me", "vehicle showroom Colombo", "used cars Sri Lanka"],
+    why: "Buyers visit the top nearby dealers first.",
+  },
+  {
+    icon: KeyRound,
+    name: "Car Rentals",
+    searches: ["rent a car near me", "car rental Colombo", "vehicle hire Sri Lanka"],
+    why: "Tourists almost always choose from the top map results.",
+  },
+  {
+    icon: Wrench,
+    name: "Repair Services",
+    searches: ["phone repair near me", "laptop repair Colombo", "ac repair near me"],
+    why: "Urgent need means an instant call to the #1 result.",
+  },
+  {
+    icon: HardHat,
+    name: "Construction",
+    searches: ["construction company Colombo", "builders near me", "house builders Sri Lanka"],
+    why: "Local trust signals on Maps drive million-rupee projects.",
+  },
+  {
+    icon: Scale,
+    name: "Lawyers",
+    searches: ["lawyer near me", "attorney Colombo", "legal services Sri Lanka"],
+    why: "Map visibility builds the credibility legal clients need.",
+  },
+  {
+    icon: Calculator,
+    name: "Accountants",
+    searches: ["accountant near me", "tax consultant Colombo", "audit firm Sri Lanka"],
+    why: "Trust-based services win when visibility is highest.",
+  },
+  {
+    icon: GraduationCap,
+    name: "Education & Tuition",
+    searches: ["tuition classes near me", "institute Colombo", "best classes Sri Lanka"],
+    why: "Parents and students search locally before enrolling.",
+  },
+  {
+    icon: CalendarHeart,
+    name: "Event & Wedding Services",
+    searches: ["wedding planner Colombo", "event planner near me", "wedding services Sri Lanka"],
+    why: "High-value bookings start with a Google Maps search.",
+  },
+  {
+    icon: Wrench,
+    name: "Home Services",
+    searches: ["plumber near me", "electrician Colombo", "cleaning service near me"],
+    why: "Top result equals the instant job — every single time.",
+  },
 ];
 
 const PROCESS = [
@@ -554,7 +691,84 @@ const GoogleMapOptimization = () => {
         </div>
       </section>
 
-      {/* COMPARISON */}
+      {/* INDUSTRIES + REAL SEARCH TERMS */}
+      <section className="bg-background py-20 sm:py-24">
+        <div className="container-tight">
+          <div className="max-w-3xl">
+            <p className="text-xs font-bold uppercase tracking-[0.14em] text-primary">
+              Industry-specific search demand
+            </p>
+            <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl">
+              Google Map Optimization Sri Lanka for Every Industry
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-muted-foreground">
+              These are the exact searches your future customers are typing into Google right now. If your business is not in the top 3, someone else is taking the call.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {INDUSTRY_SEARCHES.map((ind) => (
+              <article
+                key={ind.name}
+                className="group relative flex flex-col rounded-2xl border border-border bg-card p-6 transition-all hover:-translate-y-1 hover:shadow-card"
+              >
+                {/* Google color accent bar */}
+                <div className="absolute left-0 top-0 h-[3px] w-full overflow-hidden rounded-t-2xl flex">
+                  <div className="h-full flex-1 bg-google-blue" />
+                  <div className="h-full flex-1 bg-google-red" />
+                  <div className="h-full flex-1 bg-google-yellow" />
+                  <div className="h-full flex-1 bg-google-green" />
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <div className="flex size-10 items-center justify-center rounded-lg bg-google-blue/10">
+                    <ind.icon className="size-5 text-google-blue" aria-hidden />
+                  </div>
+                  <h3 className="font-display text-lg font-bold text-foreground">{ind.name}</h3>
+                </div>
+
+                <p className="mt-5 text-[11px] font-bold uppercase tracking-[0.14em] text-muted-foreground">
+                  What people search on Google
+                </p>
+                <ul className="mt-2 space-y-1.5">
+                  {ind.searches.map((s) => (
+                    <li
+                      key={s}
+                      className="flex items-start gap-2 text-sm text-foreground"
+                    >
+                      <Search className="mt-0.5 size-3.5 shrink-0 text-google-blue" aria-hidden />
+                      <span className="italic text-muted-foreground">"{s}"</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mt-5 rounded-lg border-l-2 border-google-green bg-soft px-3 py-2.5">
+                  <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-google-green">
+                    Why it matters
+                  </p>
+                  <p className="mt-1 text-[13px] leading-relaxed text-foreground">{ind.why}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <div className="mt-12 rounded-2xl border border-border bg-soft p-8 text-center">
+            <p className="font-display text-lg font-bold text-foreground">
+              Don't see your industry?
+            </p>
+            <p className="mt-2 text-sm text-muted-foreground">
+              If your customers search locally on Google, Google Map Optimization will work for you.
+            </p>
+            <Button asChild className="mt-5">
+              <Link to="/contact">
+                Talk to a consultant <ArrowRight className="ml-2 size-4" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+
       <section className="bg-soft py-20 sm:py-24">
         <div className="container-tight max-w-5xl">
           <div className="text-center">
