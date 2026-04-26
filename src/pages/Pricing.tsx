@@ -11,6 +11,13 @@ import { CTASection } from "@/components/CTASection";
 import { AIAnswerBlock } from "@/components/AIAnswerBlock";
 import { ConsultationSection } from "@/components/ConsultationSection";
 import { SITE } from "@/lib/site";
+import {
+  orgSchema,
+  websiteSchema,
+  localBusinessSchema,
+  faqSchema,
+  serviceSchema,
+} from "@/lib/schema";
 
 const wa = (msg: string) =>
   `https://wa.me/${SITE.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(msg)}`;
@@ -109,34 +116,24 @@ const faqs = [
 ];
 
 const Pricing = () => {
-  const faqJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
+  const PACKAGE_PRICES: Record<string, string> = {
+    Starter: "29900",
+    Business: "59900",
+    Premium: "99900",
   };
 
-  const offerJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    serviceType: "Search Engine Optimization",
-    provider: { "@id": "https://seofx.lk/#organization" },
-    areaServed: { "@type": "Country", name: "Sri Lanka" },
-    name: "SEO Packages Sri Lanka",
-    hasOfferCatalog: {
-      "@type": "OfferCatalog",
-      name: "SEO Packages Sri Lanka",
-      itemListElement: packages.map((p) => ({
-        "@type": "Offer",
-        name: `${p.name} SEO Package Sri Lanka`,
-        availability: "https://schema.org/InStock",
-        url: `https://seofx.lk/seo-packages-sri-lanka#${p.name.toLowerCase()}`,
-      })),
-    },
-  };
+  const offerService = serviceSchema({
+    name: "SEO Packages in Sri Lanka",
+    description:
+      "Transparent SEO packages in Sri Lanka — Starter, Business and Premium SEO plans backed by a 90-Day Ranking Promise.",
+    url: `${SITE.url}/seo-packages-sri-lanka`,
+    offers: packages.map((p) => ({
+      name: `${p.name} SEO Package`,
+      url: `${SITE.url}/seo-packages-sri-lanka#${p.name.toLowerCase()}`,
+      price: PACKAGE_PRICES[p.name],
+      description: p.desc,
+    })),
+  });
 
   return (
     <Layout>
@@ -145,7 +142,14 @@ const Pricing = () => {
         description="SEO packages in Sri Lanka by SeoFX — Starter, Business & Premium SEO plans built for real results. 90-Day Ranking Promise. WhatsApp us for a custom quote today."
         canonical="/seo-packages-sri-lanka"
         keywords="seo packages in sri lanka, seo price in sri lanka, seo packages sri lanka, seo cost sri lanka, affordable seo sri lanka, seo company sri lanka"
-        jsonLd={[faqJsonLd, offerJsonLd]}
+        jsonLd={[
+          orgSchema(),
+          websiteSchema(),
+          localBusinessSchema(),
+          offerService,
+          faqSchema(faqs),
+          faqSchema(PRICING_AI_ANSWERS),
+        ]}
       />
       <Breadcrumbs items={[{ label: "SEO Packages" }]} />
 
