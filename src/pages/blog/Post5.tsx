@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { BlogPost } from "@/components/BlogPost";
 
 const Post5 = () => (
@@ -12,7 +13,7 @@ const Post5 = () => (
     readTime="6 min read"
     cta="Ready to make your website work harder for your business? Contact SeoFX — the best SEO company in Sri Lanka — for a free consultation today."
   >
-    <p>Having a website is no longer enough. A website that does not generate leads is not an asset — it is a cost. Yet many Sri Lankan businesses are sitting on websites that attract no traffic, convert no visitors, and generate no enquiries. The good news: this is entirely fixable.</p>
+    <p>Having a website is no longer enough. A website that does not generate leads is not an asset — it is a cost. Yet many Sri Lankan businesses are sitting on websites that attract no traffic, convert no visitors, and generate no enquiries. The good news: this is entirely fixable with the right <Link to="/services" className="text-accent underline-offset-4 hover:underline">SEO services in Sri Lanka</Link>.</p>
     <h3>1. Keep Your Content Fresh and Relevant</h3>
     <p>Stale content is one of the fastest ways to lose both Google rankings and visitor trust. Regularly update your service pages, add new product information, publish blog posts, and ensure all your information is current. Google rewards fresh, relevant content with higher rankings — and visitors reward it with more enquiries.</p>
     <h3>2. Give Every Visitor a Clear Next Step</h3>
@@ -25,7 +26,7 @@ const Post5 = () => (
     <p>Sri Lankan consumers, like all consumers, buy from businesses they trust. Your About Us page, team photos, client testimonials, case studies, and Google reviews all play a critical role in converting visitors into leads. Do not underestimate the power of transparency and social proof.</p>
     <h3>6. Keep Your Website Fast, Clean, and Optimised</h3>
     <p>A slow website loses visitors in seconds. Remove outdated content, fix broken links, streamline navigation, and ensure your website loads quickly on both mobile and desktop. Google's Core Web Vitals — which measure real-world page performance — are now a confirmed ranking factor. A fast, clean website ranks higher and converts better.</p>
-    <p>Your website is your most powerful business tool. Do not let it sit idle. With the right SEO strategy and website optimisation from SeoFX, your website can become your #1 source of new customers in Sri Lanka.</p>
+    <p>Your website is your most powerful business tool. Do not let it sit idle. With the right SEO strategy from SeoFX — the <Link to="/" className="text-accent underline-offset-4 hover:underline">best SEO company in Sri Lanka</Link> — your website can become your #1 source of new customers. Start with a free <Link to="/seo-consultant-sri-lanka" className="text-accent underline-offset-4 hover:underline">SEO consultation in Sri Lanka</Link>, or compare our <Link to="/seo-packages-sri-lanka" className="text-accent underline-offset-4 hover:underline">SEO packages and pricing in Sri Lanka</Link> to find the right fit for your business.</p>
   </BlogPost>
 );
 export default Post5;
