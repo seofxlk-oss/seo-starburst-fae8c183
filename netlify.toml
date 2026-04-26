@@ -2,23 +2,41 @@
   publish = "dist"
   command = "npm run build"
 
-# Keep asset processing off, but ENABLE pretty URLs so Netlify serves
-# per-route static index.html files (e.g. /seo-consultant-sri-lanka ->
-# dist/seo-consultant-sri-lanka/index.html). Without this, the SPA
-# fallback below catches every URL and returns the homepage HTML — which
-# means view-source on every route shows the homepage meta tags.
 [build.processing]
   skip_processing = true
 
+# IMPORTANT: pretty_urls must be FALSE so Netlify does not auto-add trailing
+# slashes (which would conflict with our canonical URLs and the strip rule).
 [build.processing.html]
-  pretty_urls = true
+  pretty_urls = false
 
-# Force-strip trailing slashes (e.g. /google-map-optimization/ -> /google-map-optimization)
+# Force-strip trailing slashes for clean canonical URLs
+# (e.g. /seo-sri-lanka/ -> /seo-sri-lanka)
 [[redirects]]
   from = "/*/"
   to = "/:splat"
   status = 301
   force = true
+
+# Explicitly map each clean URL to its per-route static index.html.
+# This must come BEFORE the SPA fallback below. Without this rule, a
+# request for /seo-sri-lanka would not find a file (because the file is
+# at /seo-sri-lanka/index.html) and would fall through to the SPA
+# fallback — serving the homepage HTML with the homepage meta tags.
+[[redirects]]
+  from = "/:slug"
+  to = "/:slug/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/:parent/:slug"
+  to = "/:parent/:slug/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/:a/:b/:c"
+  to = "/:a/:b/:c/index.html"
+  status = 200
 
 # SPA fallback — only triggers when no static file matches the URL
 [[redirects]]
