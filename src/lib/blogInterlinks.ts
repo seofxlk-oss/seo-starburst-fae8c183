@@ -333,4 +333,160 @@ export const BLOG_INTERLINKS: Record<string, PostInterlinks> = {
       blurb: "Refresh on the full role, skills and outputs of a real specialist.",
     },
   },
+
+  // 13. Results to expect from an SEO specialist
+  "results-to-expect-from-seo-specialist-sri-lanka": {
+    related: [
+      {
+        anchor: "what an SEO specialist in Sri Lanka actually does",
+        slug: "what-does-seo-specialist-sri-lanka-do",
+        blurb: "Understand the role behind the results — and what realistic outputs look like.",
+      },
+      {
+        anchor: "8 signs of a genuinely good SEO specialist in Sri Lanka",
+        slug: "signs-of-good-seo-specialist-sri-lanka",
+        blurb: "How to verify whether the specialist behind your timeline is actually skilled.",
+      },
+      {
+        anchor: "in-house SEO specialist vs outsourcing in Sri Lanka",
+        slug: "in-house-seo-specialist-vs-outsourcing-sri-lanka",
+        blurb: "Decide which delivery model is most likely to hit your timeline goals.",
+      },
+    ],
+    next: {
+      anchor: "8 signs you've found a genuinely good SEO specialist in Sri Lanka",
+      slug: "signs-of-good-seo-specialist-sri-lanka",
+      blurb: "Now verify the person behind the timeline using 8 specific, observable signs.",
+    },
+  },
+
+  // 14. In-house SEO vs outsourcing
+  "in-house-seo-specialist-vs-outsourcing-sri-lanka": {
+    related: [
+      {
+        anchor: "SEO specialist vs SEO agency in Sri Lanka",
+        slug: "seo-specialist-vs-seo-agency-sri-lanka",
+        blurb: "The closely related question: individual specialist vs full agency.",
+      },
+      {
+        anchor: "what results to expect from an SEO specialist in Sri Lanka",
+        slug: "results-to-expect-from-seo-specialist-sri-lanka",
+        blurb: "Set honest timeline and KPI expectations for either model.",
+      },
+      {
+        anchor: "8 signs of a genuinely good SEO specialist in Sri Lanka",
+        slug: "signs-of-good-seo-specialist-sri-lanka",
+        blurb: "Vetting framework whether you hire in-house or outsource.",
+      },
+    ],
+    next: {
+      anchor: "What results to expect from an SEO specialist in Sri Lanka",
+      slug: "results-to-expect-from-seo-specialist-sri-lanka",
+      blurb: "Decided your model? Now align on the realistic timeline and KPIs.",
+    },
+  },
+
+  // 15. Signs of a good SEO specialist
+  "signs-of-good-seo-specialist-sri-lanka": {
+    related: [
+      {
+        anchor: "how to find the best SEO specialist in Sri Lanka",
+        slug: "how-to-find-best-seo-specialist-sri-lanka",
+        blurb: "The 7-point hiring checklist that pairs perfectly with these 8 signs.",
+      },
+      {
+        anchor: "what an SEO specialist in Sri Lanka actually does",
+        slug: "what-does-seo-specialist-sri-lanka-do",
+        blurb: "Understand the role to recognise the signs of real capability.",
+      },
+      {
+        anchor: "what results to expect from an SEO specialist in Sri Lanka",
+        slug: "results-to-expect-from-seo-specialist-sri-lanka",
+        blurb: "Pair these signs with realistic timeline expectations.",
+      },
+    ],
+    next: {
+      anchor: "How to find the best SEO specialist in Sri Lanka — 7 things to check",
+      slug: "how-to-find-best-seo-specialist-sri-lanka",
+      blurb: "Apply these signs alongside the full 7-point hiring checklist.",
+    },
+  },
+
+  // 16. What to look for when hiring an SEO company
+  "what-to-look-for-hiring-seo-company-sri-lanka": {
+    related: [
+      {
+        anchor: "why most Sri Lankan businesses get SEO wrong",
+        slug: "why-sri-lankan-businesses-get-seo-wrong",
+        blurb: "The seven mistakes to avoid before you sign with any SEO company.",
+      },
+      {
+        anchor: "how an SEO company in Sri Lanka builds long-term Google presence",
+        slug: "how-seo-company-sri-lanka-builds-google-presence",
+        blurb: "The full step-by-step process you should expect from a credible provider.",
+      },
+      {
+        anchor: "how to choose the right SEO company in Sri Lanka",
+        slug: "how-to-choose-seo-company-sri-lanka",
+        blurb: "A complementary, decision-focused vetting framework.",
+      },
+    ],
+    next: {
+      anchor: "Why most Sri Lankan businesses get SEO wrong",
+      slug: "why-sri-lankan-businesses-get-seo-wrong",
+      blurb: "Now learn the seven mistakes that derail most SEO investments.",
+    },
+  },
+
+  // 17. Why businesses get SEO wrong
+  "why-sri-lankan-businesses-get-seo-wrong": {
+    related: [
+      {
+        anchor: "what to look for when hiring an SEO company in Sri Lanka",
+        slug: "what-to-look-for-hiring-seo-company-sri-lanka",
+        blurb: "The hiring criteria that prevent most of these mistakes.",
+      },
+      {
+        anchor: "how an SEO company in Sri Lanka builds long-term Google presence",
+        slug: "how-seo-company-sri-lanka-builds-google-presence",
+        blurb: "The right step-by-step process — what avoiding these mistakes looks like.",
+      },
+      {
+        anchor: "the complete SEO Sri Lanka guide for 2025",
+        slug: "seo-sri-lanka-complete-guide-2025",
+        blurb: "Foundational knowledge to avoid the seven most common SEO mistakes.",
+      },
+    ],
+    next: {
+      anchor: "How an SEO company in Sri Lanka should build your long-term Google presence",
+      slug: "how-seo-company-sri-lanka-builds-google-presence",
+      blurb: "Now see what the right process actually looks like — step by step.",
+    },
+  },
+
+  // 18. How an SEO company builds your Google presence
+  "how-seo-company-sri-lanka-builds-google-presence": {
+    related: [
+      {
+        anchor: "what to look for when hiring an SEO company in Sri Lanka",
+        slug: "what-to-look-for-hiring-seo-company-sri-lanka",
+        blurb: "Vet a provider against the 7-step process you now understand.",
+      },
+      {
+        anchor: "why most Sri Lankan businesses get SEO wrong",
+        slug: "why-sri-lankan-businesses-get-seo-wrong",
+        blurb: "The mistakes this process is designed to avoid.",
+      },
+      {
+        anchor: "what an SEO service in Sri Lanka actually includes",
+        slug: "seo-service-sri-lanka-what-is-included",
+        blurb: "Map this 7-step process to the deliverables in a real SEO retainer.",
+      },
+    ],
+    next: {
+      anchor: "What to look for when hiring an SEO company in Sri Lanka",
+      slug: "what-to-look-for-hiring-seo-company-sri-lanka",
+      blurb: "Now use this process as your evaluation lens for any prospective provider.",
+    },
+  },
 };
