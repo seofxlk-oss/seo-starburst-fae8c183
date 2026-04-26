@@ -319,6 +319,141 @@ const SeoConsultation = () => {
         </div>
       </section>
 
+      {/* GOOGLE SERP VIBE STRIP — matches sitewide Google look */}
+      <section className="bg-soft py-12 sm:py-16">
+        <div className="container-tight">
+          <div className="mx-auto max-w-3xl text-center">
+            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-1.5 text-xs font-semibold tracking-wide shadow-card">
+              <span className="size-2 rounded-full bg-accent" />
+              <span className="text-muted-foreground">What clients search before they find us</span>
+            </div>
+            <h2 className="mt-5 font-display text-2xl font-extrabold leading-tight text-foreground sm:text-3xl md:text-4xl">
+              Ranking #1 for{" "}
+              <span className="text-gradient-accent">SEO Consultant Sri Lanka</span>
+            </h2>
+            <p className="mt-3 text-sm text-muted-foreground sm:text-base">
+              SeoFX delivers professional <strong className="font-semibold text-foreground">SEO consulting services</strong>,
+              audits, keyword research, and ranking strategies — built for businesses that want
+              to grow online from day one.
+            </p>
+          </div>
+
+          {/* Mocked Google SERP card */}
+          <div className="relative mx-auto mt-10 max-w-3xl">
+            <div className="pointer-events-none absolute -top-8 -left-6 h-32 w-32 rounded-full bg-accent/10 blur-3xl" aria-hidden />
+            <div className="pointer-events-none absolute -bottom-8 -right-6 h-40 w-40 rounded-full bg-primary/10 blur-3xl" aria-hidden />
+
+            <div className="relative rounded-3xl border border-border bg-card p-5 shadow-[var(--shadow-lg)] sm:p-6">
+              {/* Browser chrome */}
+              <div className="flex items-center gap-2 border-b border-border pb-3">
+                <span className="size-2.5 rounded-full bg-google-red" />
+                <span className="size-2.5 rounded-full bg-google-yellow" />
+                <span className="size-2.5 rounded-full bg-google-green" />
+                <div className="ml-3 flex flex-1 items-center gap-2 truncate rounded-full bg-muted px-3 py-1.5 text-[10px] sm:text-xs text-muted-foreground min-w-0">
+                  <span className="text-google-green">●</span>
+                  <span className="truncate">google.lk/search?q=seo+consultant+sri+lanka</span>
+                </div>
+              </div>
+
+              {/* SERP search bar mock */}
+              <div className="mt-4 flex items-center gap-3 rounded-full border border-border bg-card px-4 py-2.5">
+                <span className="font-display text-lg font-extrabold leading-none">
+                  <span className="text-google-blue">G</span>
+                  <span className="text-google-red">o</span>
+                  <span className="text-google-yellow">o</span>
+                  <span className="text-google-blue">g</span>
+                  <span className="text-google-green">l</span>
+                  <span className="text-google-red">e</span>
+                </span>
+                <span className="h-5 w-px bg-border" />
+                <span className="flex-1 truncate text-sm text-foreground">seo consultant sri lanka</span>
+                <Search className="size-4 text-google-blue" />
+              </div>
+
+              {/* Result tabs */}
+              <div className="mt-3 flex gap-5 border-b border-border pb-2 text-xs text-muted-foreground">
+                <span className="border-b-2 border-google-blue pb-2 font-semibold text-google-blue">All</span>
+                <span>Maps</span>
+                <span>Images</span>
+                <span>News</span>
+                <span className="hidden sm:inline">Videos</span>
+              </div>
+
+              {/* #1 result — SeoFX Consultation */}
+              <article className="mt-4 rounded-xl border border-google-blue/20 bg-google-blue/5 p-4">
+                <div className="flex items-center gap-2 text-xs">
+                  <div className="flex size-6 items-center justify-center rounded-full bg-gradient-accent text-[10px] font-extrabold text-white">
+                    S
+                  </div>
+                  <div className="leading-tight">
+                    <div className="font-semibold text-foreground">SeoFX</div>
+                    <div className="text-muted-foreground">https://seofx.lk › seo-consultation</div>
+                  </div>
+                  <span className="ml-auto inline-flex items-center gap-1 rounded-full bg-google-green/10 px-2 py-0.5 text-[10px] font-bold text-google-green">
+                    <TrendingUp className="size-3" /> #1
+                  </span>
+                </div>
+                <h3 className="mt-2 text-base font-bold leading-snug text-google-blue">
+                  SEO Consultant Sri Lanka — #1 SEO Consulting Services & Strategy | SeoFX
+                </h3>
+                <p className="mt-1 line-clamp-2 text-xs text-muted-foreground">
+                  SEO consultant Sri Lanka offering SEO consulting services, audits, keyword
+                  research & ranking strategies to grow your business online. Get started today.
+                </p>
+                <div className="mt-2 flex items-center gap-3 text-[11px] text-muted-foreground">
+                  <span className="inline-flex items-center gap-1">
+                    <Star className="size-3 fill-google-yellow text-google-yellow" />
+                    <Star className="size-3 fill-google-yellow text-google-yellow" />
+                    <Star className="size-3 fill-google-yellow text-google-yellow" />
+                    <Star className="size-3 fill-google-yellow text-google-yellow" />
+                    <Star className="size-3 fill-google-yellow text-google-yellow" />
+                    <span className="ml-1 font-medium text-foreground">4.9</span>
+                  </span>
+                  <span className="inline-flex items-center gap-1">
+                    <MapPin className="size-3" /> Rajagiriya, Sri Lanka
+                  </span>
+                </div>
+              </article>
+
+              {/* Suggestion chips — related searches */}
+              <div className="mt-4">
+                <div className="mb-2 text-[11px] font-semibold uppercase tracking-wider text-muted-foreground">
+                  People also search
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {[
+                    "seo consulting services sri lanka",
+                    "seo audit sri lanka",
+                    "keyword research sri lanka",
+                    "seo strategy sri lanka",
+                    "best seo consultant colombo",
+                  ].map((q) => (
+                    <span
+                      key={q}
+                      className="inline-flex items-center gap-1.5 rounded-full border border-border bg-card px-3 py-1 text-xs text-muted-foreground"
+                    >
+                      <Search className="size-3 text-muted-foreground" />
+                      {q}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Footer of card */}
+              <div className="mt-4 flex items-center justify-between text-[11px] text-muted-foreground">
+                <span>About 842,000 results (0.38 seconds)</span>
+                <span className="inline-flex items-center gap-1">
+                  <span className="size-1.5 rounded-full bg-google-blue" />
+                  <span className="size-1.5 rounded-full bg-google-red" />
+                  <span className="size-1.5 rounded-full bg-google-yellow" />
+                  <span className="size-1.5 rounded-full bg-google-green" />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* ARCHITECT ANALOGY */}
       <section className="container-tight py-16 sm:py-20">
         <div className="grid overflow-hidden rounded-3xl border border-border md:grid-cols-2">
