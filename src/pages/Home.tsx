@@ -63,6 +63,7 @@ const Home = () => {
         { name: "Starter SEO Package", url: `${SITE.url}/seo-packages-sri-lanka#starter`, price: "29900" },
         { name: "Business SEO Package", url: `${SITE.url}/seo-packages-sri-lanka#business`, price: "59900" },
         { name: "Premium SEO Package", url: `${SITE.url}/seo-packages-sri-lanka#premium`, price: "99900" },
+        { name: "Google Map Optimization", url: `${SITE.url}/google-map-optimization` },
       ],
     }),
     faqSchema(faqs, { pageUrl: `${SITE.url}/` }),
