@@ -2,6 +2,7 @@ import { SEO } from "@/components/SEO";
 import { Layout } from "@/components/Layout";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { CTASection } from "@/components/CTASection";
+import { orgSchema, websiteSchema, localBusinessSchema, faqSchema } from "@/lib/schema";
 
 const faqs = [
   {
@@ -35,15 +36,12 @@ const faqs = [
 ];
 
 const FAQ = () => {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: faqs.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-  };
+  const jsonLd = [
+    orgSchema(),
+    websiteSchema(),
+    localBusinessSchema(),
+    faqSchema(faqs),
+  ];
 
   return (
     <Layout>

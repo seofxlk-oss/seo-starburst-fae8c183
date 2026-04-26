@@ -4,6 +4,7 @@ import { Layout } from "@/components/Layout";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { SITE } from "@/lib/site";
+import { orgSchema, websiteSchema, localBusinessSchema, webPageSchema } from "@/lib/schema";
 
 const Contact = () => {
   const wa = `https://wa.me/${SITE.whatsapp.replace(/[^0-9]/g, "")}?text=${encodeURIComponent(
@@ -17,12 +18,18 @@ const Contact = () => {
         description="Contact SeoFX — SEO company Sri Lanka. Request a free SEO audit, SEO consultation or SEO price quote. Call +94 777 797 035 or WhatsApp us today."
         canonical="/contact-us"
         keywords="seo company sri lanka contact, seo consultation sri lanka, free seo audit sri lanka, seo service sri lanka, seo sri lanka"
-        jsonLd={{
-          "@context": "https://schema.org",
-          "@type": "ContactPage",
-          name: "Contact SeoFX",
-          url: "https://seofx.lk/contact-us",
-        }}
+        jsonLd={[
+          orgSchema(),
+          websiteSchema(),
+          localBusinessSchema(),
+          webPageSchema({
+            type: "ContactPage",
+            name: "Contact SeoFX — SEO Company Sri Lanka",
+            description:
+              "Contact SeoFX, Sri Lanka's leading SEO company. Get a free SEO audit, request SEO pricing or book a consultation by phone, WhatsApp or email.",
+            url: "https://seofx.lk/contact-us",
+          }),
+        ]}
       />
       <Breadcrumbs items={[{ label: "Contact" }]} />
 

@@ -5,6 +5,7 @@ import { Layout } from "@/components/Layout";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { CTASection } from "@/components/CTASection";
+import { orgSchema, websiteSchema, localBusinessSchema, webPageSchema } from "@/lib/schema";
 
 const About = () => {
   return (
@@ -14,12 +15,18 @@ const About = () => {
         description="Best SEO company in Sri Lanka — SeoFX's SEO specialists in Sri Lanka help businesses rank #1 on Google with white-hat SEO services and proven results."
         canonical="/seo-specialist-sri-lanka"
         keywords="best seo company in sri lanka, best seo company sri lanka, seo specialist sri lanka, seo consultant sri lanka, seo company sri lanka, seo sri lanka"
-        jsonLd={{
-          "@context": "https://schema.org",
-          "@type": "AboutPage",
-          name: "About SeoFX — Best SEO Company in Sri Lanka",
-          url: "https://seofx.lk/seo-specialist-sri-lanka",
-        }}
+        jsonLd={[
+          orgSchema(),
+          websiteSchema(),
+          localBusinessSchema(),
+          webPageSchema({
+            type: "AboutPage",
+            name: "About SeoFX — Best SEO Company in Sri Lanka",
+            description:
+              "About SeoFX — Sri Lanka's leading SEO company and SEO specialist team delivering white-hat SEO services with measurable Google ranking results.",
+            url: "https://seofx.lk/seo-specialist-sri-lanka",
+          }),
+        ]}
       />
       <Breadcrumbs items={[{ label: "About" }]} />
 
