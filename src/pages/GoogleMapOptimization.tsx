@@ -15,6 +15,10 @@ import {
   GraduationCap,
   Sparkles,
   Check,
+  Phone,
+  TrendingUp,
+  Users,
+  Award,
   Infinity as InfinityIcon,
   Lightbulb,
   ArrowRight,
@@ -27,213 +31,191 @@ import { SITE } from "@/lib/site";
 import { orgSchema, websiteSchema, serviceSchema, faqSchema } from "@/lib/schema";
 import googleMapVideo from "@/assets/google-map-hero.mp4.asset.json";
 
-const REALITY = [
+const WHY_CRITICAL = [
   {
-    tag: "Fact",
-    tone: "fact",
-    title: "76% of local mobile searches result in a visit within 24 hours",
-    body: "Local search is the highest-intent channel in existence. The person searching \"dentist near me\" is not browsing — they need someone today.",
+    icon: Search,
+    stat: "85%",
+    title: "Use Google to find local businesses",
+    body: "85% of customers in Sri Lanka turn to Google first when they need a local product or service — not directories, not social media. Google Maps is where buying decisions begin.",
   },
   {
-    tag: "Impact",
-    tone: "impact",
-    title: "The Local 3-Pack takes 80% of all local clicks",
-    body: "If you are not in the top three results on Google Maps for your category in your city, you are invisible to the majority of local buyers — even if you have been in business for decades.",
+    icon: TrendingUp,
+    stat: "80%",
+    title: "Of clicks go to the top 3 map results",
+    body: "The Local 3-Pack captures 80% of all local clicks. If you are not ranked in the top three on Google Maps, your competitors are receiving the customers that should be yours.",
   },
   {
-    tag: "Risk",
-    tone: "risk",
-    title: "Your competitors are optimising while you read this",
-    body: "Local search authority compounds over time. Every month without optimisation is a month competitors entrench their position further. The gap only widens.",
+    icon: Phone,
+    stat: "1×",
+    title: "Local searches convert faster than any channel",
+    body: "Someone searching \"dentist near me\" or \"restaurant Colombo\" is ready to buy today. Local search is the highest-intent traffic source — and it converts faster than any other channel.",
   },
   {
-    tag: "Impact",
-    tone: "impact",
-    title: "85% of Sri Lankans discover businesses via Google",
-    body: "Sri Lanka's mobile-first population uses Google — particularly Maps — as the primary way to find and evaluate local businesses in every city on the island.",
+    icon: Award,
+    stat: "🇱🇰",
+    title: "Most Sri Lankan businesses are poorly optimized",
+    body: "The majority of local businesses in Sri Lanka have weak or unoptimized Google Business Profiles. That is a massive opportunity — the businesses that act now will dominate their categories.",
   },
 ];
 
 const WHO = [
-  {
-    icon: Building2,
-    type: "Healthcare & Medical",
-    desc: "Clinics, dental practices, pharmacies, physiotherapists — patients search the moment they need care.",
-    impact: "Healthcare local searches convert at over 30%",
-  },
-  {
-    icon: Utensils,
-    type: "Restaurants & Hospitality",
-    desc: "Every dining decision in Sri Lanka begins with a Google Maps search. Ranking here is not optional.",
-    impact: "92% of diners check Google before visiting",
-  },
-  {
-    icon: Scale,
-    type: "Professional Services",
-    desc: "Law firms, accountants, consultancies — trust is built before first contact. It starts with visibility.",
-    impact: "Page one ranking is a credibility signal",
-  },
-  {
-    icon: ShoppingBag,
-    type: "Retail & Showrooms",
-    desc: "Furniture, electronics, clothing — foot traffic begins with a Maps search for \"near me\".",
-    impact: "28% of local searches end in same-day purchase",
-  },
-  {
-    icon: Hotel,
-    type: "Hotels & Guesthouses",
-    desc: "From Galle Fort boutiques to Kandy city hotels — travellers find you on Maps, or they don't find you.",
-    impact: "Maps drives 40%+ of direct bookings",
-  },
-  {
-    icon: Wrench,
-    type: "Trades & Services",
-    desc: "Plumbers, electricians, AC repair — emergency searches happen on Google. Be the first answer.",
-    impact: "Urgency searches convert at near 100%",
-  },
-  {
-    icon: GraduationCap,
-    type: "Education & Training",
-    desc: "Tuition centres, language schools, training institutes — parents and students search locally first.",
-    impact: "Local education searches growing 35% YoY",
-  },
-  {
-    icon: Sparkles,
-    type: "Wellness & Beauty",
-    desc: "Spas, salons, gyms, yoga studios — your next client is searching right now.",
-    impact: "Repeat visits driven by Maps trust signals",
-  },
+  { icon: Utensils, type: "Restaurants & cafés", desc: "Diners search Google Maps before every meal." },
+  { icon: Hotel, type: "Hotels & villas", desc: "Travellers find accommodation via Maps and reviews." },
+  { icon: Building2, type: "Doctors & clinics", desc: "Patients need care now — and search to find it." },
+  { icon: Sparkles, type: "Salons & spas", desc: "Beauty bookings start with a local Maps search." },
+  { icon: ShoppingBag, type: "Real estate agencies", desc: "Buyers and sellers compare local agents on Google." },
+  { icon: GraduationCap, type: "Education institutes", desc: "Parents and students search locally first." },
+  { icon: Wrench, type: "Local service businesses", desc: "Plumbers, electricians, repairs — urgency searches." },
+  { icon: Scale, type: "Professional services", desc: "Lawyers, accountants, consultants — trust starts on Google." },
 ];
 
-const PILLARS = [
+const PROCESS = [
   {
     n: "01",
-    when: "Week 1",
-    title: "Local Search Audit & Competitive Intelligence",
-    body: "Before a single change is made, we conduct a full diagnostic of your local presence — Google Business Profile health, competitor positioning, keyword landscape and ranking gaps specific to your city and category in Sri Lanka.",
+    title: "Google Business Profile Optimization",
+    body: "We fully optimize your Google Business Profile from the ground up.",
+    items: [
+      "Primary & secondary categories",
+      "Keyword-rich business description",
+      "Services & product optimization",
+      "Geo-targeting setup",
+    ],
   },
   {
     n: "02",
-    when: "Week 2",
-    title: "Google Business Profile Architecture",
-    body: "Your GBP is rebuilt from the ground up — correct primary and secondary categories, keyword-rich business description, full attribute selection, services catalogue, geo-tagged photos, and Q&A seeding. Every signal Google uses to evaluate relevance, addressed.",
+    title: "Google Maps SEO Optimization",
+    body: "We implement advanced Google Maps SEO Sri Lanka strategies.",
+    items: [
+      "Local keyword optimization",
+      "Location relevance signals",
+      "Search intent matching",
+      "Map ranking structure",
+    ],
   },
   {
     n: "03",
-    when: "Week 3",
-    title: "Google Maps Ranking Signal Build",
-    body: "We implement the prominence signals that push your listing into the 3-Pack — local authority building, NAP consistency across Sri Lankan directories, review acquisition framework design, and proximity optimisation for your target service area.",
+    title: "Google Map Ranking Signals",
+    body: "We build the signals Google uses to rank your business higher.",
+    items: [
+      "NAP consistency across Sri Lanka directories",
+      "Local citations",
+      "Authority signals",
+      "Location trust signals",
+    ],
   },
   {
     n: "04",
-    when: "Week 3–4",
-    title: "Reputation Foundation & Review Strategy",
-    body: "We design and install a sustainable system for generating authentic Google reviews — the most powerful ranking factor in local search. You receive a custom review playbook your team can run independently, indefinitely, without us.",
+    title: "Review Optimization System",
+    body: "Reviews are the #1 ranking factor on Google Maps. We install a system that delivers.",
+    items: [
+      "Generate real customer reviews",
+      "Increase review frequency",
+      "Improve overall ratings",
+      "Build long-term trust signals",
+    ],
   },
   {
     n: "05",
-    when: "Week 4",
-    title: "Handover, Documentation & Advisory Session",
-    body: "A complete Local Search Health Document — everything we built, why we built it, and exactly how to maintain your rankings without an agency. Plus a 60-minute advisory session walking through your position and answering every question.",
+    title: "Local 3-Pack Ranking Strategy",
+    body: "We position your business to enter Google Maps Top 3 results — where calls, directions, and sales increase.",
+    items: [
+      "Targeted prominence building",
+      "Proximity & relevance tuning",
+      "Competitor displacement strategy",
+      "Sustained 3-Pack positioning",
+    ],
   },
 ];
 
-const INCLUDED = [
-  "Complete Google Business Profile setup or overhaul",
-  "Category, attribute and service architecture",
-  "Geo-tagged photo strategy and professional upload",
-  "Google Maps ranking signal implementation",
-  
-  "Review acquisition system design and installation",
-  "Competitor gap analysis and positioning report",
-  "60-minute handover advisory session",
-  "Local Search Health Document — full documentation",
-  "30-day post-handover email support",
+const WHAT_YOU_GET = [
+  "Fully optimized Google Business Profile",
+  "Higher Google Maps ranking",
+  "More calls & local leads",
+  "Increased foot traffic",
+  "Long-term visibility — without ads",
+  "Complete documentation & handover",
 ];
 
-const WALK_AWAY = [
-  "A fully optimised Google Business Profile that ranks",
-  "A clear position in or approaching the Local 3-Pack",
-  "A review system your team runs without us",
-  "Complete ownership — no dependency on an agency",
-  "Full documentation your team can maintain and build on",
-  "Visibility that compounds — the longer it stands, the stronger it gets",
-  "Customers finding you every day, without spending on ads",
+const COMPARE = [
+  { gmo: "Instant local visibility", seo: "Slow results" },
+  { gmo: "High-intent customers", seo: "General traffic" },
+  { gmo: "Calls & in-person visits", seo: "Website clicks" },
+  { gmo: "Local market domination", seo: "Broad competition" },
+];
+
+const WHY_US = [
+  {
+    icon: MapPin,
+    title: "Sri Lanka-focused local SEO strategy",
+    body: "Built specifically for the Sri Lankan market — Colombo, Kandy, Galle, Negombo, Jaffna and beyond.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "No monthly retainers",
+    body: "One-time investment. No lock-in contracts. No surprise bills.",
+  },
+  {
+    icon: InfinityIcon,
+    title: "One-time optimization approach",
+    body: "We build it once, correctly. Your rankings keep working without ongoing agency fees.",
+  },
+  {
+    icon: Award,
+    title: "Proven ranking methods",
+    body: "Strategies validated across Sri Lankan businesses ranking in their Local 3-Pack.",
+  },
 ];
 
 const TIMELINE = [
   {
-    when: "Week 1–4 · During the engagement",
-    title: "The foundations are built",
-    body: "Your Google Business Profile is rebuilt. Ranking signals are implemented. Your review system is live and running. Google begins re-evaluating your listing against every competitor in your city.",
+    when: "Initial improvements · 30 days",
+    title: "Foundations live & indexed",
+    body: "Your Google Business Profile is rebuilt, ranking signals are deployed, and your review system is generating real customer reviews. Google begins re-evaluating your listing.",
   },
   {
-    when: "Days 30–60 · The momentum phase",
-    title: "Visibility begins climbing",
-    body: "Your listing starts ranking for more local queries. New reviews arrive through the system we built. Google Maps position improves. You begin receiving calls and direction requests from people who previously had no idea you existed.",
+    when: "Ranking growth · 60 days",
+    title: "Visibility climbs",
+    body: "Your listing starts ranking for more local queries. Calls and direction requests increase. Customers who never knew you existed begin finding you on Google Maps.",
   },
   {
-    when: "Days 60–90 · The breakthrough",
+    when: "Top 3 positioning · 60–90 days",
     title: "Local 3-Pack entry",
-    body: "For most businesses in Sri Lanka's market, 60 to 90 days is when the 3-Pack position is reached. This is where the step-change in inbound calls, clicks, and walk-ins becomes undeniable — the 80% of local searchers who only click the top three results can now find you.",
-  },
-  {
-    when: "Month 6 and beyond · The compounding years",
-    title: "Your investment keeps working — without you touching it",
-    body: "This is what separates local SEO from every other marketing channel. The foundations we built continue accumulating authority. Each new review strengthens your position. Each month in the 3-Pack makes your ranking harder for competitors to displace.",
-  },
-];
-
-const WHY_NOW = [
-  {
-    n: "01",
-    title: "Authority compounds over time",
-    body: "A Google Business Profile optimised and accumulating reviews for 12 months is structurally stronger than one optimised today — even if built identically. Time in market is a ranking signal. Starting sooner is starting stronger.",
-  },
-  {
-    n: "02",
-    title: "Competitors are entering the market every month",
-    body: "Categories that had two optimised competitors 18 months ago now have eight. The businesses that hold top positions now will hold them longest — and the cost to displace them rises every month they hold rank.",
-  },
-  {
-    n: "03",
-    title: "The cost of delay is measured in customers lost",
-    body: "Every day your business is invisible in local search, a competitor receives a customer that should have been yours. There is no neutral position — you are either capturing local demand or someone else is.",
+    body: "For most businesses in Sri Lanka, this is when you enter the Local 3-Pack. The step-change in inbound calls, walk-ins, and revenue becomes undeniable.",
   },
 ];
 
 const FAQS = [
   {
-    q: "What is Google Map Optimization and how is it different from regular SEO?",
-    a: "Google Map Optimization is the discipline of ranking your business in Google Maps and the Local 3-Pack — the boxed map results that appear at the top of local searches. It is fundamentally different from traditional website SEO. Map rankings are driven by your Google Business Profile, proximity to the searcher, prominence signals like reviews and citations, and the architecture of your listing. SeoFX builds all of this once, correctly, so your business shows up when nearby customers search for what you offer.",
+    q: "What is Google Map Optimization?",
+    a: "Google Map Optimization is the process of improving your Google Business Profile so your business ranks higher on Google Maps — particularly inside the Local 3-Pack, where 80% of local clicks happen. It involves category architecture, keyword optimization, ranking signals, citations, and a sustained review acquisition system.",
   },
   {
-    q: "Why is this a one-time investment and not a monthly retainer?",
-    a: "Because local search authority is a built asset — not a campaign. Once your Google Business Profile is properly architected, ranking signals are implemented, and a review acquisition system is in place, the work compounds on its own. We do the heavy strategic and technical work in one focused engagement, hand it over with full documentation, and your team maintains it. No agency dependency. No monthly bill that never ends.",
+    q: "Why is Google Maps important for my Sri Lankan business?",
+    a: "Because most customers in Sri Lanka choose businesses from the top 3 results on Google Maps. 85% of local buyers use Google to discover businesses, and the top three Maps listings receive 80% of clicks. If you are not there, your competitors are getting your customers.",
+  },
+  {
+    q: "Do I need a website to rank on Google Maps?",
+    a: "No — Google Maps alone can generate leads. Your Google Business Profile is a standalone asset that can drive calls, direction requests, and walk-ins even without a website. A website strengthens results, but it is not required to rank.",
+  },
+  {
+    q: "How fast can I rank on Google Maps?",
+    a: "Most businesses see initial improvements within 30 days, meaningful ranking growth by 60 days, and Local 3-Pack positioning between 60 and 90 days — depending on your category and the competition in your city.",
+  },
+  {
+    q: "How is Google Map Optimization different from regular SEO?",
+    a: "Traditional SEO focuses on ranking your website in Google search results — a slow, broad-competition game. Google Map Optimization ranks your Google Business Profile on Google Maps, delivering instant local visibility, high-intent customers, and direct calls or walk-ins. They are two completely different disciplines.",
   },
   {
     q: "How much does Google Map Optimization in Sri Lanka cost?",
-    a: "The Foundation Package starts from LKR 35,000 as a one-time investment — covering Google Business Profile rebuild, category and attribute architecture, NAP citation cleanup across 30+ Sri Lankan directories, ranking signal implementation, review system installation, a Local Search Health Document, and a 60-minute advisory session. Larger or multi-location businesses may require a custom scope, which we confirm during the discovery call.",
+    a: "The Foundation Package starts from LKR 35,000 as a one-time investment. This covers the complete Google Business Profile rebuild, Maps SEO implementation, ranking signal deployment, review system installation, and full handover documentation. No monthly fees. No retainer.",
   },
   {
-    q: "How long before I see ranking improvements on Google Maps?",
-    a: "The build itself takes approximately four weeks. Initial ranking improvements typically begin within 30–60 days as Google re-evaluates your listing. For most Sri Lankan businesses in moderate-competition categories, the Local 3-Pack position is reached between days 60 and 90. From month six onwards, your authority continues compounding — without further investment from you.",
+    q: "Will my listing keep ranking after the engagement?",
+    a: "Yes. Local search authority does not depreciate the way ad spend does. Once your Google Business Profile is correctly built and your review system is running, your listing continues to gain strength on its own — for years.",
   },
   {
-    q: "Will my listing keep ranking after the engagement ends?",
-    a: "Yes — that is the entire point. Local search authority does not depreciate the way ad spend does. Once a Google Business Profile is correctly built, citations are aligned, and a review system is generating fresh reviews, the listing continues to gain strength on its own. Many businesses we optimised years ago are still ranking today without any further work from us.",
-  },
-  {
-    q: "Do you also offer Google My Business (GMB) profile management?",
-    a: "Google My Business was renamed to Google Business Profile (GBP), but the work is the same. We handle the complete profile setup, optimisation, content architecture, photo strategy, services catalogue, Q&A seeding, and review framework. After handover, your team manages day-to-day posts and review responses — using the playbook we provide.",
-  },
-  {
-    q: "What if my business has multiple locations in Sri Lanka?",
-    a: "Multi-location businesses require an extended engagement scope. Each location needs its own optimised profile, location-specific content, individual citation alignment, and a per-location review strategy. We confirm pricing and timeline for multi-location work during the discovery call — typically running between two and three months end-to-end.",
-  },
-  {
-    q: "Is this only for Colombo businesses, or does it work everywhere in Sri Lanka?",
-    a: "It works for any Sri Lankan business serving a local or regional customer base — Colombo, Kandy, Galle, Negombo, Jaffna, Matara, Kurunegala, Anuradhapura, Trincomalee, Batticaloa and beyond. In fact, businesses outside Colombo often see faster results because the local competition is less mature.",
+    q: "Does this work outside Colombo?",
+    a: "Absolutely. Our Google Map Optimization Sri Lanka service works in Colombo, Kandy, Galle, Negombo, Jaffna, Matara, Kurunegala, Anuradhapura, Trincomalee, Batticaloa and beyond. Businesses outside Colombo often see faster results because local competition is less mature.",
   },
 ];
 
@@ -241,9 +223,9 @@ const GoogleMapOptimization = () => {
   const svcSchema = serviceSchema({
     name: "Google Map Optimization Sri Lanka",
     description:
-      "One-time Google Map Optimization and Google Business Profile consultancy for Sri Lankan businesses. Rank in the Local 3-Pack, capture local demand, and build visibility that compounds for years — without a monthly retainer.",
+      "Rank #1 on Google Maps and get more local customers. Google Map Optimization Sri Lanka service — Google Business Profile optimization, Google Maps SEO, Local 3-Pack ranking, review system. One-time investment, no monthly retainer.",
     url: `${SITE.url}/google-map-optimization`,
-    serviceType: "Local Search Optimization",
+    serviceType: "Google Maps SEO & Local Search Optimization",
     offers: [
       {
         name: "Google Map Optimization — Foundation Package",
@@ -251,7 +233,7 @@ const GoogleMapOptimization = () => {
         price: "35000",
         priceCurrency: "LKR",
         description:
-          "One-time Google Business Profile rebuild, Maps ranking signal implementation, citation alignment, review system installation, and full documentation.",
+          "One-time Google Business Profile rebuild, Google Maps SEO Sri Lanka implementation, ranking signal build, citation alignment, review system installation, and full documentation.",
       },
     ],
   });
@@ -266,7 +248,7 @@ const GoogleMapOptimization = () => {
         title="Google Map Optimization Sri Lanka | Google My Business SEO Services"
         description="Boost your local visibility with Google Map Optimization in Sri Lanka. Rank higher on Google Maps, optimize your Google My Business profile, get more calls, traffic & local leads."
         canonical="/google-map-optimization"
-        keywords="google map optimization sri lanka, google maps seo sri lanka, google my business sri lanka, google business profile sri lanka, local seo sri lanka, gmb optimization sri lanka, local 3-pack sri lanka, near me seo sri lanka"
+        keywords="google map optimization, google map optimization sri lanka, google maps seo sri lanka, google my business sri lanka, google business profile optimization, gmb optimization sri lanka, local 3-pack sri lanka, near me seo sri lanka, local seo sri lanka"
         jsonLd={[orgSchema(), websiteSchema(), svcSchema, faqJsonLd]}
       />
 
@@ -285,12 +267,10 @@ const GoogleMapOptimization = () => {
           aria-hidden
           className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-30"
         />
-        {/* Dark overlay for text legibility */}
         <div
           className="pointer-events-none absolute inset-0 bg-gradient-to-r from-hero via-hero/85 to-hero/40"
           aria-hidden
         />
-        {/* Google-colored ambient glows */}
         <div
           className="pointer-events-none absolute -top-40 -right-40 h-[700px] w-[700px] rounded-full bg-google-blue/25 blur-3xl"
           aria-hidden
@@ -316,17 +296,20 @@ const GoogleMapOptimization = () => {
               Google Map Optimization · Sri Lanka
             </span>
             <h1 className="mt-7 max-w-2xl font-display text-4xl font-extrabold leading-[1.04] tracking-tight text-white sm:text-5xl md:text-6xl">
-              One investment.{" "}
-              <span className="text-white/50">Years of</span>{" "}
+              Rank #1 on{" "}
               <span className="bg-gradient-to-r from-google-blue via-google-red to-google-yellow bg-clip-text text-transparent">
                 Google Maps
               </span>{" "}
-              visibility.
+              <span className="text-white/50">&</span> get more local customers.
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-white/65 sm:text-lg">
-              SeoFX is Sri Lanka's local search consultancy. We rebuild your Google Business Profile,
-              install the ranking signals that win the Local 3-Pack, and hand you a system that keeps
-              generating customers — without a monthly retainer.
+              If your business is not showing on Google Maps when customers search, you are losing
+              leads every day. Our <strong className="font-semibold text-white">Google Map Optimization
+              Sri Lanka</strong> service ranks you in the Local 3-Pack — driving calls, foot traffic,
+              and high-intent customers without ads.
+            </p>
+            <p className="mt-4 max-w-xl text-sm font-medium text-white/55">
+              This is not traditional SEO. <span className="text-accent">This is Google Maps dominance.</span>
             </p>
             <div className="mt-9 flex flex-wrap items-center gap-4">
               <Button asChild variant="hero" size="lg">
@@ -396,175 +379,261 @@ const GoogleMapOptimization = () => {
             </div>
           </div>
         </div>
-
-        <div className="container-tight relative mt-16 grid grid-cols-2 gap-6 border-t border-white/10 pt-10 sm:grid-cols-4">
-          {[
-            { num: "80%", label: "Of local clicks go to the top 3 Maps results" },
-            { num: "76%", label: "Of local mobile searches lead to a visit in 24h" },
-            { num: "85%", label: "Of Sri Lankans discover businesses via Google" },
-            { num: "1×", label: "Built once. Compounds for years." },
-          ].map((s) => (
-            <div key={s.label} className="border-l border-white/10 pl-5 first:border-l-0 first:pl-0 sm:pl-6">
-              <div className="font-display text-3xl font-extrabold text-white sm:text-4xl">{s.num}</div>
-              <div className="mt-1.5 text-xs leading-relaxed text-white/40 sm:text-sm">{s.label}</div>
-            </div>
-          ))}
-        </div>
       </section>
 
-      {/* STATEMENT */}
+      {/* WHAT IS GOOGLE MAP OPTIMIZATION */}
       <section className="border-b border-border bg-soft py-20 sm:py-24">
-        <div className="container-tight max-w-4xl text-center">
+        <div className="container-tight max-w-4xl">
           <p className="text-xs font-bold uppercase tracking-[0.14em] text-primary">
-            The truth about local search
+            What is Google Map Optimization?
           </p>
-          <h2 className="mt-5 font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl">
-            Someone in your city is searching for exactly what you offer right now.{" "}
-            <span className="text-muted-foreground">Can they find you?</span>
+          <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl">
+            The discipline of ranking your business in the Google Maps Local 3-Pack.
           </h2>
-          <p className="mx-auto mt-7 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            If your business does not appear in Google Maps when a nearby customer searches —{" "}
-            that customer goes to your competitor.{" "}
-            <strong className="font-semibold text-foreground">Not because they prefer your competitor. Simply because they found them first.</strong>
+          <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
+            <strong className="font-semibold text-foreground">Google Map Optimization</strong> is the
+            process of improving your Google Business Profile to rank higher on Google Maps. When
+            someone in Sri Lanka searches for:
           </p>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-            Local search visibility is not a marketing luxury. It is the most fundamental piece of
-            commercial infrastructure a Sri Lankan business can have today. And unlike advertising,
-            you only have to build it once.
+
+          <div className="mt-7 grid gap-3 sm:grid-cols-3">
+            {['"restaurant near me"', '"dentist Colombo"', '"salon Sri Lanka"'].map((q) => (
+              <div
+                key={q}
+                className="flex items-center gap-3 rounded-xl border border-border bg-card p-4"
+              >
+                <Search className="size-4 shrink-0 text-google-blue" aria-hidden />
+                <span className="text-sm font-medium text-foreground">{q}</span>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-7 text-base leading-relaxed text-muted-foreground sm:text-lg">
+            Google shows the top 3 businesses — the{" "}
+            <strong className="font-semibold text-foreground">Local 3-Pack</strong>. If you are not
+            there, your competitors get the customer. Our Google Map Optimization Sri Lanka service
+            ensures your business appears where it matters most.
           </p>
         </div>
       </section>
 
-      {/* REALITY */}
+      {/* WHY CRITICAL IN SRI LANKA */}
       <section className="bg-background py-20 sm:py-24">
-        <div className="container-tight grid gap-14 lg:grid-cols-2 lg:gap-20">
-          <div>
+        <div className="container-tight">
+          <div className="max-w-3xl">
             <p className="text-xs font-bold uppercase tracking-[0.14em] text-primary">
-              Why this matters
+              Why this matters in Sri Lanka
             </p>
             <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl">
-              What Google Maps actually means for your revenue
+              Google Map Optimization is critical in Sri Lanka.
             </h2>
-            <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-              The businesses at the top of Google Maps are not there by chance. They are there
-              because someone made deliberate, strategic decisions about how their local presence
-              is structured.
-            </p>
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              The opportunity: those decisions do not require an ongoing agency. They require one
-              expert consultation, executed precisely, once — and the results compound indefinitely.
+            <p className="mt-5 text-base leading-relaxed text-muted-foreground sm:text-lg">
+              Ranking on Google Maps in Sri Lanka equals direct revenue. Here's why every local
+              business needs this — now.
             </p>
           </div>
-          <div className="space-y-3">
-            {REALITY.map((r) => (
+
+          <div className="mt-12 grid gap-5 sm:grid-cols-2">
+            {WHY_CRITICAL.map((w) => (
               <div
-                key={r.title}
-                className="rounded-xl border border-border bg-card p-6 transition-shadow hover:shadow-card"
+                key={w.title}
+                className="rounded-2xl border border-border bg-card p-7 transition-shadow hover:shadow-card"
               >
-                <div className="flex items-start justify-between gap-4">
-                  <h4 className="font-display text-base font-bold text-foreground">{r.title}</h4>
-                  <span
-                    className={
-                      "shrink-0 rounded-full px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider " +
-                      (r.tone === "fact"
-                        ? "bg-accent/10 text-accent"
-                        : r.tone === "impact"
-                        ? "bg-primary/10 text-primary"
-                        : "bg-google-red/10 text-google-red")
-                    }
-                  >
-                    {r.tag}
-                  </span>
+                <div className="flex items-center gap-4">
+                  <div className="flex size-12 shrink-0 items-center justify-center rounded-xl bg-google-blue/10">
+                    <w.icon className="size-6 text-google-blue" aria-hidden />
+                  </div>
+                  <div className="font-display text-3xl font-extrabold text-foreground">{w.stat}</div>
                 </div>
-                <p className="mt-2.5 text-sm leading-relaxed text-muted-foreground">{r.body}</p>
+                <h3 className="mt-5 font-display text-base font-bold text-foreground">{w.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{w.body}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* WHO */}
-      <section className="bg-hero py-20 sm:py-24">
+      {/* OUR PROCESS */}
+      <section className="bg-soft py-20 sm:py-24">
         <div className="container-tight">
-          <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">
-            Every business · Every category
-          </p>
-          <h2 className="mt-4 max-w-3xl font-display text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-4xl md:text-5xl">
-            If customers can walk through your door, they should be able to find you on Google.
-          </h2>
-          <p className="mt-5 max-w-2xl text-base leading-relaxed text-white/45">
-            This is not industry-specific advice. Local search visibility is the baseline
-            requirement for any business that serves a local market — in any city, in any category.
-          </p>
+          <div className="grid items-end gap-10 lg:grid-cols-2 lg:gap-20">
+            <div>
+              <p className="text-xs font-bold uppercase tracking-[0.14em] text-primary">
+                Our process
+              </p>
+              <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl">
+                Our Google Map Optimization Sri Lanka process.
+              </h2>
+            </div>
+            <p className="text-base leading-relaxed text-muted-foreground">
+              Five focused stages. Built once, correctly. Designed to rank — and keep ranking — in
+              the Google Maps Local 3-Pack for your category and city.
+            </p>
+          </div>
+
+          <div className="mt-12 grid gap-5 lg:grid-cols-2">
+            {PROCESS.map((p) => (
+              <div
+                key={p.n}
+                className="rounded-2xl border border-border bg-card p-7 transition-shadow hover:shadow-card"
+              >
+                <div className="flex items-center gap-3">
+                  <span className="font-display text-xs font-bold uppercase tracking-wider text-google-blue">
+                    Step {p.n}
+                  </span>
+                </div>
+                <h3 className="mt-3 font-display text-xl font-bold text-foreground">{p.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{p.body}</p>
+                <ul className="mt-5 space-y-2.5">
+                  {p.items.map((item) => (
+                    <li key={item} className="flex items-start gap-2.5 text-sm text-foreground/80">
+                      <Check className="mt-0.5 size-4 shrink-0 text-google-green" aria-hidden />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WHAT YOU GET */}
+      <section className="bg-hero py-20 sm:py-24">
+        <div className="container-tight max-w-5xl">
+          <div className="text-center">
+            <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent">
+              What you get
+            </p>
+            <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-4xl md:text-5xl">
+              Everything required to dominate Google Maps in your city.
+            </h2>
+          </div>
+
+          <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {WHAT_YOU_GET.map((item) => (
+              <div
+                key={item}
+                className="flex items-start gap-3 rounded-xl border border-white/10 bg-white/5 p-5 text-sm text-white/80"
+              >
+                <Check className="mt-0.5 size-4 shrink-0 text-accent" aria-hidden />
+                {item}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WHO NEEDS IT */}
+      <section className="bg-background py-20 sm:py-24">
+        <div className="container-tight">
+          <div className="max-w-3xl">
+            <p className="text-xs font-bold uppercase tracking-[0.14em] text-primary">
+              Who needs Google Map Optimization?
+            </p>
+            <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl">
+              If customers search for your service locally — you need this.
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-muted-foreground">
+              This service is essential for every Sri Lankan business serving a local market.
+            </p>
+          </div>
 
           <div className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
             {WHO.map((w) => (
               <div
                 key={w.type}
-                className="rounded-xl border border-white/10 bg-white/5 p-6 transition-colors hover:bg-white/10"
+                className="rounded-xl border border-border bg-card p-6 transition-shadow hover:shadow-card"
               >
-                <w.icon className="size-7 text-accent" aria-hidden />
-                <h3 className="mt-4 font-display text-sm font-bold text-white">{w.type}</h3>
-                <p className="mt-2 text-[13px] leading-relaxed text-white/50">{w.desc}</p>
-                <p className="mt-4 border-t border-white/10 pt-3 text-xs text-white/35">
-                  <span className="font-semibold text-accent">{w.impact}</span>
-                </p>
+                <w.icon className="size-7 text-google-blue" aria-hidden />
+                <h3 className="mt-4 font-display text-sm font-bold text-foreground">{w.type}</h3>
+                <p className="mt-2 text-[13px] leading-relaxed text-muted-foreground">{w.desc}</p>
               </div>
             ))}
-          </div>
-
-          <div className="mt-10 flex items-start gap-4 rounded-2xl border border-white/10 bg-primary/10 p-7">
-            <Lightbulb className="mt-0.5 size-5 shrink-0 text-accent" aria-hidden />
-            <p className="text-sm leading-relaxed text-white/65 sm:text-base">
-              If you are reading this and wondering whether Google Map Optimization applies to your
-              business —{" "}
-              <strong className="font-semibold text-white">it does.</strong>{" "}
-              The only businesses that cannot benefit from Google Maps visibility are those with no
-              physical or service-area presence. Every other business is quietly leaving customers
-              on the table without it.
-            </p>
           </div>
         </div>
       </section>
 
-      {/* WHAT WE DO */}
+      {/* COMPARISON */}
       <section className="bg-soft py-20 sm:py-24">
-        <div className="container-tight">
-          <div className="grid items-end gap-10 lg:grid-cols-2 lg:gap-20">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.14em] text-primary">The work</p>
-              <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl">
-                One month of focused expert work. Built to last.
-              </h2>
-            </div>
-            <p className="text-base leading-relaxed text-muted-foreground">
-              We do not sell you an ongoing dependency. We come in, do the work correctly, and build
-              a local search presence that works for your business every day without us. Here is
-              exactly what that looks like.
+        <div className="container-tight max-w-5xl">
+          <div className="text-center">
+            <p className="text-xs font-bold uppercase tracking-[0.14em] text-primary">
+              Side by side
+            </p>
+            <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl">
+              Google Map Optimization vs Traditional SEO
+            </h2>
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground">
+              Two completely different disciplines. One delivers local customers today.
             </p>
           </div>
 
           <div className="mt-12 overflow-hidden rounded-2xl border border-border bg-card">
-            {PILLARS.map((p, i) => (
+            <div className="grid grid-cols-2 border-b border-border bg-soft">
+              <div className="p-5 sm:p-7">
+                <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-google-blue">
+                  Google Map Optimization
+                </p>
+                <p className="mt-1 font-display text-base font-bold text-foreground sm:text-lg">
+                  Local domination
+                </p>
+              </div>
+              <div className="border-l border-border p-5 sm:p-7">
+                <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-muted-foreground">
+                  Traditional SEO
+                </p>
+                <p className="mt-1 font-display text-base font-bold text-foreground sm:text-lg">
+                  Broad search
+                </p>
+              </div>
+            </div>
+            {COMPARE.map((c, i) => (
               <div
-                key={p.n}
+                key={c.gmo}
                 className={
-                  "grid items-center gap-6 p-7 transition-colors hover:bg-soft sm:grid-cols-[60px_1fr_auto] sm:p-8 " +
-                  (i < PILLARS.length - 1 ? "border-b border-border" : "")
+                  "grid grid-cols-2 " +
+                  (i < COMPARE.length - 1 ? "border-b border-border" : "")
                 }
               >
-                <div className="font-display text-sm font-bold uppercase tracking-wider text-muted-foreground">
-                  {p.n}
+                <div className="flex items-start gap-3 p-5 text-sm text-foreground sm:p-6">
+                  <Check className="mt-0.5 size-4 shrink-0 text-google-green" aria-hidden />
+                  <span className="font-medium">{c.gmo}</span>
+                </div>
+                <div className="border-l border-border p-5 text-sm text-muted-foreground sm:p-6">
+                  {c.seo}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* WHY CHOOSE US */}
+      <section className="bg-background py-20 sm:py-24">
+        <div className="container-tight">
+          <div className="max-w-3xl">
+            <p className="text-xs font-bold uppercase tracking-[0.14em] text-primary">
+              Why SeoFX
+            </p>
+            <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl">
+              Why choose our Google Map Optimization Sri Lanka service?
+            </h2>
+          </div>
+
+          <div className="mt-12 grid gap-5 sm:grid-cols-2">
+            {WHY_US.map((w) => (
+              <div
+                key={w.title}
+                className="flex gap-5 rounded-2xl border border-border bg-card p-7 transition-shadow hover:shadow-card"
+              >
+                <div className="flex size-11 shrink-0 items-center justify-center rounded-xl bg-google-blue/10">
+                  <w.icon className="size-5 text-google-blue" aria-hidden />
                 </div>
                 <div>
-                  <h3 className="font-display text-lg font-bold text-foreground">{p.title}</h3>
-                  <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted-foreground">
-                    {p.body}
-                  </p>
+                  <h3 className="font-display text-base font-bold text-foreground">{w.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{w.body}</p>
                 </div>
-                <span className="inline-flex w-fit items-center rounded-full bg-primary/10 px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-wider text-primary">
-                  {p.when}
-                </span>
               </div>
             ))}
           </div>
@@ -582,8 +651,8 @@ const GoogleMapOptimization = () => {
               Pay once. Rank for years.
             </h2>
             <p className="mt-5 text-base leading-relaxed text-white/45">
-              No retainer. No monthly fee. No lock-in. One investment, one month of work, a local
-              search presence that compounds in value every single day after we are done.
+              No retainer. No monthly fee. No lock-in. One investment, one focused engagement, a
+              Google Maps presence that compounds in value every day after.
             </p>
           </div>
 
@@ -598,8 +667,7 @@ const GoogleMapOptimization = () => {
                 </h3>
                 <p className="mt-3 max-w-md text-sm leading-relaxed text-white/45">
                   Everything a Sri Lankan business needs to establish dominant, lasting Google Maps
-                  visibility — done once, done correctly, built to work without ongoing agency
-                  involvement.
+                  visibility — done once, done correctly.
                 </p>
                 <span className="mt-4 inline-flex items-center gap-1.5 rounded-full border border-primary/40 bg-primary/15 px-3.5 py-1.5 text-[11px] font-bold uppercase tracking-wider text-accent">
                   <Check className="size-3.5" /> One-Time Investment · No Monthly Fees
@@ -618,52 +686,13 @@ const GoogleMapOptimization = () => {
               </div>
             </div>
 
-            <div className="grid gap-12 p-9 sm:p-12 lg:grid-cols-2">
-              <div>
-                <h4 className="font-display text-xs font-bold uppercase tracking-[0.1em] text-muted-foreground">
-                  What is included
-                </h4>
-                <ul className="mt-5 space-y-3.5">
-                  {INCLUDED.map((item) => (
-                    <li key={item} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
-                      <span className="mt-0.5 inline-flex size-5 shrink-0 items-center justify-center rounded-full bg-accent/15">
-                        <Check className="size-3 text-accent" />
-                      </span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-display text-xs font-bold uppercase tracking-[0.1em] text-muted-foreground">
-                  What you walk away with
-                </h4>
-                <ul className="mt-5 space-y-3.5">
-                  {WALK_AWAY.map((item) => (
-                    <li key={item} className="flex gap-3 text-sm leading-relaxed text-muted-foreground">
-                      <span className="mt-0.5 inline-flex size-5 shrink-0 items-center justify-center rounded-full bg-accent/15">
-                        <Check className="size-3 text-accent" />
-                      </span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
-                <div className="mt-7 rounded-lg border-l-4 border-primary bg-soft p-5 text-sm leading-relaxed text-muted-foreground">
-                  <strong className="font-semibold text-foreground">Our commitment:</strong> we do
-                  not consider the engagement complete until your Google Business Profile is
-                  verified, fully optimised, and indexed — regardless of how long that process
-                  takes on Google's side.
-                </div>
-              </div>
-            </div>
-
             <div className="flex flex-wrap items-center justify-between gap-5 border-t border-border bg-soft px-9 py-7 sm:px-12">
               <p className="max-w-md text-sm leading-relaxed text-muted-foreground">
                 <strong className="font-semibold text-foreground">
-                  Ready to invest once in your business's long-term local visibility?
+                  Ready to rank on Google Maps?
                 </strong>{" "}
                 Book a 20-minute discovery call. We review your current position and confirm this
-                is the right fit before you commit to anything.
+                is the right fit.
               </p>
               <Button asChild variant="hero" size="lg">
                 <Link to="/contact-us">
@@ -679,141 +708,32 @@ const GoogleMapOptimization = () => {
       <section className="bg-background py-20 sm:py-24">
         <div className="container-tight">
           <p className="text-xs font-bold uppercase tracking-[0.14em] text-primary">
-            What happens after
+            How long does it take?
           </p>
           <h2 className="mt-4 max-w-3xl font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl">
-            The compounding return on a one-time investment
+            How long does Google Map Optimization take?
           </h2>
           <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-            Local search authority does not depreciate. Unlike advertising — which stops the moment
-            you stop paying — a well-built local presence grows stronger with every passing month.
+            Timing depends on competition in your city and category — but here is the typical path
+            for Sri Lankan businesses.
           </p>
 
           <div className="relative mt-14 border-l border-border pl-8 sm:pl-10">
             {TIMELINE.map((t, i) => (
               <div key={t.title} className={i < TIMELINE.length - 1 ? "pb-12" : ""}>
                 <span
-                  className="absolute -left-2 mt-1 inline-block size-4 rounded-full border-[1.5px] border-muted-foreground bg-background"
+                  className="absolute -left-2 mt-1 inline-block size-4 rounded-full border-[1.5px] border-google-blue bg-background"
                   aria-hidden
                 />
-                <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-muted-foreground">
+                <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-google-blue">
                   {t.when}
                 </p>
                 <h4 className="mt-2 font-display text-xl font-bold text-foreground">{t.title}</h4>
                 <p className="mt-2.5 max-w-2xl text-base leading-relaxed text-muted-foreground">
                   {t.body}
                 </p>
-                {i === TIMELINE.length - 1 && (
-                  <div className="mt-5 flex max-w-xl items-start gap-4 rounded-xl bg-hero p-6">
-                    <InfinityIcon className="mt-0.5 size-6 shrink-0 text-accent" aria-hidden />
-                    <p className="text-sm leading-relaxed text-white/70">
-                      A business we optimise today will still be benefiting from that same work{" "}
-                      <strong className="font-semibold text-white">
-                        three, five, ten years from now
-                      </strong>{" "}
-                      — with no further investment required. That is the nature of local search
-                      authority. It is an asset on your balance sheet, not a marketing expense.
-                    </p>
-                  </div>
-                )}
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* WHY NOW */}
-      <section className="bg-soft py-20 sm:py-24">
-        <div className="container-tight grid gap-14 lg:grid-cols-2 lg:gap-20">
-          <div>
-            <p className="text-xs font-bold uppercase tracking-[0.14em] text-primary">
-              Why act now
-            </p>
-            <h2 className="mt-4 font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl">
-              The window to rank easily is closing
-            </h2>
-            <p className="mt-5 text-base leading-relaxed text-muted-foreground">
-              Sri Lanka's local search landscape is maturing fast. Three years ago, most categories
-              in most cities had almost no optimised competition. Today, the most competitive
-              Colombo markets are genuinely difficult to enter.
-            </p>
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              In two years, the same will be true of Kandy, Galle, Negombo and beyond. The
-              businesses that move now — even in moderately competitive markets — will entrench
-              positions that become exponentially harder and more expensive to displace over time.
-            </p>
-          </div>
-          <div className="space-y-4">
-            {WHY_NOW.map((w) => (
-              <div
-                key={w.n}
-                className="flex gap-5 rounded-xl border border-border bg-card p-6 transition-shadow hover:shadow-card"
-              >
-                <div className="font-display text-3xl font-extrabold text-border">{w.n}</div>
-                <div>
-                  <h4 className="font-display text-base font-bold text-foreground">{w.title}</h4>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{w.body}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* WITHOUT */}
-      <section className="border-t border-border bg-background py-20 sm:py-24">
-        <div className="container-tight">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl md:text-5xl">
-              What does a business look like without local search visibility?
-            </h2>
-            <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-muted-foreground">
-              Not failed. Not closed. Just quietly leaving significant revenue on the table, every
-              single day, without knowing it.
-            </p>
-          </div>
-
-          <div className="mx-auto mt-14 grid max-w-6xl overflow-hidden rounded-2xl md:grid-cols-3">
-            <div className="bg-soft p-8">
-              <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-muted-foreground">
-                Today — without it
-              </p>
-              <h4 className="mt-3 font-display text-base font-bold text-foreground">
-                Invisible to the majority of local buyers
-              </h4>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                A potential customer searches "your category + your city" on Google. Your business
-                does not appear. They call your competitor. They may never know you exist. This is
-                happening dozens of times every week.
-              </p>
-            </div>
-            <div className="bg-google-red/5 p-8">
-              <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-google-red">
-                The real cost
-              </p>
-              <h4 className="mt-3 font-display text-base font-bold text-foreground">
-                The numbers are uncomfortable
-              </h4>
-              <p className="mt-3 text-sm leading-relaxed text-foreground/75">
-                If your average customer is worth LKR 5,000 and you are missing just 10 customers a
-                month from local search — that is{" "}
-                <strong className="font-semibold">LKR 600,000 a year</strong> going to a competitor.
-                The investment to stop that is LKR 35,000. Once. Ever.
-              </p>
-            </div>
-            <div className="bg-soft p-8">
-              <p className="text-[11px] font-bold uppercase tracking-[0.12em] text-muted-foreground">
-                With SeoFX — for years
-              </p>
-              <h4 className="mt-3 font-display text-base font-bold text-foreground">
-                Every local search becomes an opportunity
-              </h4>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-                Once your local presence is built correctly, you capture that demand permanently.
-                No ad budget required. No monthly agency fee. Consistent, compounding visibility
-                that turns local searches into customers, year after year.
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -825,7 +745,7 @@ const GoogleMapOptimization = () => {
             Frequently asked
           </p>
           <h2 className="mt-4 text-center font-display text-3xl font-extrabold leading-tight tracking-tight text-foreground sm:text-4xl">
-            Google Map Optimization questions, answered
+            Google Map Optimization Sri Lanka FAQs
           </h2>
 
           <div className="mt-12 space-y-4">
@@ -854,15 +774,26 @@ const GoogleMapOptimization = () => {
           className="pointer-events-none absolute left-1/2 top-1/2 h-[800px] w-[800px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-primary/15 blur-3xl"
           aria-hidden
         />
+        {/* Google brand accent strip */}
+        <div className="pointer-events-none absolute top-0 left-0 h-[3px] w-full" aria-hidden>
+          <div className="flex h-full w-full">
+            <div className="h-full flex-1 bg-google-blue" />
+            <div className="h-full flex-1 bg-google-red" />
+            <div className="h-full flex-1 bg-google-yellow" />
+            <div className="h-full flex-1 bg-google-green" />
+          </div>
+        </div>
         <div className="container-tight relative max-w-3xl">
           <h2 className="font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl">
-            Your business deserves to be found.{" "}
-            <span className="text-white/40">Let's make it visible.</span>
+            Ready to rank on{" "}
+            <span className="bg-gradient-to-r from-google-blue via-google-red to-google-yellow bg-clip-text text-transparent">
+              Google Maps?
+            </span>
           </h2>
-          <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-white/45 sm:text-lg">
-            One conversation. We review where you stand today, show you exactly what needs to be
-            done, and give you an honest assessment of what is possible. No sales pressure. No
-            obligation.
+          <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-white/55 sm:text-lg">
+            Your competitors are already investing in Google Map Optimization. Every day you delay
+            equals lost customers. Get your business ranked on Google Maps today and dominate local
+            search in Sri Lanka.
           </p>
 
           <div className="mt-12">
@@ -873,13 +804,13 @@ const GoogleMapOptimization = () => {
               LKR 35,000
             </p>
             <p className="mt-2 text-sm text-white/30">
-              One month of work · Lifetime of results · Zero monthly fees
+              One-time investment · Lifetime of results · Zero monthly fees
             </p>
           </div>
 
           <div className="mt-12 flex flex-wrap justify-center gap-3.5">
             <Button asChild size="lg" variant="secondary" className="bg-white text-foreground hover:bg-white/90">
-              <Link to="/contact-us">Book a Discovery Call →</Link>
+              <Link to="/contact-us">Book a Consultation Now →</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white/20 bg-transparent text-white hover:bg-white/10 hover:text-white">
               <a href={`mailto:${SITE.email}`}>Send us a message</a>
