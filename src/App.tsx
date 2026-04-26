@@ -37,6 +37,15 @@ import Post20 from "./pages/blog/Post20";
 import Post21 from "./pages/blog/Post21";
 import Post22 from "./pages/blog/Post22";
 import Post23 from "./pages/blog/Post23";
+import Post24 from "./pages/blog/Post24";
+import Post25 from "./pages/blog/Post25";
+import Post26 from "./pages/blog/Post26";
+import Post27 from "./pages/blog/Post27";
+import Post28 from "./pages/blog/Post28";
+import Post29 from "./pages/blog/Post29";
+import Post30 from "./pages/blog/Post30";
+import Post31 from "./pages/blog/Post31";
+import Post32 from "./pages/blog/Post32";
 import IndustriesHub from "./pages/IndustriesHub";
 import IndustryPage from "./pages/IndustryPage";
 import SeoConsultation from "./pages/SeoConsultation";
@@ -86,6 +95,15 @@ const App = () => (
             <Route path="/blog/what-to-look-for-hiring-seo-company-sri-lanka" element={<Post21 />} />
             <Route path="/blog/why-sri-lankan-businesses-get-seo-wrong" element={<Post22 />} />
             <Route path="/blog/how-seo-company-sri-lanka-builds-google-presence" element={<Post23 />} />
+            <Route path="/blog/seo-sri-lanka-complete-guide-2026" element={<Post24 />} />
+            <Route path="/blog/is-seo-worth-it-sri-lanka" element={<Post25 />} />
+            <Route path="/blog/seo-sri-lanka-2026-how-google-has-changed" element={<Post26 />} />
+            <Route path="/blog/how-to-choose-seo-company-sri-lanka-questions" element={<Post27 />} />
+            <Route path="/blog/what-seo-company-sri-lanka-should-deliver" element={<Post28 />} />
+            <Route path="/blog/seo-company-sri-lanka-red-flags-green-flags" element={<Post29 />} />
+            <Route path="/blog/seo-services-sri-lanka-what-is-included" element={<Post30 />} />
+            <Route path="/blog/on-page-vs-off-page-seo-services-sri-lanka" element={<Post31 />} />
+            <Route path="/blog/monthly-seo-services-vs-one-time-audit-sri-lanka" element={<Post32 />} />
             <Route path="/seo-consultant-sri-lanka" element={<SeoConsultation />} />
             <Route path="/seo-consultation" element={<Navigate to="/seo-consultant-sri-lanka" replace />} />
             <Route path="/industries" element={<IndustriesHub />} />
