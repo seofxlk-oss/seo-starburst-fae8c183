@@ -151,10 +151,11 @@ const Services = () => {
   return (
     <Layout>
       <SEO
-        title="SEO Services Sri Lanka | SEO Service Sri Lanka | SeoFX"
-        description="SEO services Sri Lanka by SeoFX — full SEO service in Sri Lanka covering audit, keyword research, on-page, link building & local SEO. Free SEO audit."
+        title="SEO Services in Sri Lanka — Full SEO Service | SeoFX"
+        description="Full-service SEO in Sri Lanka: audit, keyword research, on-page, link building, local & e-commerce SEO. 50+ Sri Lankan brands ranked. Free SEO audit."
         canonical="/services"
-        keywords="seo services sri lanka, seo service sri lanka, seo companies sri lanka, seo company sri lanka, best seo company sri lanka, seo sri lanka"
+        keywords="seo services sri lanka, seo service sri lanka, seo company sri lanka, best seo services sri lanka, technical seo sri lanka, on page seo sri lanka, off page seo sri lanka, local seo sri lanka, ecommerce seo sri lanka, link building sri lanka"
+        ogImageAlt="Full SEO services in Sri Lanka by SeoFX — audit, on-page, link building, local SEO"
         jsonLd={[
           orgSchema(),
           websiteSchema(),

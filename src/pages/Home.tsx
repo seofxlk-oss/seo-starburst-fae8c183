@@ -198,10 +198,11 @@ const Home = () => {
   return (
     <Layout>
       <SEO
-        title="SEO Company Sri Lanka | #1 SEO Services & Packages | SeoFX"
-        description="Best SEO company in Sri Lanka. SeoFX delivers proven SEO services, transparent SEO packages & 90-day ranking promise. For businesses, agencies & web devs. Free audit."
+        title="SEO Company Sri Lanka — #1 Rated SEO Agency | SeoFX"
+        description="Sri Lanka's #1 SEO company. Rank on Google in 90 days or we work free. White-hat SEO services for businesses, agencies & web devs. Free SEO audit today."
         canonical="/"
-        keywords="seo company sri lanka, seo companies in sri lanka, best seo company sri lanka, seo companies sri lanka, seo sri lanka, seo service sri lanka, best seo company in sri lanka, seo packages in sri lanka, seo price in sri lanka, white label seo sri lanka"
+        keywords="seo company sri lanka, seo sri lanka, best seo company in sri lanka, seo services sri lanka, seo packages sri lanka, seo agency sri lanka, seo specialist sri lanka, white label seo sri lanka, local seo sri lanka, seo colombo"
+        ogImageAlt="SeoFX — #1 SEO Company in Sri Lanka with 90-day ranking promise"
         jsonLd={jsonLd}
       />
 

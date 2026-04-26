@@ -138,10 +138,11 @@ const Pricing = () => {
   return (
     <Layout>
       <SEO
-        title="SEO Packages in Sri Lanka | SEO Services & Plans | SeoFX"
-        description="SEO packages in Sri Lanka by SeoFX — Starter, Business & Premium SEO plans built for real results. 90-Day Ranking Promise. WhatsApp us for a custom quote today."
+        title="SEO Packages Sri Lanka — Prices from LKR 29,900 | SeoFX"
+        description="Transparent SEO packages in Sri Lanka from LKR 29,900/month. Starter, Business & Premium plans. 90-Day Ranking Promise — rank or we work free. Get a quote."
         canonical="/seo-packages-sri-lanka"
-        keywords="seo packages in sri lanka, seo price in sri lanka, seo packages sri lanka, seo cost sri lanka, affordable seo sri lanka, seo company sri lanka"
+        keywords="seo packages sri lanka, seo price sri lanka, seo packages in sri lanka, seo price in sri lanka, seo cost sri lanka, affordable seo sri lanka, cheap seo sri lanka, monthly seo sri lanka, seo plans sri lanka, seo company sri lanka"
+        ogImageAlt="SEO packages in Sri Lanka from LKR 29,900/month — 90-day ranking promise by SeoFX"
         jsonLd={[
           orgSchema(),
           websiteSchema(),

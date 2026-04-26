@@ -10,10 +10,11 @@ const Blog = () => {
   return (
     <Layout>
       <SEO
-        title="SEO Blog Sri Lanka | SEO Tips & Guides | SeoFX"
-        description="SEO blog Sri Lanka — expert SEO tips, guides and news from SeoFX, the leading SEO company in Sri Lanka. Learn SEO strategies that grow Sri Lankan businesses."
+        title="SEO Blog Sri Lanka — Expert SEO Tips & Guides | SeoFX"
+        description="The Sri Lanka SEO blog: actionable tips, ranking guides, local SEO strategies & case studies from SeoFX — Sri Lanka's leading SEO team. New posts weekly."
         canonical="/blog"
-        keywords="seo blog sri lanka, seo tips sri lanka, seo guide sri lanka, seo company sri lanka, seo sri lanka"
+        keywords="seo blog sri lanka, seo tips sri lanka, seo guide sri lanka, sri lanka seo strategies, local seo sri lanka, google ranking sri lanka, seo company sri lanka, seo learning sri lanka"
+        ogImageAlt="SeoFX SEO Blog — Sri Lanka SEO tips, guides & ranking strategies"
         jsonLd={{
           "@context": "https://schema.org",
           "@type": "Blog",

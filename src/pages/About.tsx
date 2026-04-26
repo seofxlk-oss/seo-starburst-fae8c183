@@ -11,10 +11,11 @@ const About = () => {
   return (
     <Layout>
       <SEO
-        title="Best SEO Company in Sri Lanka | SEO Specialist Sri Lanka | SeoFX"
-        description="Best SEO company in Sri Lanka — SeoFX's SEO specialists in Sri Lanka help businesses rank #1 on Google with white-hat SEO services and proven results."
+        title="SEO Specialist Sri Lanka — Best SEO Experts | SeoFX"
+        description="Meet Sri Lanka's top SEO specialists. 10+ years' experience, 50+ brands ranked, 100% white-hat SEO. Trusted SEO consultants in Colombo. Book a free call."
         canonical="/seo-specialist-sri-lanka"
-        keywords="best seo company in sri lanka, best seo company sri lanka, seo specialist sri lanka, seo consultant sri lanka, seo company sri lanka, seo sri lanka"
+        keywords="seo specialist sri lanka, best seo specialist sri lanka, seo expert sri lanka, seo consultant sri lanka, seo professional sri lanka, best seo company sri lanka, seo agency sri lanka, seo company colombo"
+        ogImageAlt="SeoFX — Sri Lanka's leading SEO specialists & SEO consultants"
         jsonLd={[
           orgSchema(),
           websiteSchema(),
