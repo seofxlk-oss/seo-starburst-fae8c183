@@ -183,23 +183,22 @@ const Home = () => {
       href: wa,
       external: true,
     },
-    {
-      name: "Google Map Optimization",
-      tagline: "Local businesses & service areas",
-      goal: "Rank in the Google Maps 3-Pack",
-      icon: MapPin,
-      features: [
-        "Google Business Profile setup & optimisation",
-        "Local keyword & geo targeting",
-        "Citations & NAP consistency",
-        "Review generation strategy",
-        "Monthly local ranking report",
-      ],
-      cta: "Explore Map SEO",
-      href: "/google-map-optimization",
-      external: false,
-    },
   ];
+
+  const mapPackage = {
+    name: "Google Map Optimization",
+    tagline: "Local businesses & service areas in Sri Lanka",
+    goal: "Rank in the Google Maps 3-Pack",
+    features: [
+      "Google Business Profile setup & optimisation",
+      "Local keyword & geo targeting",
+      "Citations & NAP consistency across 30+ Sri Lankan directories",
+      "Review generation strategy",
+      "Monthly local ranking report",
+    ],
+    cta: "Explore Map SEO",
+    href: "/google-map-optimization",
+  };
 
   // ───────── Section 8 — Testimonials ─────────
   const testimonials = [
@@ -463,7 +462,7 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {packages.map((p) => {
               const Icon = p.icon;
               return (
@@ -556,6 +555,54 @@ const Home = () => {
               );
             })}
           </div>
+
+          {/* ─── Highlight: Google Map Optimization (wide promo card) ─── */}
+          <article className="relative mt-8 overflow-hidden rounded-3xl border border-accent/30 bg-card shadow-card transition-all hover:-translate-y-1 hover:shadow-glow">
+            {/* Decorative gradient blob */}
+            <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-accent/10 blur-3xl" aria-hidden />
+            <div className="pointer-events-none absolute -bottom-16 -left-16 h-56 w-56 rounded-full bg-primary/10 blur-3xl" aria-hidden />
+
+            <div className="relative grid gap-8 p-6 sm:p-8 lg:grid-cols-[auto,1fr,auto] lg:items-center lg:p-10">
+              {/* Icon + title */}
+              <div className="flex items-start gap-4 lg:max-w-xs">
+                <div className="inline-flex size-14 shrink-0 items-center justify-center rounded-2xl bg-accent/10 text-accent ring-1 ring-accent/20">
+                  <MapPin className="size-7" />
+                </div>
+                <div>
+                  <span className="inline-block rounded-full bg-accent/10 px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-accent">
+                    Local SEO
+                  </span>
+                  <h3 className="mt-2 font-display text-2xl font-extrabold leading-tight sm:text-3xl">
+                    {mapPackage.name}
+                  </h3>
+                  <p className="mt-1 text-sm text-muted-foreground">{mapPackage.tagline}</p>
+                  <p className="mt-3 inline-flex items-start gap-2 rounded-xl bg-accent/10 px-3 py-2 text-xs font-semibold text-accent">
+                    <Target className="mt-0.5 size-3.5 shrink-0" />
+                    <span>{mapPackage.goal}</span>
+                  </p>
+                </div>
+              </div>
+
+              {/* Features grid */}
+              <ul className="grid gap-2.5 text-sm sm:grid-cols-2 lg:border-l lg:border-border lg:pl-8">
+                {mapPackage.features.map((f) => (
+                  <li key={f} className="flex gap-2">
+                    <CheckCircle2 className="mt-0.5 size-4 shrink-0 text-accent" />
+                    <span className="text-foreground/80">{f}</span>
+                  </li>
+                ))}
+              </ul>
+
+              {/* CTA */}
+              <div className="flex lg:flex-col lg:items-stretch lg:gap-3">
+                <Button asChild variant="hero" size="lg" className="w-full">
+                  <Link to={mapPackage.href}>
+                    {mapPackage.cta} <ArrowRight className="size-4" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </article>
 
           <p className="mt-8 text-center text-sm text-muted-foreground">
             Not sure which plan?{" "}
