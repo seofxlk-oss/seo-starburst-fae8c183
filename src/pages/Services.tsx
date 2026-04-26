@@ -1,11 +1,107 @@
 import { Link } from "react-router-dom";
-import { CheckCircle2, ArrowRight } from "lucide-react";
+import {
+  CheckCircle2,
+  ArrowRight,
+  Target,
+  BarChart3,
+  ShieldCheck,
+  Eye,
+  Search,
+  FileText,
+  Wrench,
+  Link2,
+  LineChart,
+  MapPin,
+  ShoppingCart,
+  Hotel,
+  Stethoscope,
+  GraduationCap,
+  Briefcase,
+  Building2,
+} from "lucide-react";
 import { SEO } from "@/components/SEO";
 import { Layout } from "@/components/Layout";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { CTASection } from "@/components/CTASection";
 import { AIAnswerBlock } from "@/components/AIAnswerBlock";
 import { SERVICES } from "@/lib/services";
+
+const WHY_CHOOSE = [
+  {
+    icon: MapPin,
+    title: "Local Sri Lanka Market Expertise",
+    text: "We understand Sri Lankan consumer search behaviour, Sinhala/Tamil/English query patterns, and the competitive landscape across Colombo, Kandy, Galle, Jaffna and beyond — so your SEO targets buyers, not just traffic.",
+  },
+  {
+    icon: BarChart3,
+    title: "Data-Driven SEO Decisions",
+    text: "Every SEO strategy we build is backed by real data — search volume, SERP analysis, competitor intelligence, Core Web Vitals and conversion analytics — not guesswork or generic templates.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "100% White-Hat SEO Methodology",
+    text: "We never use shortcuts, PBNs or black-hat techniques. Our ethical SEO approach builds sustainable Google rankings that survive every algorithm update — protecting your domain long-term.",
+  },
+  {
+    icon: Eye,
+    title: "Full Transparency & Reporting",
+    text: "Detailed monthly SEO reports, clear KPIs (rankings, traffic, leads, revenue) and direct access to your dedicated Sri Lankan SEO specialist — no jargon, no black boxes, no surprises.",
+  },
+];
+
+const PROCESS_STEPS = [
+  {
+    icon: Search,
+    step: "Step 01",
+    title: "Discovery & Free SEO Audit",
+    text: "Free website SEO audit to assess your current technical health, content quality, backlink profile and ranking gaps in the Sri Lankan market.",
+  },
+  {
+    icon: FileText,
+    step: "Step 02",
+    title: "Keyword Research & Strategy",
+    text: "Custom SEO roadmap aligned to your business goals — mapping high-intent Sri Lankan keywords to revenue pages.",
+  },
+  {
+    icon: Wrench,
+    step: "Step 03",
+    title: "On-Site SEO Optimisation",
+    text: "Technical SEO fixes, content enhancements, schema markup, internal linking and Core Web Vitals improvements.",
+  },
+  {
+    icon: Link2,
+    step: "Step 04",
+    title: "Off-Site SEO & Link Building",
+    text: "Authority building through quality white-hat backlinks, digital PR and Google Business Profile optimisation.",
+  },
+  {
+    icon: LineChart,
+    step: "Step 05",
+    title: "Monitor, Report & Grow",
+    text: "Monthly SEO reporting, ranking tracking, conversion analysis and continuous optimisation to compound results.",
+  },
+];
+
+const INDUSTRIES = [
+  { icon: ShoppingCart, name: "E-commerce SEO", text: "Product, category and collection page SEO for Sri Lankan online stores." },
+  { icon: Hotel, name: "Hotels & Tourism SEO", text: "Local SEO for hotels, villas and tour operators across Sri Lanka." },
+  { icon: Stethoscope, name: "Healthcare SEO", text: "Clinics, hospitals and medical practices in Colombo and beyond." },
+  { icon: GraduationCap, name: "Education SEO", text: "Schools, institutes and online education providers." },
+  { icon: Briefcase, name: "Professional Services SEO", text: "Lawyers, accountants, consultants, agencies and B2B firms." },
+  { icon: Building2, name: "Real Estate SEO", text: "Property developers and real estate agencies in Sri Lanka." },
+];
+
+const LOCATIONS = [
+  "Colombo", "Kandy", "Galle", "Negombo", "Jaffna", "Kurunegala",
+  "Matara", "Nuwara Eliya", "Anuradhapura", "Trincomalee", "Batticaloa", "Ratnapura",
+];
+
+const STATS = [
+  { num: "50+", label: "Sri Lankan businesses served" },
+  { num: "3×", label: "Average organic traffic increase" },
+  { num: "100%", label: "White-hat SEO methodology" },
+  { num: "10+", label: "Years of SEO experience" },
+];
 
 const SERVICES_AI_ANSWERS = [
   {
