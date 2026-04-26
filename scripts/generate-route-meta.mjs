@@ -102,20 +102,30 @@ const extractTopLevelObjects = (source, constName) => {
 };
 
 const extractStringField = (block, fieldName) => {
-  const patterns = [
-    new RegExp(`${fieldName}:\\s*"((?:\\\\.|[^"\\])*)"`),
-    new RegExp(`${fieldName}:\\s*'((?:\\\\.|[^'\\])*)'`),
-    new RegExp(`${fieldName}:\\s*` + "`([\\s\\S]*?)`"),
-  ];
+  const fieldIndex = block.indexOf(`${fieldName}:`);
+  if (fieldIndex === -1) return undefined;
 
-  for (const pattern of patterns) {
-    const value = block.match(pattern)?.[1];
-    if (value) {
-      return value.replace(/\\"/g, '"').replace(/\\'/g, "'").replace(/\$\{SITE\.url\}/g, SITE_URL);
-    }
+  let i = fieldIndex + fieldName.length + 1;
+  while (i < block.length && /\s/.test(block[i])) i += 1;
+
+  const quote = block[i];
+  if (!["\"", "'", "`"].includes(quote)) return undefined;
+
+  i += 1;
+  let value = "";
+
+  while (i < block.length) {
+    const ch = block[i];
+    if (ch === quote && block[i - 1] !== "\\") break;
+    value += ch;
+    i += 1;
   }
 
-  return undefined;
+  return value
+    .replace(/\\`/g, "`")
+    .replace(/\\"/g, '"')
+    .replace(/\\'/g, "'")
+    .replace(/\$\{SITE\.url\}/g, SITE_URL);
 };
 
 const services = extractTopLevelObjects(servicesModule, "SERVICES").map((block) => ({
