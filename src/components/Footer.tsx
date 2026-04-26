@@ -48,6 +48,7 @@ export const Footer = () => {
           <div>
             <h3 className="font-display text-sm font-bold uppercase tracking-wider text-white">SEO Services</h3>
             <ul className="mt-4 space-y-2 text-sm text-white/70">
+              <li><Link to="/seo-sri-lanka" className="hover:text-accent">SEO Sri Lanka</Link></li>
               <li><Link to="/services" className="hover:text-accent">SEO Consulting</Link></li>
               <li><Link to="/services" className="hover:text-accent">Website SEO Audit</Link></li>
               <li><Link to="/services" className="hover:text-accent">Keyword Research</Link></li>
@@ -63,6 +64,8 @@ export const Footer = () => {
         <div className="mt-12 border-t border-white/10 pt-6">
           <p className="text-center text-xs font-medium text-white/60">
             <a href="https://seofx.lk/services" className="hover:text-accent">SEO Services in Sri Lanka</a>
+            <span className="mx-2 text-white/30">|</span>
+            <a href="https://seofx.lk/seo-sri-lanka" className="hover:text-accent">SEO Sri Lanka</a>
             <span className="mx-2 text-white/30">|</span>
             <a href="https://seofx.lk/seo-consultant-sri-lanka" className="hover:text-accent">SEO Consultant Sri Lanka</a>
             <span className="mx-2 text-white/30">|</span>
