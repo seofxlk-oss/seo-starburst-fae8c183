@@ -294,7 +294,7 @@ const Home = () => {
       </section>
 
       {/* ═══ SECTION 3 — PAID CONSULTATION ═══ */}
-      <ConsultationSection variant="soft" />
+      <ConsultationSection variant="soft" emitFaqSchema={false} />
 
       {/* ═══ SECTION 4 — PARTNER WITH US ═══ */}
       <section id="partner" className="relative overflow-hidden bg-hero py-20 text-white sm:py-24" aria-labelledby="partner-heading">

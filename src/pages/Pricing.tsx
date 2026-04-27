@@ -332,7 +332,7 @@ const Pricing = () => {
       </section>
 
       {/* ═══ PAID CONSULTATION ═══ */}
-      <ConsultationSection variant="light" />
+      <ConsultationSection variant="light" emitFaqSchema={false} />
 
       {/* ═══ FAQ ═══ */}
       <section className="bg-soft py-20">
