@@ -140,7 +140,7 @@ const GoogleAdsSriLanka = () => {
     ],
   });
 
-  const faqJsonLd = faqSchema(FAQS, { pageUrl });
+  const faqJsonLd = faqSchema([...PACKAGE_FAQS, ...FAQS], { pageUrl });
 
   return (
     <Layout>
