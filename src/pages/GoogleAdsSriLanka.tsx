@@ -470,6 +470,32 @@ const GoogleAdsSriLanka = () => {
         </div>
       </section>
 
+      {/* PACKAGE FAQ */}
+      <section className="bg-muted/40 py-20">
+        <div className="container-tight max-w-3xl">
+          <span className="text-xs font-bold uppercase tracking-widest text-primary">Package Questions</span>
+          <h2 className="mt-2 font-display text-3xl font-bold text-foreground sm:text-4xl">
+            Search Ads Bridge & Ads Now + SEO for Life — FAQs
+          </h2>
+
+          <div className="mt-10 space-y-3">
+            {PACKAGE_FAQS.map((f, i) => (
+              <details
+                key={i}
+                className="group rounded-xl border border-border bg-card p-5 [&_summary::-webkit-details-marker]:hidden"
+                id={`pkg-faq-${i + 1}`}
+              >
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-foreground">
+                  <span>{f.q}</span>
+                  <span className="text-2xl font-light text-primary transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{f.a}</p>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* INDUSTRIES */}
       <section className="py-20">
         <div className="container-tight max-w-4xl">
