@@ -46,6 +46,11 @@ import Post29 from "./pages/blog/Post29";
 import Post30 from "./pages/blog/Post30";
 import Post31 from "./pages/blog/Post31";
 import Post32 from "./pages/blog/Post32";
+import Post33 from "./pages/blog/Post33";
+import Post34 from "./pages/blog/Post34";
+import Post35 from "./pages/blog/Post35";
+import Post36 from "./pages/blog/Post36";
+import Post37 from "./pages/blog/Post37";
 import IndustriesHub from "./pages/IndustriesHub";
 import IndustryPage from "./pages/IndustryPage";
 import SeoConsultation from "./pages/SeoConsultation";
@@ -107,6 +112,11 @@ const App = () => (
             <Route path="/blog/seo-services-sri-lanka-what-is-included" element={<Post30 />} />
             <Route path="/blog/on-page-vs-off-page-seo-services-sri-lanka" element={<Post31 />} />
             <Route path="/blog/monthly-seo-services-vs-one-time-audit-sri-lanka" element={<Post32 />} />
+            <Route path="/blog/why-sri-lankan-business-needs-google-ads-2025" element={<Post33 />} />
+            <Route path="/blog/how-much-does-google-ads-cost-sri-lanka" element={<Post34 />} />
+            <Route path="/blog/google-ads-vs-facebook-ads-sri-lanka" element={<Post35 />} />
+            <Route path="/blog/google-ads-mistakes-sri-lankan-businesses-make" element={<Post36 />} />
+            <Route path="/blog/how-to-choose-google-ads-agency-sri-lanka" element={<Post37 />} />
             <Route path="/seo-consultant-sri-lanka" element={<SeoConsultation />} />
             <Route path="/seo-consultation" element={<Navigate to="/seo-consultant-sri-lanka" replace />} />
             <Route path="/google-map-optimization" element={<GoogleMapOptimization />} />
