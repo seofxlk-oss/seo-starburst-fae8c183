@@ -73,7 +73,7 @@ export const Footer = () => {
             <a href="https://seofx.lk/" className="hover:text-accent">SEO Company in Sri Lanka</a>
           </p>
           <div className="mt-4 flex flex-col gap-3 text-xs text-white/50 md:flex-row md:items-center md:justify-between">
-            <p>© {new Date().getFullYear()} SeoFX. All Rights Reserved. Best SEO Company in Sri Lanka.</p>
+            <p>© 2020 SeoFX. All Rights Reserved. Best SEO Company in Sri Lanka.</p>
             <p>SeoFX — Sri Lanka's #1 SEO Company</p>
           </div>
         </div>
