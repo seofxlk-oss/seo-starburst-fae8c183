@@ -116,6 +116,15 @@ const FAQS = [
   { q: "Is Google Ads worth it for small businesses in Sri Lanka?", a: "Yes — when managed correctly. Google Ads levels the playing field. A small local business in Colombo can appear above a large national competitor if their ad and landing page are more relevant to the searcher's query. The key is proper keyword selection, tight targeting, and continuous optimisation — which is exactly what SeoFX provides. We have successfully run profitable Google Ads campaigns for businesses with budgets starting from Rs. 45,000 per month in ad spend." },
 ];
 
+const PACKAGE_FAQS = [
+  { q: "What is included in the Search Ads Bridge package?", a: "Search Ads Bridge includes complete Google Search Ads campaign setup and launch, Sri Lanka keyword research and competitor audit, ad copy writing with A/B testing, negative keyword management to prevent wasted clicks, weekly bid and budget optimisation, conversion tracking setup for calls, forms and sales, a monthly performance report, and a landing page audit with recommendations. The Rs. 45,000 per month is a management fee only — your ad spend is paid separately to Google and you control your own daily budget cap." },
+  { q: "How is Ads Now + SEO for Life different from Search Ads Bridge?", a: "Ads Now + SEO for Life includes everything in Search Ads Bridge plus a full SEO campaign running in parallel. As your SEO rankings improve and begin generating free organic traffic for specific keywords, we pause the Google Ads spend on those same keywords — progressively reducing your paid advertising cost while maintaining your total lead volume. You permanently own the organic rankings, meaning your cost per lead drops month after month as SEO matures. This package also includes a dedicated account manager and priority support." },
+  { q: "Why does Search Ads Bridge have a limitation?", a: "The limitation of Search Ads Bridge is that your traffic stops immediately if you stop paying Google or pause the campaign. Unlike SEO, Google Ads does not build a permanent asset — it is rented visibility. That is why SeoFX recommends using Search Ads Bridge alongside SEO, or upgrading to the Ads Now + SEO for Life bundle, so you are building long-term organic rankings even while you pay for immediate ads traffic." },
+  { q: "Is there a fixed price for Ads Now + SEO for Life?", a: "No — Ads Now + SEO for Life is quoted custom because every business has different SEO needs, existing website authority, competition level, and target keywords. The Google Ads management component starts from the same base as Search Ads Bridge, while the SEO retainer is scoped after we audit your site and market. We offer a bundle discount when both services are combined — contact us for a tailored quote." },
+  { q: "Can I start with Search Ads Bridge and upgrade later?", a: "Absolutely. Many Sri Lankan businesses begin with Search Ads Bridge to generate immediate leads while their SEO campaign is being planned and built. Once SEO is live and rankings begin improving, you can upgrade to Ads Now + SEO for Life at any time. We will seamlessly transition your account and begin the keyword handoff process — pausing ad spend on keywords as they earn organic rankings." },
+  { q: "How long should I run Search Ads Bridge before seeing SEO results?", a: "Google Ads delivers traffic within 24–48 hours. SEO typically takes 3–6 months to start showing meaningful organic ranking improvements in Sri Lanka's competitive markets. We recommend running Search Ads Bridge continuously during this entire SEO growth period so you never lose potential customers. Once SEO matures, your combined cost drops because you are earning free clicks for keywords that previously required paid ads." },
+];
+
 const GoogleAdsSriLanka = () => {
   const pageUrl = `${SITE.url}/google-ads-sri-lanka`;
 
@@ -131,7 +140,7 @@ const GoogleAdsSriLanka = () => {
     ],
   });
 
-  const faqJsonLd = faqSchema(FAQS, { pageUrl });
+  const faqJsonLd = faqSchema([...PACKAGE_FAQS, ...FAQS], { pageUrl });
 
   return (
     <Layout>
@@ -456,6 +465,32 @@ const GoogleAdsSriLanka = () => {
                   </Button>
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PACKAGE FAQ */}
+      <section className="bg-muted/40 py-20">
+        <div className="container-tight max-w-3xl">
+          <span className="text-xs font-bold uppercase tracking-widest text-primary">Package Questions</span>
+          <h2 className="mt-2 font-display text-3xl font-bold text-foreground sm:text-4xl">
+            Search Ads Bridge & Ads Now + SEO for Life — FAQs
+          </h2>
+
+          <div className="mt-10 space-y-3">
+            {PACKAGE_FAQS.map((f, i) => (
+              <details
+                key={i}
+                className="group rounded-xl border border-border bg-card p-5 [&_summary::-webkit-details-marker]:hidden"
+                id={`pkg-faq-${i + 1}`}
+              >
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-foreground">
+                  <span>{f.q}</span>
+                  <span className="text-2xl font-light text-primary transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{f.a}</p>
+              </details>
             ))}
           </div>
         </div>
