@@ -66,54 +66,42 @@ const INDUSTRIES = [
 
 const PACKAGES = [
   {
-    name: "Starter",
-    tagline: "Ideal for small Sri Lankan businesses launching their first Google Ads campaign.",
+    name: "Search Ads Bridge",
+    tagline: "Appear at the top of Google today while your SEO grows. Stop losing customers right now.",
     price: "Rs. 45,000",
-    period: "/month management",
-    note: "+ ad spend (paid directly to Google)",
+    period: "/ month",
+    note: "Management fee only. Ad spend paid separately to Google — you set your own daily budget cap.",
     features: [
-      "Single campaign setup & launch",
-      "Up to 3 ad groups",
-      "Sri Lanka keyword research",
-      "Conversion tracking install",
-      "Weekly optimisation",
+      "Google Search Ads campaign setup & launch",
+      "Sri Lanka keyword research & competitor audit",
+      "Ad copy writing with A/B testing",
+      "Negative keyword management (no wasted clicks)",
+      "Weekly bid & budget optimisation",
+      "Conversion tracking setup (calls, forms, sales)",
       "Monthly performance report",
+      "Landing page audit & recommendations",
     ],
+    limitation: "Limitation: traffic stops if you stop paying. Best used alongside SEO.",
     featured: false,
   },
   {
-    name: "Growth",
-    tagline: "For established businesses ready to scale leads and revenue with Google Ads Sri Lanka.",
-    price: "Rs. 75,000",
-    period: "/month management",
-    note: "+ ad spend (paid directly to Google)",
+    name: "Ads Now + SEO for Life",
+    tagline: "Get immediate leads today while building permanent free rankings. The smartest long-term investment.",
+    price: null,
+    period: null,
+    note: "Google Ads management fee + SEO retainer quoted separately. Bundle discount available — ask us.",
     features: [
-      "Up to 3 campaigns",
-      "Up to 8 ad groups",
-      "Advanced keyword & competitor research",
-      "Custom landing page advice",
-      "Call tracking + form tracking",
-      "Weekly optimisation & A/B testing",
-      "Detailed monthly ROI report",
+      "Everything in Search Ads Bridge",
+      "Full SEO campaign running in parallel",
+      "As SEO ranks a keyword organically, ad spend on that term is paused — your cost drops",
+      "Zero customer loss during the SEO growth period",
+      "Monthly combined report: Ads performance + SEO ranking progress",
+      "You own your organic rankings permanently",
+      "Cost per lead reduces month by month as SEO matures",
+      "Priority support & dedicated account manager",
     ],
+    limitation: null,
     featured: true,
-  },
-  {
-    name: "Scale",
-    tagline: "Multi-location or high-spend businesses competing for top keywords nationally.",
-    price: "Rs. 120,000+",
-    period: "/month management",
-    note: "+ ad spend (paid directly to Google)",
-    features: [
-      "Unlimited campaigns",
-      "Geo-targeted city campaigns",
-      "Remarketing campaigns",
-      "Conversion-focused landing page audit",
-      "Bi-weekly strategy calls",
-      "Daily monitoring & optimisation",
-      "Custom dashboards & reporting",
-    ],
-    featured: false,
   },
 ];
 
@@ -138,9 +126,8 @@ const GoogleAdsSriLanka = () => {
     url: pageUrl,
     serviceType: "Google Ads Management & PPC",
     offers: [
-      { name: "Google Ads Sri Lanka — Starter", url: pageUrl, price: "45000", priceCurrency: "LKR", description: "Single campaign setup, up to 3 ad groups, weekly optimisation and monthly reporting. Ad spend paid separately to Google." },
-      { name: "Google Ads Sri Lanka — Growth", url: pageUrl, price: "75000", priceCurrency: "LKR", description: "Up to 3 campaigns, advanced research, call & form tracking, weekly optimisation and detailed ROI reports." },
-      { name: "Google Ads Sri Lanka — Scale", url: pageUrl, price: "120000", priceCurrency: "LKR", description: "Unlimited campaigns, geo-targeted city campaigns, remarketing, daily monitoring and bi-weekly strategy calls." },
+      { name: "Search Ads Bridge — Google Ads Sri Lanka", url: pageUrl, price: "45000", priceCurrency: "LKR", description: "Google Search Ads campaign setup, Sri Lanka keyword research, ad copy A/B testing, weekly bid & budget optimisation, conversion tracking, monthly reporting and landing page audit. Ad spend paid separately to Google." },
+      { name: "Ads Now + SEO for Life — Google Ads + SEO Bundle", url: pageUrl, description: "Everything in Search Ads Bridge plus a full SEO campaign in parallel. As SEO ranks keywords organically, ad spend on those terms is paused — your cost drops month by month. Bundle pricing on request." },
     ],
   });
 
@@ -421,7 +408,7 @@ const GoogleAdsSriLanka = () => {
             </p>
           </div>
 
-          <div className="mt-12 grid gap-6 md:grid-cols-3">
+          <div className="mt-12 grid gap-6 md:grid-cols-2 md:max-w-4xl md:mx-auto">
             {PACKAGES.map((p) => (
               <div
                 key={p.name}
@@ -432,18 +419,22 @@ const GoogleAdsSriLanka = () => {
                 <div className="border-b border-border p-6">
                   {p.featured && (
                     <span className="mb-3 inline-block rounded-full bg-primary px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-primary-foreground">
-                      Most Popular
+                      ⭐ Recommended
                     </span>
                   )}
                   <h3 className="font-display text-xl font-bold text-foreground">{p.name}</h3>
                   <p className="mt-2 text-sm text-muted-foreground">{p.tagline}</p>
                 </div>
                 <div className="border-b border-border bg-muted/30 p-6">
-                  <div className="text-3xl font-extrabold text-foreground">
-                    {p.price}
-                    <span className="ml-1 text-sm font-normal text-muted-foreground">{p.period}</span>
-                  </div>
-                  <p className="mt-1 text-xs text-muted-foreground">{p.note}</p>
+                  {p.price ? (
+                    <div className="text-3xl font-extrabold text-foreground">
+                      {p.price}
+                      <span className="ml-1 text-sm font-normal text-muted-foreground">{p.period}</span>
+                    </div>
+                  ) : (
+                    <div className="text-2xl font-extrabold text-foreground">Custom Quote</div>
+                  )}
+                  <p className="mt-2 text-xs leading-relaxed text-muted-foreground">{p.note}</p>
                 </div>
                 <ul className="flex-1 space-y-3 p-6">
                   {p.features.map((f) => (
@@ -453,9 +444,15 @@ const GoogleAdsSriLanka = () => {
                     </li>
                   ))}
                 </ul>
+                {p.limitation && (
+                  <div className="mx-6 mb-4 flex items-start gap-2 rounded-lg border-l-2 border-destructive bg-destructive/5 px-3 py-2 text-xs text-muted-foreground">
+                    <Info className="mt-0.5 size-3.5 flex-shrink-0 text-destructive" />
+                    <span>{p.limitation}</span>
+                  </div>
+                )}
                 <div className="p-6 pt-0">
                   <Button asChild className="w-full" variant={p.featured ? "default" : "outline"}>
-                    <Link to="/contact-us">Get Started</Link>
+                    <Link to="/contact-us">Get started →</Link>
                   </Button>
                 </div>
               </div>
