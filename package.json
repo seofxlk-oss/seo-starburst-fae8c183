@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && bun scripts/generate-route-meta.mjs",
-    "build:dev": "vite build --mode development && bun scripts/generate-route-meta.mjs",
+    "build": "vite build && bun scripts/generate-route-meta.mjs && bun scripts/generate-sitemap.mjs",
+    "build:dev": "vite build --mode development && bun scripts/generate-route-meta.mjs && bun scripts/generate-sitemap.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
